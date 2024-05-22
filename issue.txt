@@ -1,0 +1,123 @@
+** dashboard
+1 - supeadmin
+1 - admin
+     Pages:
+            0 -> dashboard
+                -> business
+                -> accounts
+            * -> POS
+                 -> pos
+                 -> outlet
+                 -> outlet checkin
+                 -> outlet users
+            1 -> user management ->
+                -> cutomer
+                -> supplier
+                -> retailer
+                -> employee
+            2 -> product management
+                -> category
+                -> brand
+                -> color
+                -> size
+                -> menufecturer
+                -> attribute group
+                -> attributes
+                -> products
+                -> import
+                -> export
+                -> barcode
+                -> QR code
+                -> Offer create
+            3 -> Cuopon management
+            3.1 -> Product wear house
+            4 -> Product purchase
+                -> new purchase
+                -> all purchase
+                -> purchase return
+                -> purchase bills
+                -> purchase payments
+                -> purchase dues
+                -> supplier credit
+            5 -> product stock
+                -> stock transfer
+                -> stock balance
+            6 -> sales management
+                -> sales at a glance
+                -> new order
+                -> quotatin
+                -> invoice
+                -> all ecommerce orders
+                -> pending orders
+                -> confirm orders
+                -> process orders
+                -> on the way orders
+                -> delivered orders
+                -> cancel orders
+                -> return orders
+                -> refund orders
+                -> payments
+            7 -> accounts
+                ->expenditures
+                ->account list
+                ->money transfer
+                ->dipocit
+                ->transections
+                ->new expense
+                ->expenses
+                ->assets
+            8 -> Places
+                -> country
+                -> state
+                -> divition
+                -> district
+                -> upjila
+                -> thana
+                ->
+            9 -> CRM
+                -> customer category
+                -> customer list
+                -> customer call history
+                -> customer upcomming contact list
+            10 -> HRM
+                ->  deperatment
+                ->  designations
+                ->  employees
+                ->  holiday
+                ->  attendence report
+                ->  attendence entry
+                ->  time schedule
+                ->  payroll
+                ->  office location
+            11 -> website management
+                -> settings
+                -> cutomer wislist
+                -> banners
+                -> blogs
+                -> contactus
+                -> new latter
+                -> subscribers
+                -> policy
+                -> pertners
+                -> achivements
+                -> testimonials
+                -> product reviews
+                -> plugins
+                   -> google analitics
+                   -> google  map
+                   -> facebook pixed
+                   -> whatsapp
+                -> SEO
+                -> FAQ
+                -> Home Page section controll
+                -> Home Page section controll
+
+2 - sales
+
+3 - accountant
+4 - retailer
+5 - supplier
+6 - delivery man
+7 - customer
+7 - employee
+
