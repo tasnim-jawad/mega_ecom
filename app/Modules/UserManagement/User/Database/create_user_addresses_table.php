@@ -1,0 +1,41 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     php artisan migrate --path='\App\Modules\UserManagement\User\Database\create_user_addresses_table.php'
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('user_addresses', function (Blueprint $table) {
+            $table->id();
+            $table->bigInteger('user_id')->nullable();
+            $table->tinyInteger('is_shipping')->nullable();
+            $table->tinyInteger('is_billing')->nullable();
+            $table->enum('address_types', ['office', 'pickup_point', 'store'])->nullable();
+            $table->string('address')->nullable();
+            $table->bigInteger('country_id')->nullable();
+            $table->bigInteger('state_division_id')->nullable();
+            $table->bigInteger('division_id')->nullable();
+            $table->bigInteger('district_id')->nullable();
+            $table->bigInteger('thana_id')->nullable();
+            $table->bigInteger('city_id')->nullable();
+            $table->string('zip_code')->nullable();
+            $table->tinyInteger('is_present_address')->nullable();
+            $table->bigInteger('is_permanent_address')->nullable();
+            $table->timestamps();
+        });
+    }
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('user_addresses');
+    }
+};

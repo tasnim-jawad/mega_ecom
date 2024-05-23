@@ -37,6 +37,17 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \App\Http\Middleware\HandleInertiaRequests::class,
+            // system middleware
+            // system middleware
+            \App\Http\Middleware\SuperAdmin::class,
+            \App\Http\Middleware\Admin::class,
+            \App\Http\Middleware\DeliveryMan::class,
+            \App\Http\Middleware\Employee::class,
+            \App\Http\Middleware\Retailer::class,
+            \App\Http\Middleware\Sales::class,
+            \App\Http\Middleware\Supplier::class,
+            \App\Http\Middleware\Accountent::class,
+            \App\Http\Middleware\Customer::class,
         ],
 
         'api' => [
@@ -65,5 +76,14 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'SuperAdmin' => \App\Http\Middleware\SuperAdmin::class,
+        'Admin' => \App\Http\Middleware\Admin::class,
+        'DeliveryMan' => \App\Http\Middleware\DeliveryMan::class,
+        'Employee' => \App\Http\Middleware\Employee::class,
+        'Retailer' => \App\Http\Middleware\Retailer::class,
+        'Sales' => \App\Http\Middleware\Sales::class,
+        'Supplier' => \App\Http\Middleware\Supplier::class,
+        'Accountent' => \App\Http\Middleware\Accountent::class,
+        'Customer' => \App\Http\Middleware\Customer::class,
     ];
 }

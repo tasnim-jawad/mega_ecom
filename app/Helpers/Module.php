@@ -585,7 +585,9 @@ if (!function_exists('migration')) {
                         $type =  'string';
                     } elseif ($type == 'longtext' || $type == 'text') {
                         $type =  'text';
-                    } elseif ($type == 'number' || $type == 'integer') {
+                    } elseif ($type == 'number' || $type == 'integer'|| $type == 'intiger') {
+                        $type = 'Integer';
+                    }elseif ($type == 'bigint' || $type == 'biginteger') {
                         $type = 'bigInteger';
                     } elseif ($type == 'boolean' || $type == 'tinyint') {
                         $type =  'tinyInteger';

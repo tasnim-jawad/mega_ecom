@@ -9,9 +9,9 @@
         <div class="sidebar-menu">
             <li class="my-2 d-flex align-items-center gap-2">
                 <i class="icon-desktop"></i>
-                <router-link :to="{ name: `SuperAdminDashboard` }">Dashboard</router-link>
+                <router-link :to="{ name: `SalesAdminDashboard` }">Dashboard</router-link>
             </li>
- 
+
         </div>
     </div>
 </template>

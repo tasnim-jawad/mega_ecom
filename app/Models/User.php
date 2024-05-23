@@ -14,8 +14,8 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    static $userRoleModel = \App\Modules\UserRole\Models\Model::class;
-    static $userPermissionModel = \App\Modules\UserPermission\Models\Model::class;
+    static $userRoleModel = \App\Modules\UserManagement\UserRole\Models\Model::class;
+    static $userPermissionModel = \App\Modules\UserManagement\UserPermission\Models\Model::class;
 
     /**
      * The attributes that are mass assignable.
