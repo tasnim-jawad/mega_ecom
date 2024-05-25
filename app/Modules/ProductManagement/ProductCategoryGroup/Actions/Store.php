@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Modules\UserManagement\User\Actions;
+namespace App\Modules\ProductManagement\ProductCategoryGroup\Actions;
 
-use App\Modules\UserManagement\User\Validations\Validation;
+use App\Modules\ProductManagement\ProductCategoryGroup\Validations\Validation;
 
 
 class Store
 {
-    static $model = \App\Modules\UserManagement\User\Models\Model::class;
+    static $model = \App\Modules\ProductManagement\ProductCategoryGroup\Models\Model::class;
 
     public static function execute(Validation $request)
     {

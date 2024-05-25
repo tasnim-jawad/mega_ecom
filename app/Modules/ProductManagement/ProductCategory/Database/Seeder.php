@@ -13,10 +13,10 @@ class Seeder extends SeederClass
     static $model = \App\Modules\ProductManagement\ProductCategory\Models\Model::class;
     public function run(): void
     {
-
         self::$model::truncate();
         for ($i = 1; $i < 100; $i++) {
             self::$model::create([
+                'product_category_group_id' => rand(1, 10),
                 'title' => facker()->name,
                 'parent_id' => rand(1, 100),
                 'serial' => $i,

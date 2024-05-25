@@ -7,18 +7,14 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     php artisan migrate --path='\App\Modules\ProductManagement\ProductCategory\Database\create_product_categories_table.php'
+     php artisan migrate --path='\App\Modules\ProductManagement\ProductCategoryGroup\Database\create_product_category_groups_table.php'
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('product_categories', function (Blueprint $table) {
+        Schema::create('product_category_groups', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('product_category_group_id')->nullable();
             $table->string('title')->nullable();
-            $table->string('parent_id')->nullable();
-            $table->string('serial')->nullable();
-            $table->string('image')->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();
@@ -32,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('product_categories');
+        Schema::dropIfExists('product_category_groups');
     }
 };

@@ -17,11 +17,11 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('user_id')->nullable();
             $table->bigInteger('user_address_id')->nullable();
-            $table->string('full_name')->nullable();
+            $table->string('name')->nullable();
             $table->string('phone_number')->nullable();
             $table->string('email')->nullable();
             $table->timestamps();
-
+            $table->softDeletes();
         });
     }
     /**

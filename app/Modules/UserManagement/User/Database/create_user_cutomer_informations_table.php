@@ -19,6 +19,7 @@ return new class extends Migration
             $table->bigInteger('user_id')->nullable();
             $table->string('website')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
     /**

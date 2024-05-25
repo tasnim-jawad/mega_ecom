@@ -2,21 +2,20 @@
 
 namespace App\Modules\UserManagement\User\Actions;
 
-use App\Modules\UserManagement\User\Validations\Validation;
 
-class Update
+
+class Show
 {
     static $model = \App\Modules\UserManagement\User\Models\Model::class;
 
-    public static function execute(Validation $request,$id)
+    public static function execute($id)
     {
         try {
-            if (!$data = self::$model::query()->where('id', $id)->first()) {
+            $with = [];
+            if (!$data = self::$model::query()->with($with)->where('id', $id)->first()) {
                 return messageResponse('Data not found...', 404, 'error');
             }
-            $requestData = $request->validated();
-            $data->update($requestData);
-            return messageResponse('Item updated successfully');
+            return entityResponse($data);
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(), 500, 'server_error');
         }

@@ -64,7 +64,7 @@ class LoginController extends Controller
             );
         }
 
-        $check_auth_user = User::where('email', $request->email)->orWhere('uid', $request->email)->first();
+        $check_auth_user = User::where('email', $request->email)->first();
 
         if ($check_auth_user->is_blocked) {
             return response()->json(['status' => 'error', 'message' => 'Sorry,you are blocked'], 404);

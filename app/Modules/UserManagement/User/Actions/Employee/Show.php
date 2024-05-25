@@ -2,18 +2,20 @@
 
 namespace App\Modules\UserManagement\User\Actions;
 
-class Delete
+
+
+class Show
 {
     static $model = \App\Modules\UserManagement\User\Models\Model::class;
 
     public static function execute($id)
     {
         try {
-            if (!$data=self::$model::find($id)) {
+            $with = [];
+            if (!$data = self::$model::query()->with($with)->where('id', $id)->first()) {
                 return messageResponse('Data not found...', 404, 'error');
             }
-            $data->delete();
-            return messageResponse('Item Successfully deleted', 200, 'success');
+            return entityResponse($data);
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(), 500, 'server_error');
         }

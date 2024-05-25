@@ -20,6 +20,7 @@ return new class extends Migration
             $table->bigInteger('user_id')->nullable();
             $table->string('employee_code')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
     /**

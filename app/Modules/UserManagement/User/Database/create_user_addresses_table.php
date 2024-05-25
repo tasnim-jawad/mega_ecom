@@ -29,6 +29,8 @@ return new class extends Migration
             $table->tinyInteger('is_present_address')->nullable();
             $table->bigInteger('is_permanent_address')->nullable();
             $table->timestamps();
+            $table->softDeletes();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
     /**

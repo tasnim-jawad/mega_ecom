@@ -517,6 +517,7 @@ if (!function_exists('model')) {
                         if (strlen(\$data->slug) > 150) {
                             \$data->slug = substr(\$data->slug, strlen(\$data->slug) - 150, strlen(\$data->slug));
                         }
+                        \$data->save();
                     });
                 }
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Modules\UserManagement\User;
+namespace App\Modules\ProductManagement\ProductCategoryGroup;
 
-use App\Modules\UserManagement\User\Actions\All;
-use App\Modules\UserManagement\User\Actions\Delete;
-use App\Modules\UserManagement\User\Actions\Show;
-use App\Modules\UserManagement\User\Actions\Store;
-use App\Modules\UserManagement\User\Actions\Update;
-use App\Modules\UserManagement\User\Validations\Validation;
-use App\Modules\UserManagement\User\Actions\BulkActions;
+use App\Modules\ProductManagement\ProductCategoryGroup\Actions\All;
+use App\Modules\ProductManagement\ProductCategoryGroup\Actions\Delete;
+use App\Modules\ProductManagement\ProductCategoryGroup\Actions\Show;
+use App\Modules\ProductManagement\ProductCategoryGroup\Actions\Store;
+use App\Modules\ProductManagement\ProductCategoryGroup\Actions\Update;
+use App\Modules\ProductManagement\ProductCategoryGroup\Validations\Validation;
+use App\Modules\ProductManagement\ProductCategoryGroup\Actions\BulkActions;
 use App\Http\Controllers\Controller as ControllersController;
 
 
