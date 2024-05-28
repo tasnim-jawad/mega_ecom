@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Modules\UserManagement\User\Actions\User;
+namespace App\Modules\LocationManageemnt\Thana\Actions;
 
-class Restroy
+class Delete
 {
-    static $model = \App\Modules\UserManagement\User\Models\Model::class;
+    static $model = \App\Modules\LocationManageemnt\Thana\Models\Model::class;
 
-    public static function execute()
+    public static function execute($id)
     {
         try {
-            if (!$data = self::$model::where('slug',request()->slug)) {
+            if (!$data=self::$model::find($id)) {
                 return messageResponse('Data not found...', 404, 'error');
             }
-            $data->forceDelete();
+            $data->delete();
             return messageResponse('Item Successfully deleted', 200, 'success');
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(), 500, 'server_error');

@@ -10,20 +10,20 @@ class Store
     static $model = \App\Modules\UserManagement\User\Models\Model::class;
     static $userAddress = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
     static $userAddressContactPerson = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
-    static $userCustomerInformation = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
-    static $userSupplierInformation = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
-    static $userEmployeeInformation = \App\Modules\UserManagement\User\Models\UserEmployeeInformationModel::class;
+    static $userShow = \App\Modules\UserManagement\User\Actions\User\Show::class;
     public static function execute(Validation $request)
     {
         try {
             // dd($request->userAddress);
             $requestData = $request->validated();
-
+            unset($requestData['confirmed']);
             $userData = self::$model::create($requestData);
 
             if ($request->userAddress) {
+
                 $userAddressContactPersons = [];
                 foreach ($request->userAddress as $key => $address) {
+
                     $address = (object) $address;
                     $userAddressData = [
                         'user_id' => $userData->id,
@@ -65,49 +65,9 @@ class Store
                 }
             }
 
-            return messageResponse('Item store successfully');
+            return self::$userShow::execute($userData->slug);
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(), 500, 'server_error');
         }
     }
 }
-
-// let request = {
-//     user_info: {},
-//     addresses: [
-//         {
-//             is_shipping: false,
-//             is_billing: true,
-//             address_type: '',
-//             contact_persons: [
-//                 {
-//                     name: '',
-//                     phone_number: '',
-//                     email,
-//                 }
-//             ]
-//         }
-//     ]
-// }
-   // self::$userCustomerInformation::create([
-                //     'user_id' => $userData->id,
-                //     'customer_type_id' => $request->customer_type_id,
-                //     'client_id' => $request->client_id,
-                //     'website' => $request->website,
-                // ]);
-
-                // self::$userSupplierInformation::create([
-                //     'user_id' => $userData->id,
-                //     'supplier_type_id' => $request->supplier_type_id,
-                //     'supplier_id' => $request->supplier_id,
-                //     'mobile_number' => $request->mobile_number,
-                //     'email' => $request->email,
-                // ]);
-
-                // self::$userEmployeeInformation::create([
-                //     'user_id' => $userData->id,
-                //     'gender' =>  $request->gender,
-                //     'nick_name' => $request->nick_name,
-                //     'date_of_birth' => $request->date_of_birth,
-                //     'employee_code' => $request->employee_code,
-                // ]);

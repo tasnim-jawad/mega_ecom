@@ -18,8 +18,10 @@ return new class extends Migration
             $table->bigInteger('client_id')->nullable();
             $table->bigInteger('user_id')->nullable();
             $table->string('website')->nullable();
+            $table->bigInteger('creator')->unsigned()->nullable();
+            $table->string('slug',50)->nullable();
+            $table->enum('status',['active','inactive'])->default('active');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
     /**

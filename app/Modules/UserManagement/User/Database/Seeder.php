@@ -23,6 +23,8 @@ class Seeder extends SeederClass
 
     public function run(): void
     {
+
+
         self::$userModel::truncate();
         $roles = self::$roleModel::get();
         foreach ($roles as  $role) {
@@ -66,8 +68,8 @@ class Seeder extends SeederClass
                 'supplier_type_id' => rand(1, 10),
                 'user_id' => $userData->id,
                 'supplier_id' => rand(1, 10),
-                'mobile_number' => facker()->phoneNumber(),
-                'email' => facker()->email(),
+                'alt_mobile_number' => facker()->phoneNumber(),
+                'alt_email' => facker()->email(),
             ]);
 
             self::$userEmployeeInformation::create([

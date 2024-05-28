@@ -18,7 +18,6 @@ class Update
 
 
             $requestData = $request->validated();
-
             $userData = self::$model::find($id);
 
             if (!$userData) {

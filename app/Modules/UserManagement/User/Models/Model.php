@@ -5,18 +5,25 @@ namespace App\Modules\UserManagement\User\Models;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Casts\Attribute;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Model extends EloquentModel
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Passport\HasApiTokens;
+
+class Model extends Authenticatable
 {
+    use HasApiTokens, HasFactory, Notifiable;
+
     static $userRoleModel = \App\Modules\UserManagement\UserRole\Models\Model::class;
     static $userPermissionModel = \App\Modules\UserManagement\UserPermission\Models\Model::class;
     static $userAddressModel = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
+    static $userAddressContactPersonModel = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
+    static $userContactInformationModel = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
+    static $userSupplierInformationModel = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
 
     protected $table = "users";
     protected $guarded = [];
-    protected $appends = ['full_name'];
-    use SoftDeletes;
     protected $hidden = [
         'password',
         'remember_token',
@@ -40,11 +47,10 @@ class Model extends EloquentModel
             if (strlen($data->slug) > 150) {
                 $data->slug = substr($data->slug, strlen($data->slug) - 150, strlen($data->slug));
             }
+            if (auth()->check()) {
+                $data->creator = auth()->user()->id;
+            }
             $data->save();
-        });
-
-        static::deleting(function ($user) {
-            $user->user_address()->delete();
         });
     }
 
@@ -68,17 +74,16 @@ class Model extends EloquentModel
     {
         return $this->hasMany(self::$userAddressModel, 'user_id', 'id');
     }
-
-
-
-
-    protected function fullName(): Attribute
+    public function user_address_contact_person()
     {
-        return Attribute::make(
-            function (mixed  $value, array $data) {
-                $fullName =  $data['name'] . $data['user_name'];
-                return $fullName;
-            },
-        );
+        return $this->hasMany(self::$userAddressContactPersonModel, 'user_id', 'id');
+    }
+    public function user_contact_information()
+    {
+        return $this->hasMany(self::$userContactInformationModel, 'user_id', 'id');
+    }
+    public function user_supplier_information()
+    {
+        return $this->hasMany(self::$userSupplierInformationModel, 'user_id', 'id');
     }
 }
