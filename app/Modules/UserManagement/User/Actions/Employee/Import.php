@@ -59,7 +59,7 @@ class Import
 
             return messageResponse('Items imported successfully');
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(),[], 500, 'server_error');
         }
     }
 }

@@ -20,7 +20,7 @@ class SoftDelete
             $data->update();
             return messageResponse('Item Successfully soft deleted', [], 200, 'success');
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(), [], 500, 'server_error');
         }
     }
 }

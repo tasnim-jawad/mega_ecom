@@ -75,7 +75,9 @@ class ModelingDirectory extends Command
             'Seeder.php',
             'Restore.php',
             'SoftDelete.php',
-            'Import.php'
+            'Import.php',
+            'GetAllValidation.php',
+            'BulkActionsValidation.php',
         ];
 
         if ($module_dir != null) {
@@ -114,7 +116,7 @@ class ModelingDirectory extends Command
                 File::put($actionsDirectory . '/' . $file, update($module_name));
             }
             if ($file == 'Destroy.php') {
-                File::put($actionsDirectory . '/' . $file, delete($module_name));
+                File::put($actionsDirectory . '/' . $file, destroy($module_name));
             }
             if ($file == 'BulkActions.php') {
                 File::put($actionsDirectory . '/' . $file, bulkActions($module_name));
@@ -123,13 +125,19 @@ class ModelingDirectory extends Command
                 File::put($actionsDirectory . '/' . $file, softDelete($module_name));
             }
             if ($file == 'Import.php') {
-                File::put($actionsDirectory . '/' . $file, import($module_name));
+                File::put($actionsDirectory . '/' . $file, import($module_name, $fields));
             }
             if ($file == 'Restore.php') {
                 File::put($actionsDirectory . '/' . $file, restore($module_name));
             }
             if ($file == 'Validation.php') {
                 File::put($ValidationDirectory . '/' . $file, validation($module_name, $fields));
+            }
+            if ($file == 'GetAllValidation.php') {
+                File::put($ValidationDirectory . '/' . $file, GetAllValidation($module_name, $fields));
+            }
+            if ($file == 'BulkActionsValidation.php') {
+                File::put($ValidationDirectory . '/' . $file, BulkActionsValidation($module_name, $fields));
             }
         }
 
