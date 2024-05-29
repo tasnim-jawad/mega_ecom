@@ -253,7 +253,10 @@ if (!function_exists('show')) {
                 {
                     try {
                         \$with = [];
-                        \$fields = request()->input('fields');
+                        \$fields = request()->input('fields') ?? [];
+                        if (empty(\$fields)) {
+                            \$fields = ['*'];
+                        }
                         if (!\$data = self::\$model::query()->with(\$with)->select(\$fields)->where('slug', \$slug)->first()) {
                             return messageResponse('Data not found...',\$data, 404, 'error');
                         }

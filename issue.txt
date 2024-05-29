@@ -3,6 +3,7 @@ https://whimsical.com/super-shop-9cLLFVwKp4NenNMAVV8tq5
 planing->
 https://www.figma.com/board/Z1zR8GkTgQ0ndyR1dzMx3L/mega-ecommerce?node-id=0-1&t=3Fdy4buL2bfNwCyQ-0
 ------------------------------------------------
+php artisan make:module ProductManagement/ProductCategoryGroup [title:string]
 php artisan make:module ProductManagement/ProductCategory [title:string,parent_id:intiger,serial:intiger,image:string]
 php artisan make:module ProductManagement/ProductMenufacturer [title:string,serial:intiger,image:string]
 php artisan make:module ProductManagement/ProductBrand [title:string,serial:intiger,image:string]
