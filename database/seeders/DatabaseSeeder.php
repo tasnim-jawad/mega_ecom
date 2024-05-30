@@ -31,11 +31,11 @@ class DatabaseSeeder extends Seeder
             UserPermissionSeeder::class,
             UserSeeder::class,
             //product management seeder
-            ProductCategoryGroupSeeder::class,
-            ProductCategorySeeder::class,
-            ProductBrandSeeder::class,
-            ProductMenufacturerSeeder::class,
-            ProductSeeder::class,
+            // ProductCategoryGroupSeeder::class,
+            // ProductCategorySeeder::class,
+            // ProductBrandSeeder::class,
+            // ProductMenufacturerSeeder::class,
+            // ProductSeeder::class,
         ]);
     }
 }
