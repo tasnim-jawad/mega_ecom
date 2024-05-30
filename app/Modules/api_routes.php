@@ -22,5 +22,14 @@ include_once  base_path("app/Modules/ProductManagement/ProductCategory/Route.php
 // include_once  base_path("app/Modules/ProductManagement/Product/Route.php");
 // include_once  base_path("app/Modules/ProductManagement/Product/Route.php");
 // include_once  base_path("app/Modules/ProductManagement/Product/Route.php");
+// include_once  base_path("app/Modules/ProductManagement/Product/Route.php");
 
 // include_once  base_path("app/Modules/TestUser/Route.php");
+
+/*
+|--------------------------------------------------------------------------
+| Location management Routes
+|--------------------------------------------------------------------------
+*/
+include_once  base_path("app/Modules/LocationManagement/Country/Route.php");
+include_once  base_path("app/Modules/LocationManagement/StateDivision/Route.php");
