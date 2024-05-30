@@ -20,9 +20,10 @@ return new class extends Migration
             $table->string('alt', 150)->nullable();
             $table->tinyInteger('is_thumb')->default(0);
             $table->tinyInteger('is_primary')->default(0);
+            $table->tinyInteger('is_secondary')->default(0);
 
             $table->bigInteger('creator')->unsigned()->nullable();
-            $table->string('slug', 50)->nullable();
+            $table->string('slug', 150)->nullable();
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();
         });

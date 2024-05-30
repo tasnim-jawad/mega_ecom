@@ -17,7 +17,7 @@ class SoftDelete
             }
             $data->status = 'inactive';
             $data->update();
-            return messageResponse('Item Successfully soft deleted');
+            return messageResponse('Item Successfully updated');
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(), 500, 'server_error');
         }

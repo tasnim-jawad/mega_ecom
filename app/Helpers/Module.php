@@ -127,7 +127,7 @@ if (!function_exists('bulkActions')) {
                         }
                     }
 
-                    return messageResponse("Items are Successfully " . request()->input('action'), 200, 'success');
+                    return messageResponse("Items are Successfully " . request()->input('action'),[], 200, 'success');
                 } catch (\Exception \$e) {
                     return messageResponse(\$e->getMessage(),[], 500, 'server_error');
                 }
@@ -395,7 +395,7 @@ if (!function_exists('import')) {
 
                             ]);
                         }
-                        return messageResponse('Item Successfully soft deleted', [], 200, 'success');
+                        return messageResponse('Item Successfully updated', [], 200, 'success');
                     } catch (\Exception \$e) {
                         return messageResponse(\$e->getMessage(),[], 500, 'server_error');
                     }
@@ -900,7 +900,7 @@ if (!function_exists('migration')) {
                         $type =  'string';
                     } elseif ($type == 'longtext' || $type == 'text') {
                         $type =  'text';
-                    } elseif ($type == 'number' || $type == 'integer' || $type == 'intiger') {
+                    } elseif ($type == 'number' || $type == 'integer' || $type == 'intiger' || $type == 'int') {
                         $type = 'Integer';
                     } elseif ($type == 'bigint' || $type == 'biginteger') {
                         $type = 'bigInteger';

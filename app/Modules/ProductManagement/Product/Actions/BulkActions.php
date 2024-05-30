@@ -32,7 +32,7 @@ class BulkActions
                 }
             }
 
-            return messageResponse("Items are Successfully " . request()->input('action'), 200, 'success');
+            return messageResponse("Items are Successfully " . request()->input('action'), [],200, 'success');
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(),[], 500, 'server_error');
         }
