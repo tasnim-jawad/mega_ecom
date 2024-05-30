@@ -22,6 +22,7 @@
         "filefy": "^0.1.11",
         "moment": "^2.30.1",
         "pinia": "^2.1.7",
+        "vue-marquee-text-component": "^2.0.1",
         "vue-router": "^4.2.5"
     }
 }
