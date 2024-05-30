@@ -15,10 +15,14 @@ return new class extends Migration
         Schema::create('user_supplier_informations', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('supplier_type_id')->nullable();
-            $table->string('email',50)->nullable();
-            $table->string('mobile_number',20)->nullable();
+            $table->string('alt_email', 50)->nullable();
+            $table->string('alt_mobile_number', 20)->nullable();
             $table->bigInteger('supplier_id')->nullable();
             $table->bigInteger('user_id')->nullable();
+
+            $table->bigInteger('creator')->unsigned()->nullable();
+            $table->string('slug', 50)->nullable();
+            $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();
         });
     }

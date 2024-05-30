@@ -19,6 +19,10 @@ return new class extends Migration
             $table->dateTime('date_of_birth')->nullable();
             $table->bigInteger('user_id')->nullable();
             $table->string('employee_code')->nullable();
+
+            $table->bigInteger('creator')->unsigned()->nullable();
+            $table->string('slug',50)->nullable();
+            $table->enum('status',['active','inactive'])->default('active');
             $table->timestamps();
         });
     }

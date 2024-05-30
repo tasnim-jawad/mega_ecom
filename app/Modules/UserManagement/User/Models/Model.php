@@ -5,25 +5,55 @@ namespace App\Modules\UserManagement\User\Models;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Casts\Attribute;
-class Model extends EloquentModel
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Passport\HasApiTokens;
+
+class Model extends Authenticatable
 {
+    use HasApiTokens, HasFactory, Notifiable;
+
     static $userRoleModel = \App\Modules\UserManagement\UserRole\Models\Model::class;
     static $userPermissionModel = \App\Modules\UserManagement\UserPermission\Models\Model::class;
+    static $userAddressModel = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
+    static $userAddressContactPersonModel = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
+    static $userContactInformationModel = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
+    static $userSupplierInformationModel = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
 
     protected $table = "users";
     protected $guarded = [];
-    protected $appends = ['title'];
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+        'password' => 'hashed',
+    ];
     protected static function booted()
     {
         static::created(function ($data) {
             $random_no = random_int(100, 999) . $data->id . random_int(100, 999);
-            $slug = $data->title . " " . $random_no;
+            $slug = $data->name . " " . $random_no;
             $data->slug = Str::slug($slug); //use Illuminate\Support\Str;
             if (strlen($data->slug) > 150) {
                 $data->slug = substr($data->slug, strlen($data->slug) - 150, strlen($data->slug));
             }
+            if (auth()->check()) {
+                $data->creator = auth()->user()->id;
+            }
+            $data->save();
         });
     }
+
 
     public function scopeActive($q)
     {
@@ -32,7 +62,7 @@ class Model extends EloquentModel
 
     public function roles()
     {
-        return $this->belongsTo(self::$userRoleModel, 'role_id','serial');
+        return $this->belongsTo(self::$userRoleModel, 'role_id', 'serial');
     }
 
     public function permissions()
@@ -40,16 +70,20 @@ class Model extends EloquentModel
         return $this->belongsToMany(self::$userPermissionModel, 'user_user_permission', 'user_id', 'user_permission_id', 'id', 'permission_serial'); //user::id
     }
 
-
-
-    
-
-    protected function title(): Attribute
+    public function user_address()
     {
-        return Attribute::make(
-            function (mixed  $value, array $data) {
-                return $data['full_name'];
-            },
-        );
+        return $this->hasMany(self::$userAddressModel, 'user_id', 'id');
+    }
+    public function user_address_contact_person()
+    {
+        return $this->hasMany(self::$userAddressContactPersonModel, 'user_id', 'id');
+    }
+    public function user_contact_information()
+    {
+        return $this->hasMany(self::$userContactInformationModel, 'user_id', 'id');
+    }
+    public function user_supplier_information()
+    {
+        return $this->hasMany(self::$userSupplierInformationModel, 'user_id', 'id');
     }
 }

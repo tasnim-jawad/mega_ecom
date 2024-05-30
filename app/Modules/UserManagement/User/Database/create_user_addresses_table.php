@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('user_addresses', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->tinyInteger('is_shipping')->nullable();
             $table->tinyInteger('is_billing')->nullable();
             $table->enum('address_types', ['office', 'pickup_point', 'store'])->nullable();
@@ -28,7 +28,14 @@ return new class extends Migration
             $table->string('zip_code')->nullable();
             $table->tinyInteger('is_present_address')->nullable();
             $table->bigInteger('is_permanent_address')->nullable();
+
+
+            $table->bigInteger('creator')->unsigned()->nullable();
+            $table->string('slug',50)->nullable();
+            $table->enum('status',['active','inactive'])->default('active');
             $table->timestamps();
+
+            // $table->softDeletes();
         });
     }
     /**
@@ -36,6 +43,11 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_addresses');
+        Schema::table('user_addresses', function (Blueprint $table) {
+            $table->dropForeign(['user_id']);
+        });
+        Schema::table('user_addresses', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+        });
     }
 };

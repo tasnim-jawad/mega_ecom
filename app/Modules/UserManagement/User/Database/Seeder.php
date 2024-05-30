@@ -23,15 +23,19 @@ class Seeder extends SeederClass
 
     public function run(): void
     {
+
+
         self::$userModel::truncate();
         $roles = self::$roleModel::get();
         foreach ($roles as  $role) {
             $userData = self::$userModel::create([
-                "full_name" => "Mr " . $role->name,
+                "name" => "Mr " . $role->name,
+                "user_name" =>  $role->name,
                 "email" => $role->name . "@gmail.com",
                 "password" => Hash::make('@12345678'),
                 "role_id" => $role->serial,
                 "phone" => rand(99999999999, 999999999999),
+                "photo" => facker()->imageUrl(300, 300),
             ]);
             $userData->permissions()->attach([1, 2, 3, 4]);
             $userData->save();
@@ -64,8 +68,8 @@ class Seeder extends SeederClass
                 'supplier_type_id' => rand(1, 10),
                 'user_id' => $userData->id,
                 'supplier_id' => rand(1, 10),
-                'mobile_number' => facker()->phoneNumber(),
-                'email' => facker()->email(),
+                'alt_mobile_number' => facker()->phoneNumber(),
+                'alt_email' => facker()->email(),
             ]);
 
             self::$userEmployeeInformation::create([
@@ -78,7 +82,7 @@ class Seeder extends SeederClass
             self::$userAddressContactPerson::create([
                 'user_id' => $userData->id,
                 'user_address_id' => $userAddress->id,
-                'full_name' => facker()->name,
+                'name' => facker()->name,
                 'phone_number' => facker()->phoneNumber(),
                 'email' => facker()->email,
             ]);

@@ -42,7 +42,15 @@ class Validation extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required | sometimes',
+            'name' => 'required | sometimes',
+            'user_name' => 'required | sometimes',
+            'email' => 'required|unique:users,email,' . $this->id,
+            'password' => 'required | sometimes',
+            'confirmed' => 'sometimes|required|same:password',
+            'phone' => 'required | sometimes',
+            'photo' => 'required | sometimes',
+            'role_id' => ' sometimes',
+
             'status' => ['sometimes', Rule::in(['active', 'inactive'])],
         ];
     }
