@@ -100,17 +100,22 @@
                 <div class="right">
                     <div class="top_banner">
                         <div class="top_banner_left">
-                            <div class="slide-1 no-arrow theme-slider">
-                                <div>
-                                    <div class="slider-banner">
-                                        <img src="/frontend/assets/images/banner_1.png" class="w-100" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="slider-banner">
-                                        <img src="/frontend/assets/images/banner_2.png" class="w-100" />
-                                    </div>
-                                </div>
+                            <div class="theme-slider">
+                                <carousel :items-to-show="1">
+                                    <slide v-for="i in 2" :key="i">
+                                        <div>
+                                            <div class="slider-banner">
+                                                <img :src="`/frontend/assets/images/banner_${i}.png`" class="w-100" />
+                                            </div>
+                                        </div>
+                                    </slide>
+
+                                    <!-- <template #addons>
+                                        <navigation />
+                                        <pagination />
+                                    </template> -->
+                                </carousel>
+
                                 <!-- <div>
                                 <div class="slider-banner">
                                     <div class="slider-img">
@@ -170,14 +175,16 @@
 </template>
 
 <script>
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 export default {
-    mounted() {
-        setTimeout(() => {
-            $('.slide-1 ').slick({
-                autoplay: true,
-                autoplaySpeed: 2500,
-            });
-        })
+    components: {
+        Carousel,
+        Slide,
+        Pagination,
+        Navigation,
+    },
+    created() {
     },
 };
 </script>
