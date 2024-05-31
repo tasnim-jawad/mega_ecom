@@ -93,31 +93,36 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="footer-left">
-                            <p>2019-20 Copy Right by Themeforest Powered by pixel strap</p>
+                            <p>2019-24 Copy Right by ETEK.com.bd</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="footer-right">
                             <ul class="payment">
                                 <li>
-                                    <a href="javascript:void(0)"><img src="frontend/assets/images/1(7).png"
-                                            class="img-fluid" alt="pay"></a>
+                                    <a href="javascript:void(0)">
+                                        <img src="/frontend/assets/images/1(7).png" class="img-fluid" alt="pay">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="frontend/assets/images/2(7).png"
-                                            class="img-fluid" alt="pay"></a>
+                                    <a href="javascript:void(0)">
+                                        <img src="/frontend/assets/images/2(7).png" class="img-fluid" alt="pay">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="frontend/assets/images/3(7).png"
-                                            class="img-fluid" alt="pay"></a>
+                                    <a href="javascript:void(0)">
+                                        <img src="/frontend/assets/images/3(7).png" class="img-fluid" alt="pay">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="frontend/assets/images/4(4).png"
-                                            class="img-fluid" alt="pay"></a>
+                                    <a href="javascript:void(0)">
+                                        <img src="/frontend/assets/images/4(4).png" class="img-fluid" alt="pay">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="frontend/assets/images/5(5).png"
-                                            class="img-fluid" alt="pay"></a>
+                                    <a href="javascript:void(0)">
+                                        <img src="/frontend/assets/images/5(5).png" class="img-fluid" alt="pay">
+                                    </a>
                                 </li>
                             </ul>
                         </div>

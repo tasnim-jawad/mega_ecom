@@ -3,8 +3,12 @@
         <div class="product-box">
             <div class="product-imgbox">
                 <div class="product-front">
-                    <a href="">
+                    <Link :href="`/product-details/${product.name.replaceAll(' ','-')}`">
                         <img :src="product.image" class="img-fluid" alt="product">
+                    </Link>
+                    <a onclick="openCart()" class="buy_now_btn">
+                        <i class="icon-shopping-cart icon"></i>
+                        Buy Now
                     </a>
                 </div>
                 <div class="product-icon">
@@ -25,15 +29,6 @@
                             <path
                                 d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                             </path>
-                        </svg>
-                    </a>
-                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view"
-                        class="tooltip-left" data-tippy-content="Quick View" tabindex="0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-eye">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
                         </svg>
                     </a>
                     <a href="compare.html" class="tooltip-left" data-tippy-content="Compare" tabindex="0">
@@ -58,11 +53,11 @@
             <div class="product-detail">
                 <div class="detail-title">
                     <div class="detail-left">
-                        <a href="product-page(left-sidebar).html" tabindex="0">
+                        <Link :href="`/product-details/${product.name.replaceAll(' ','-')}`">
                             <h6 class="price-title">
                                 {{ product.name }}
                             </h6>
-                        </a>
+                        </Link>
                     </div>
                     <div class="detail-right">
                         <div class="check-price">
@@ -79,7 +74,9 @@
     </div>
 </template>
 <script>
+import { Link } from '@inertiajs/vue3'
 export default {
+    components: { Link },
     props: ['product']
 }
 </script>
