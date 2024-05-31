@@ -66,9 +66,9 @@
                 <div class="main-menu-block">
                     <div class="header-left">
                         <div class="brand-logo logo-sm-center">
-                            <a href="/">
+                            <Link href="/">
                                 <img src="/frontend/images/etek_logo.png" class="img-fluid  " alt="logo">
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div class="input-block">
@@ -214,10 +214,9 @@
                                         <ul class="nav-cat title-font">
                                             <li>
                                                 <a href="category-page(left-sidebar).html">
-                                                    <img
-                                                        src="https://themes.pixelstrap.com/bigdeal/assets/images/layout-1/nav-img/01.png"
+                                                    <img src="https://themes.pixelstrap.com/bigdeal/assets/images/layout-1/nav-img/01.png"
                                                         alt="category-product">
-                                                        western ware
+                                                    western ware
                                                 </a>
                                             </li>
 
@@ -276,28 +275,30 @@
                                     <div class="dropdown-menu gift-dropdown">
                                         <div class="media">
                                             <div class="me-3">
-                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/1.png" alt="Generic placeholder image">
+                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/1.png"
+                                                    alt="Generic placeholder image">
                                             </div>
                                             <div class="media-body">
                                                 <h5 class="mt-0">Billion Days</h5>
-                                                <p><img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/currency.png" class="cash"
-                                                        alt="curancy"> Flat Rs. 270 Rewards</p>
+                                                <p><img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/currency.png"
+                                                        class="cash" alt="curancy"> Flat Rs. 270 Rewards</p>
                                             </div>
                                         </div>
                                         <div class="media">
                                             <div class="me-3">
-                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/2.png" alt="Generic placeholder image"
-                                                    class="gift-bloc">
+                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/2.png"
+                                                    alt="Generic placeholder image" class="gift-bloc">
                                             </div>
                                             <div class="media-body">
                                                 <h5 class="mt-0">Fashion Discount</h5>
-                                                <p><img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/fire.png" class="fire"
-                                                        alt="fire">Extra 10% off (upto Rs. 10,000*) </p>
+                                                <p><img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/fire.png"
+                                                        class="fire" alt="fire">Extra 10% off (upto Rs. 10,000*) </p>
                                             </div>
                                         </div>
                                         <div class="media">
                                             <div class="me-3">
-                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/3.png" alt="Generic placeholder image">
+                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/3.png"
+                                                    alt="Generic placeholder image">
                                             </div>
                                             <div class="media-body">
                                                 <h5 class="mt-0">75% off Store</h5>
@@ -306,7 +307,8 @@
                                         </div>
                                         <div class="media">
                                             <div class="me-3">
-                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/6.png" alt="Generic placeholder image">
+                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/6.png"
+                                                    alt="Generic placeholder image">
                                             </div>
                                             <div class="media-body">
                                                 <h5 class="mt-0">Upto 50% off</h5>
@@ -315,12 +317,13 @@
                                         </div>
                                         <div class="media">
                                             <div class="me-3">
-                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/5.png" alt="Generic placeholder image">
+                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/5.png"
+                                                    alt="Generic placeholder image">
                                             </div>
                                             <div class="media-body">
                                                 <h5 class="mt-0">Beauty store</h5>
-                                                <p><img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/currency.png" class="cash"
-                                                        alt="curancy"> Flat Rs. 270 Rewards</p>
+                                                <p><img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/currency.png"
+                                                        class="cash" alt="curancy"> Flat Rs. 270 Rewards</p>
                                             </div>
                                         </div>
                                     </div>
@@ -358,7 +361,8 @@
 </template>
 
 <script>
+import { Link } from '@inertiajs/vue3';
 export default {
-
+    components: { Link }
 };
 </script>
