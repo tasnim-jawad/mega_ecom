@@ -33,9 +33,8 @@ Route::prefix('v1')->group(function () {
         Route::post('bulk-actions', [CustomerController::class, 'bulkAction']);
     });
 
-    Route::prefix('sppliers')->group(function () {
+    Route::prefix('suppliers')->group(function () {
         Route::get('/', [SupplierController::class, 'index']);
-        Route::get('{slug}', [SupplierController::class, 'show']);
         Route::post('store', [SupplierController::class, 'store']);
         Route::post('update/{id}', [SupplierController::class, 'update']);
         Route::post('soft-delete', [SupplierController::class, 'softDelete']);
@@ -43,6 +42,7 @@ Route::prefix('v1')->group(function () {
         Route::post('restore', [SupplierController::class, 'restore']);
         Route::post('import', [SupplierController::class, 'import']);
         Route::post('bulk-actions', [SupplierController::class, 'bulkAction']);
+        Route::get('/{slug}', [SupplierController::class, 'show']);
     });
 
     Route::prefix('retailers')->group(function () {
@@ -68,5 +68,5 @@ Route::prefix('v1')->group(function () {
         Route::post('import', [EmployeeController::class, 'import']);
         Route::post('bulk-actions', [EmployeeController::class, 'bulkAction']);
     });
-    
+
 });

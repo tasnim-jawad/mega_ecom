@@ -23,7 +23,7 @@ return new class extends Migration
 
             $table->integer('product_menufecturer_id')->nullable();
             $table->integer('product_brand_id')->nullable();
-            $table->integer('sku')->nullable();
+            $table->string('sku',50)->nullable();
             $table->integer('product_unit_id')->nullable();
 
             $table->integer('alert_quantity')->nullable();

@@ -16,6 +16,7 @@ use App\Modules\ProductManagement\ProductBrand\Database\Seeder as ProductBrandSe
 use App\Modules\ProductManagement\ProductMenufacturer\Database\Seeder as ProductMenufacturerSeeder;
 use App\Modules\ProductManagement\ProductUnitGroup\Database\Seeder as ProductUnitGroupSeeder;
 use App\Modules\ProductManagement\ProductUnit\Database\Seeder as ProductUnitSeeder;
+use App\Modules\ProductManagement\ProductBarCode\Database\Seeder as ProductBarCodeSeeder;
 use App\Modules\ProductManagement\Product\Database\Seeder as ProductSeeder;
 
 class DatabaseSeeder extends Seeder
@@ -39,6 +40,7 @@ class DatabaseSeeder extends Seeder
             ProductMenufacturerSeeder::class,
             ProductUnitGroupSeeder::class,
             ProductUnitSeeder::class,
+            ProductBarCodeSeeder::class,
             ProductSeeder::class,
         ]);
     }
