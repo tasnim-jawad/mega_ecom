@@ -1,0 +1,11 @@
+---product management orders-----
+php artisan make:module ProductManagement/ProductCategoryGroup [title:string]
+php artisan make:module ProductManagement/ProductCategory [title:string,parent_id:intiger,serial:intiger,image:string]
+php artisan make:module ProductManagement/ProductMenufacturer [title:string,serial:intiger,image:string]
+php artisan make:module ProductManagement/ProductBrand [title:string,serial:intiger,image:string]
+php artisan make:module ProductManagement/Product [title:string,type:enum,short_description:text,description:intiger,menufecturer_id:intiger,brand_id:intiger,sku:intiger,unit:intiger,alert_quantity:intiger,saller_points:string,is_returnable:tinyint,expiration_days:datetime,purchase_price,purchase_account:string,discount_type:enum,discount_amount:intiger,tax_id:initiger,tax_type:enum,vat_on_sale:intiger,vat_on_purchase:intiger]
+
+
+---sales orders management-----
+php artisan make:module SalesManagement/SalesOrder [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
+php artisan make:module SalesManagement/SalesReturn [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]

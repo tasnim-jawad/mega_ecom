@@ -890,33 +890,59 @@ if (!function_exists('migration')) {
         EOD;
         if (count($fields)) {
             foreach ($fields as $fieldName) {
+                $stringLimit = 100;
 
                 if (count($fieldName) == 1) {
-                    $content .= "            \$table->string('{$fieldName[0]}')->nullable();\n";
+                    $content .= "            \$table->string('{$fieldName[0]}, {$stringLimit}')}')->nullable();\n";
                 }
                 if (count($fieldName) > 1) {
                     $type = $fieldName[1];
-                    if ($type == 'string') {
-                        $type =  'string';
-                    } elseif ($type == 'longtext' || $type == 'text') {
-                        $type =  'text';
-                    } elseif ($type == 'number' || $type == 'integer' || $type == 'intiger' || $type == 'int') {
-                        $type = 'Integer';
-                    } elseif ($type == 'bigint' || $type == 'biginteger') {
-                        $type = 'bigInteger';
-                    } elseif ($type == 'boolean' || $type == 'tinyint') {
-                        $type =  'tinyInteger';
-                    } elseif ($type == 'date') {
-                        $type =  'date';
-                    } elseif ($type == 'enum') {
-                        $type =  'enum';
-                    } elseif ($type == 'float') {
-                        $type =  'float';
-                    } else {
-                        $type =  'string';
+                    //enum value set
+                    $enumvalue = [];
+
+                    $position = strpos($type, '-');
+
+                    if ($position == 4) {
+                        $enumType = explode('-', $type);
+                        $type = $enumType[0];
+                        $enumvalue = explode('.', $enumType[1]);
                     }
 
-                    $content .= $type == 'enum' ? "            \$table->{$type}('{$fieldName[0]}',['value1','value2'])->nullable();\n" : "            \$table->{$type}('{$fieldName[0]}')->nullable();\n";
+                    if ($position == 6) {
+                        $limit = explode('-', $type);
+                        $limit = explode('.', $limit[1]);
+                        $stringLimit = $limit[0];
+                    }
+
+                    //enum value set end
+                    if ($type == 'string') {
+                        $type = 'string';
+                    } elseif (in_array($type, ['longtext', 'text'])) {
+                        $type = 'text';
+                    } elseif (in_array($type, ['number', 'integer', 'intiger', 'int'])) {
+                        $type = 'integer';
+                    } elseif (in_array($type, ['bigint', 'biginteger'])) {
+                        $type = 'bigInteger';
+                    } elseif (in_array($type, ['boolean', 'tinyint'])) {
+                        $type = 'tinyInteger';
+                    } elseif ($type == 'date') {
+                        $type = 'date';
+                    } elseif ($type == 'enum') {
+                        $type = 'enum';
+                    } elseif ($type == 'float') {
+                        $type = 'float';
+                    } else {
+                        $type = 'string';
+                    }
+
+                    if ($type == 'enum') {
+                        $enumString = implode("','", $enumvalue);
+                        $content .= "            \$table->{$type}('{$fieldName[0]}', ['{$enumString}'])->nullable();\n";
+                    } else if ($type == 'string') {
+                        $content .= "            \$table->string('{$fieldName[0]}', {$stringLimit})->nullable();\n";
+                    } else {
+                        $content .= "            \$table->{$type}('{$fieldName[0]}')->nullable();\n";
+                    }
                 }
             }
         }
@@ -1128,7 +1154,7 @@ if (!function_exists('routeContent')) {
                     Route::get('', [Controller::class,'index']);
                     Route::get('{slug}', [Controller::class,'show']);
                     Route::post('store', [Controller::class,'store']);
-                    Route::post('update/{id}', [Controller::class,'update']);
+                    Route::post('update/{slug}', [Controller::class,'update']);
                     Route::post('soft-delete', [Controller::class,'softDelete']);
                     Route::delete('destroy/{slug}', [Controller::class,'destroy']);
                     Route::post('restore', [Controller::class,'restore']);

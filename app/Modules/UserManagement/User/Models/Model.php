@@ -2,10 +2,7 @@
 
 namespace App\Modules\UserManagement\User\Models;
 
-use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Str;
-use Illuminate\Database\Eloquent\Casts\Attribute;
-
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -62,7 +59,7 @@ class Model extends Authenticatable
         return $q->where('status', 'active');
     }
 
-    public function roles()
+    public function role()
     {
         return $this->belongsTo(self::$userRoleModel, 'role_id', 'serial');
     }

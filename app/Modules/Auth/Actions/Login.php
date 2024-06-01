@@ -23,7 +23,7 @@ class Login
                 DB::table('oauth_access_tokens')->where("user_id", $check_auth_user->id)->update(['revoked' => 1]);
                 $data['access_token'] = $check_auth_user->createToken('accessToken')->accessToken;
                 $data['user'] = $check_auth_user;
-                return messageResponse('Successfully Registered', $data, 200, 'success');
+                return messageResponse('Successfully Loged In', $data, 200, 'success');
             } else {
                 // if ($check_auth_user->no_of_attempt > 2) {
                 //     $check_auth_user->is_blocked = 1;
