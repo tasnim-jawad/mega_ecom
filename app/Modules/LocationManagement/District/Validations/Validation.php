@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\ProductManagement\Product\Validations;
+namespace App\Modules\LocationManagement\District\Validations;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
@@ -42,26 +42,9 @@ class Validation extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required | sometimes',
-            'type' => 'required | sometimes',
-            'short_description' => 'required | sometimes',
-            'description' => 'required | sometimes',
-            'product_menufecturer_id' => 'required | sometimes',
-            'product_brand_id' => 'required | sometimes',
-            'sku' => 'required | sometimes',
-            'product_unit_id' => 'required | sometimes',
-            'alert_quantity' => 'required | sometimes',
-            'seller_points' => 'required | sometimes',
-            'is_returnable' => 'required | sometimes',
-            'expiration_days' => 'required | sometimes',
-            'purchase_price' => 'required | sometimes',
-            // 'purchase_account' => 'required | sometimes',
-            'discount_type' => 'required | sometimes',
-            'discount_amount' => 'required | sometimes',
-            // 'tax_id' => 'required | sometimes',
-            'tax_type' => 'required | sometimes',
-            // 'vat_on_sale' => 'required | sometimes',
-            // 'vat_on_purchase' => 'required | sometimes',
+            'country_id' => 'required | sometimes',
+            'state_division_id' => 'required | sometimes',
+            'name' => 'required | sometimes',
             'status' => ['sometimes', Rule::in(['active', 'inactive'])],
         ];
     }

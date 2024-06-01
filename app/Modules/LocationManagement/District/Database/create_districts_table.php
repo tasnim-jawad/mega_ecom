@@ -7,15 +7,17 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     php artisan migrate --path='\App\Modules\LocationManagement\StateDivision\Database\create_state_divisions_table.php'
+     php artisan migrate --path='\App\Modules\LocationManagement\District\Database\create_districts_table.php'
+     php artisan migrate --path='app/Modules/LocationManagement/District/Database/create_districts_table.php'
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('state_divisions', function (Blueprint $table) {
+        Schema::create('districts', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('country_id')->nullable();
-            $table->string('name',50)->nullable();
+            $table->bigInteger('state_division_id')->nullable();
+            $table->string('name',30)->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 100)->nullable();
@@ -29,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('state_divisions');
+        Schema::dropIfExists('districts');
     }
 };

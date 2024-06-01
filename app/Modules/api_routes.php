@@ -18,10 +18,12 @@ include_once  base_path("app/Modules/UserManagement/User/Route.php");
 */
 include_once  base_path("app/Modules/ProductManagement/ProductCategoryGroup/Route.php");
 include_once  base_path("app/Modules/ProductManagement/ProductCategory/Route.php");
-// include_once  base_path("app/Modules/ProductManagement/Product/Route.php");
-// include_once  base_path("app/Modules/ProductManagement/Product/Route.php");
-// include_once  base_path("app/Modules/ProductManagement/Product/Route.php");
-// include_once  base_path("app/Modules/ProductManagement/Product/Route.php");
+include_once  base_path("app/Modules/ProductManagement/Product/Route.php");
+include_once  base_path("app/Modules/ProductManagement/ProductBarCode/Route.php");
+include_once  base_path("app/Modules/ProductManagement/ProductBrand/Route.php");
+include_once  base_path("app/Modules/ProductManagement/ProductCategory/Route.php");
+include_once  base_path("app/Modules/ProductManagement/ProductCategoryGroup/Route.php");
+include_once  base_path("app/Modules/ProductManagement/ProductMenufacturer/Route.php");
 // include_once  base_path("app/Modules/ProductManagement/Product/Route.php");
 
 // include_once  base_path("app/Modules/TestUser/Route.php");
