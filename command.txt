@@ -1,3 +1,26 @@
+---user management -----
+---user management -----
+
+user_roles
+title serial
+
+user_permissions
+can_create tinyint can_update tinyint can_delete tinyint can_show
+
+user_user_permissions
+user_permission_id user_id bigint bigint
+
+users
+name
+
+user_address_contact_persons
+user_id user_address_id full_name phone_number
+
+user_addresses user_name has many role_serial default (customer) user_id email is_shipping phone_number is_billing email photo addess_types enum (office, pick up point, store) address text country_id state_division_id district_id thana_id city_id zip_code is_present_address is permanent_address text
+
+
+
+---product management orders-----
 ---product management orders-----
 php artisan make:module ProductManagement/ProductCategoryGroup [title:string]
 php artisan make:module ProductManagement/ProductCategory [title:string,parent_id:intiger,serial:intiger,image:string]
@@ -10,3 +33,119 @@ php artisan make:module ProductManagement/Product [title:string,type:enum,short_
 php artisan make:module SalesManagement/SalesOrder [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
 php artisan make:module SalesManagement/SalesReturn [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
 php artisan make:module SalesManagement/SalesReturn [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
+
+---- hrm management-----
+---- hrm management-----
+
+user_employee_work_informations
+user_id, joining_date, payslip_generation_date, confirmation_date, department_id, user_employee_job_position_id, user_employee_job_title_id, user_employee_office_location_id, user_employee_type_id, in_time, out_time, is_allow_flexible_time, flexible_time_minutes (ex: per day 180 min), re_joining_date, appointment_letter
+
+
+user_employee_job_titles
+title,description
+
+user_employee_work_departments
+department_code, department_name, parent_department, in_charge, description
+
+user_employee_office_locations
+location_name, text, address, country, state_division, district, thana, description
+
+
+user_employee_types
+title
+
+user_employee_job_positions
+title, status, position_type (enum{ shared, single }), head_count (how many max employee will work on this position), payroll_id, supervisor
+
+
+user_employee_payroll
+title,payment_type (enum { cash, bkash, nagad, bank, debit card, credit card })
+
+user_employee_payroll_periods
+user_employee_payroll_id,period_type (enum{ annual, bi-annual, tri-annual, quarterly, monthly, weekly })
+
+user_employee_attendances
+user_id, in_time, out_time, grace_time, working_hours, status (enum{ present, absent }), late_time, over_time, early_out_time
+
+
+user_employee_dependents
+user_id, full_name, relationship, date_of_birth, email, phone_number, nid (file)
+
+
+user_employee_references
+user_id, reference_name, department, designation, address, company, relationship (text), phone_number, email
+
+
+user_employee_resignations
+user_id, is_resignation, is_termination, resignation_letter (file), letter_received_date, resign_date, applied_resign_rules (user_employee_resign_rules_id), status (enum{ present, absent }), reason_for_resignation, good_or_bad_activities, is_resigned_applied
+
+
+user_employee_resign_rules
+title
+
+user_employee_educations
+user_id, qualification, major, institution, board, passing_year, grade_cgpa
+
+user_employee_experiences
+user_id, company_name, designation, location, joining_date, resign_date, responsibilities (text)
+
+
+
+user_payslips
+user_id, month, payslip_token, status, account_transaction_id
+
+
+user_payslip_values
+month, user_id, user_payslip_id, user_employee_payhead_id, unit (enum{ percentage, amount }), value, addition, deduction
+
+
+user_employee_payroll_period_type_bill_periods
+user_employee_payroll_period_id, period_name, start_date, end_date, issue_date
+
+user_employee_payroll_payhead_values
+user_employee_payroll_id, user_employee_payhead_id, value_type (enum{ percentage, amount }), user_employee_payhead_type
+
+
+user_employee_payhead
+title, head_type (enum{ addition, deduction }), description, is_default (enum{ 0, 1 })
+---- hrm management-----
+---- END -----
+
+--- leave management-----
+--- leave management-----
+
+user_employee_leave_types
+title, short_code display_order, description, validity_start_date, validity_end_date
+
+user_employee_leave_type_applicable_for_positions
+user_employee_leave_type_id, user_employee_job_position_id total_days
+
+user_employee_holidays
+titl,e description, number_of_days, heighlight_color
+
+user_employee_leave_type_applicable_fors
+user_employee_leave_type_id, user_employee_job_position_id, total_days,
+
+user_employee_leave_applications
+user_id, leave_type_id, from_date to_date, reson_for_leave, application_file
+
+--- leave management-----
+--- END -----
+
+--- stock management-----
+--- stock management-----
+
+products
+id title
+
+product_wearhouse_branches
+title
+
+product_wearhouses
+title image product_wearhouse_branch_id
+
+product_stocks
+date stock_type purchase, sales, return, waste product_id qty date bill_receipt_no purchase_order_id
+
+--- stock management-----
+--- END -----
