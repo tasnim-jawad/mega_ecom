@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Modules\ProductManagement\ProductBarCode\Database;
 
 use Illuminate\Database\Seeder as SeederClass;
@@ -15,12 +16,12 @@ class Seeder extends SeederClass
 
         self::$model::truncate();
         for ($i = 1; $i < 100; $i++) {
-        self::$model::create([
-            'product_id' => facker()->name,
-            'barcode_image' => facker()->name,
-            'price' => facker()->name,
-            'title' => facker()->name,
-            'company_name' => facker()->name,
+            self::$model::create([
+                'product_id' => rand(1, 20),
+                'barcode_image' => facker()->imageUrl(100, 100),
+                'price' => rand(1000, 10000),
+                'title' => facker()->title(),
+                'company_name' => facker()->name,
             ]);
         }
     }

@@ -1,22 +1,16 @@
 ---user management -----
 ---user management -----
 
-user_roles
-title serial
-
-user_permissions
-can_create tinyint can_update tinyint can_delete tinyint can_show
-
-user_user_permissions
-user_permission_id user_id bigint bigint
-
-users
-name
-
-user_address_contact_persons
-user_id user_address_id full_name phone_number
-
-user_addresses user_name has many role_serial default (customer) user_id email is_shipping phone_number is_billing email photo addess_types enum (office, pick up point, store) address text country_id state_division_id district_id thana_id city_id zip_code is_present_address is permanent_address text
+users: name,user_name,role_serial (default | customer),email,phone_number,photo
+user_addresses: user_id,is_shipping,is_billing,address_types (enum: office, pick up point, store),address,country_id,state_division_id,district_id,thana_id,city_id,zip_code,is_present_address,is_permanent_address
+user_address_contact_persons: user_id,user_address_id,full_name,phone_number,email
+user_customer_informations: customer_type_id,website,client_id,user_id
+user_customer_types: title
+user_supplier_informations: supplier_type_id,email,mobile_number,supplier_id,user_id
+user_supplier_types: title
+user_retailer_informations: user_retailer_type_id,email,mobile_number,retailer_id,user_id
+user_retailer_types: title
+user_employee_informations: gender,nick_name,gender (enum: male, female, other),date_of_birth,user_id,employee_code
 
 
 
@@ -33,6 +27,19 @@ php artisan make:module ProductManagement/Product [title:string,type:enum,short_
 php artisan make:module SalesManagement/SalesOrder [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
 php artisan make:module SalesManagement/SalesReturn [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
 php artisan make:module SalesManagement/SalesReturn [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
+
+
+php artisan make:module SalesManagement/SalesQuotationOrder [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
+
+php artisan make:module SalesManagement/SalesQuotationOrderDetails [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
+
+php artisan make:module SalesManagement/SalesInvoice [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
+
+php artisan make:module SalesManagement/SalesInvoiceDetails [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
+
+php artisan make:module SalesManagement/SalesEcommerceOrder [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
+
+php artisan make:module SalesManagement/SalesEcommerceOrderDetails [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_pais:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,souce:enum-pos.ecommerce.retail_order]
 
 ---- hrm management-----
 ---- hrm management-----
@@ -135,17 +142,58 @@ user_id, leave_type_id, from_date to_date, reson_for_leave, application_file
 --- stock management-----
 --- stock management-----
 
-products
-id title
 
 product_wearhouse_branches
-title
+php artisan make:module StockManagement/ProductWearHouseBranch [title:string-150]
 
 product_wearhouses
-title image product_wearhouse_branch_id
+php artisan make:module StockManagement/ProductWearHouse [title:string-150,image:string-100,product_wearhouse_branch_id:bigint]
 
 product_stocks
-date stock_type purchase, sales, return, waste product_id qty date bill_receipt_no purchase_order_id
+php artisan make:module StockManagement/ProductStock [date:date,stock_type:enum-purchase.initial.sales.return.waste,product_id:bigint,qty:int,bill_receipt_no:string-50,purchase_order_id:bigint]
 
 --- stock management-----
 --- END -----
+
+--- account and payments---
+--- account and payments---
+
+purchase_payments:
+purchase_order_id,account_id,account_number_id,amount,supplier_id,date,payment_type (enum: bill, advanced),account_transaction_id
+
+purchase_return_payments:
+purchase_return_order_id,account_id,account_number_id,amount,supplier_id,date,account_transaction_id
+
+sale_payments:
+sale_order_id,account_id,account_number_id,amount,customer_id,payment_type (enum: bill, advanced),account_transaction_id
+
+account_transaction_logs:
+tr_id (autogenerate),date,account_id,account_number_id,account_head_id,amount,type (enum: debit, credit),account_expenditure_group_id,account_expenditure_id,user_id
+
+account_transactions:
+account_transaction_log_id,transaction_media_id (ssl, bkash, etc.),date,title,description,account_id,account_number_id,account_head_id,amount,account_expenditure_id,user_id,transaction_type (enum: debit, credit),expense_type (enum: refund, official),income_type (enum: pos, ecommerce, retail_payment, official)
+
+account_expenditure_groups:
+title,description
+
+account_expenditures:
+account_expenditure_group_id,title,description
+
+account_heads:
+title (e.g., cash, mobile_bank, bank, deposit),description,date
+
+accounts:
+account_head_id,title (e.g., bkash, roket),description,transaction_start_date,account_transaction_type (enum: income, expense)
+
+account_numbers:
+account_head_id,account_id,account_number,account_name,amount,opening_balance,account_transaction_id (opening_balance_entry_id)
+
+sale_return_payments:
+sale_return_order_id,account_id,account_number_id,amount,customer_id,payment_type (enum: bill, advanced),account_transaction_id
+
+account_transaction_attachments:
+account_transaction_id,attachment
+
+
+--- account and payments---
+--- END---

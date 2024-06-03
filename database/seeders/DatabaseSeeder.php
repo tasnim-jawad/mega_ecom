@@ -18,6 +18,12 @@ use App\Modules\ProductManagement\ProductUnitGroup\Database\Seeder as ProductUni
 use App\Modules\ProductManagement\ProductUnit\Database\Seeder as ProductUnitSeeder;
 use App\Modules\ProductManagement\ProductBarCode\Database\Seeder as ProductBarCodeSeeder;
 use App\Modules\ProductManagement\Product\Database\Seeder as ProductSeeder;
+//vat management seeder
+use App\Modules\VatManagement\Vat\Database\Seeder as VatSeeder;
+use App\Modules\VatManagement\VatGroup\Database\Seeder as VatGroupSeeder;
+//Purchase management seeder
+use App\Modules\PurchageManagement\PurchaseOrder\Database\Seeder as PurchaseOrderSeeder;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -42,6 +48,11 @@ class DatabaseSeeder extends Seeder
             ProductUnitSeeder::class,
             ProductBarCodeSeeder::class,
             ProductSeeder::class,
+            //vat management seeder
+            VatSeeder::class,
+            VatGroupSeeder::class,
+            //Purchase management seeder
+            PurchaseOrderSeeder::class,
         ]);
     }
 }

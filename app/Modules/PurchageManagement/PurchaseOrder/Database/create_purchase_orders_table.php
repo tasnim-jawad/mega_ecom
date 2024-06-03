@@ -16,13 +16,12 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('product_wearhouse_id')->nullable();
             $table->bigInteger('supplier_id')->nullable();
-            $table->bigInteger('product_id')->nullable();
             $table->date('date')->nullable();
-            $table->string('reference')->nullable();
-            $table->Integer('discount_on_all')->nullable();
-            $table->string('discount_on_all_type')->nullable();
-            $table->bigInteger('subtotal')->nullable();
-            $table->bigInteger('total')->nullable();
+            $table->string('reference', 100)->nullable();
+            $table->float('discount_on_all')->nullable()->unsigned();
+            $table->enum('discount_on_all_type', ['fixed', 'percentage'])->nullable();
+            $table->float('subtotal')->nullable()->unsigned();
+            $table->float('total')->nullable()->unsigned();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();

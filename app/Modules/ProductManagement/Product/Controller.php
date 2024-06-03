@@ -69,5 +69,10 @@ class Controller extends ControllersController
         $data = BulkActions::execute($request);
         return $data;
     }
+    public function ProductMaxMinPrice()
+    {
+        $data = BulkActions::execute($request);
+        return $data;
+    }
 
 }

@@ -9,6 +9,7 @@ class Model extends EloquentModel
 {
     protected $table = "vat_groups";
     protected $guarded = [];
+    static $vatGroupModel = \App\Modules\VatManagement\VatGroup\Models\Model::class;
 
     protected static function booted()
     {
@@ -30,4 +31,10 @@ class Model extends EloquentModel
     {
         return $q->where('status', 'active');
     }
+
+    public function vat_group_vats(){
+        return $this->belongsToMany(self::$vatGroupModel, 'vat_group_vats', 'vat_group_id', 'vat_id');
+    }
+
+
 }

@@ -9,6 +9,7 @@ class Model extends EloquentModel
 {
     protected $table = "product_categories";
     protected $guarded = [];
+    static $productModel = \App\Modules\ProductManagement\Product\Models\Model::class;
 
     protected static function booted()
     {
@@ -25,6 +26,15 @@ class Model extends EloquentModel
             $data->save();
         });
     }
+
+
+    public function products()
+    {
+        return $this->belongsToMany(self::$productModel,'product_category_products','product_id','product_category_id');
+    }
+
+
+
 
     public function scopeActive($q)
     {

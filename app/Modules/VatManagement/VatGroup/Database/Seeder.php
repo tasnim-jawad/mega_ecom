@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Modules\VatManagement\VatGroup\Database;
 
 use Illuminate\Database\Seeder as SeederClass;
@@ -12,13 +13,18 @@ class Seeder extends SeederClass
     static $model = \App\Modules\VatManagement\VatGroup\Models\Model::class;
     public function run(): void
     {
-
         self::$model::truncate();
-        for ($i = 1; $i < 100; $i++) {
-        self::$model::create([
-            'title' => facker()->name,
-            'percentage' => facker()->name,
+        $data = [
+            [
+                "title" => "Import VAT",
+            ],
+        ];
+        foreach ($data as $key => $value) {
+            $vatGroup =  self::$model::create([
+                'title' => $value['title'],
             ]);
+
+            $vatGroup->vat_group_vats()->attach([1, 3]);
         }
     }
 }
