@@ -16,9 +16,9 @@ class Seeder extends SeederClass
         self::$model::truncate();
         for ($i = 1; $i < 100; $i++) {
         self::$model::create([
-            'product_id' => facker()->name,
+            'product_id' => rand(10000,999999),
             'barcode_image' => facker()->name,
-            'price' => facker()->name,
+            'price' => facker()->randomFloat($nbMaxDecimals = 2, $min = 100, $max = 1000),
             'title' => facker()->name,
             'company_name' => facker()->name,
             ]);

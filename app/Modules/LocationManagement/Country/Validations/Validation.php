@@ -44,7 +44,7 @@ class Validation extends FormRequest
         return [
             'name' => 'required | sometimes',
             'country_code' => 'required | sometimes',
-            'cuntry_short_code' => 'required | sometimes',
+            'country_short_code' => 'required | sometimes',
             'flag_url' => 'required | sometimes',
             'status' => ['sometimes', Rule::in(['active', 'inactive'])],
         ];

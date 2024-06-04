@@ -24,7 +24,7 @@ class All
                 $data = $data->where(function ($q) use ($searchKey) {
                     $q->where('name', $searchKey)
                     ->orWhere('country_code', 'like', '%' . $searchKey . '%')
-                    ->orWhere('cuntry_short_code', 'like', '%' . $searchKey . '%')
+                    ->orWhere('country_short_code', 'like', '%' . $searchKey . '%')
                     ->orWhere('flag_url', 'like', '%' . $searchKey . '%');
                 });
             }
