@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\LocationManagement\District\Actions;
+namespace App\Modules\LocationManagement\Thana\Actions;
 
 class All
 {
-    static $model = \App\Modules\LocationManagement\District\Models\Model::class;
+    static $model = \App\Modules\LocationManagement\Thana\Models\Model::class;
 
     public static function execute($request)
     {
