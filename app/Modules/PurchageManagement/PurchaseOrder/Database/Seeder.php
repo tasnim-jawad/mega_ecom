@@ -68,7 +68,7 @@ class Seeder extends SeederClass
                 $subTotal +=  $purchaseOrderProducts->total;
 
                 $producStock =  self::$producStockModel::create([
-                    "data" => Carbon::now()->toDateString(),
+                    "date" => Carbon::now()->toDateString(),
                     "stock_type" => 'purchase',
                     "product_id" => $j,
                     "qty" => $purchaseOrderProducts->qty,

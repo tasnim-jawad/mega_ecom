@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -51,9 +52,10 @@ Route::get('/checkout', function () {
 });
 
 Route::get('/image', function () {
-    $image = file_get_contents('https://m2ce.sindabad.com/pub/media/catalog/category/classification/flash-outline.svg');
+    // dd(Carbon::now()->toDateString());
+    // $image = file_get_contents('https://m2ce.sindabad.com/pub/media/catalog/category/classification/flash-outline.svg');
 
-    file_put_contents(public_path('uploads/d_products/' . rand(100000, 999999) . '.jpg'), $image);
+    // file_put_contents(public_path('uploads/d_products/' . rand(100000, 999999) . '.jpg'), $image);
 });
 
 Auth::routes();

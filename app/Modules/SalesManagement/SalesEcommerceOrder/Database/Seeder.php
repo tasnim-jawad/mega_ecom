@@ -1,6 +1,8 @@
 <?php
+
 namespace App\Modules\SalesManagement\SalesEcommerceOrder\Database;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder as SeederClass;
 
 class Seeder extends SeederClass
@@ -11,36 +13,88 @@ class Seeder extends SeederClass
      */
     static $model = \App\Modules\SalesManagement\SalesEcommerceOrder\Models\Model::class;
     static $SalesOrderChargeModel = \App\Modules\SalesManagement\SalesEcommerceOrder\Models\SalesEcommerceOrderChargeModel::class;
-    static $model = \App\Modules\SalesManagement\SalesEcommerceOrder\Models\Model::class;
-    static $model = \App\Modules\SalesManagement\SalesEcommerceOrder\Models\Model::class;
+    static $SalesOrderProductModel = \App\Modules\SalesManagement\SalesEcommerceOrder\Models\SalesEcommerceOrderProductModel::class;
+    static $SalesOrderPaymentModel = \App\Modules\SalesManagement\SalesEcommerceOrder\Models\SalesEcommerceOrderPaymentModel::class;
+    /**
+     * stock management model
+     */
+    static $producStockModel = \App\Modules\StockManagement\ProductStock\Models\Model::class;
+    /**
+     *  run
+     */
     public function run(): void
     {
 
         self::$model::truncate();
+        $productId = 1;
+        for ($i = 1; $i < 5; $i++) {
+            $subTotal = 0;
+            $order =  self::$model::create([
 
-
-
-        for ($i = 1; $i < 100; $i++) {
-        self::$model::create([
-            'product_wearhouse_id' => facker()->name,
-            'customer_id' => facker()->name,
-            'product_id' => facker()->name,
-            'date' => facker()->name,
-            'order_id' => facker()->name,
-            'discount_on_all' => facker()->name,
-            'discount_on_all_type' => facker()->name,
-            'is_quotation' => facker()->name,
-            'is_order' => facker()->name,
-            'is_invoiced' => facker()->name,
-            'is_delivered' => facker()->name,
-            'is_pais' => facker()->name,
-            'order_type' => facker()->name,
-            'order_status' => facker()->name,
-            'total' => facker()->name,
-            'subtotal' => facker()->name,
-            'paid_amount' => facker()->name,
-            'souce' => facker()->name,
+                'order_id' => rand(1000000, 999999999),
+                'date' => Carbon::now()->toDateString(),
+                'user_type' => 3,
+                'customer_id' => 3,
+                'is_delivered' => 0,
+                'order_status' => 'pending',
+                'user_address_id' => 1,
+                'delivery_method' => 'home_delivery',
+                'delivery_address' => "mirpur dhaka",
+                'delivery_charge' => 50,
+                'additional_charge' => 0,
+                'product_coupon_id' => null,
+                'coupon_discount' => null,
+                'subtotal' => $subTotal,
+                'total' => 0,
+                'is_paid' => 0,
+                'payment_id' => null,
+                'payment_method' => "cod",
             ]);
+
+            for ($j = $productId; $j < $productId + 3; $j++) {
+
+                $price = [500, 700, 1000][rand(0, 2)];
+
+                $purchaseOrderProducts = self::$SalesOrderProductModel::create([
+                    "purchase_order_id" => $order->id,
+                    "product_id" => $j,
+                    "purchase_price" => $price,
+                    "discount" => 50,
+                    "qty" => 3,
+                    "discount_type" => "fixed",
+                    "subtotal" => $price * 3,
+                    "total" => ($price * 3) - 50,
+                ]);
+
+                $purchaseOrderCharge = self::$SalesOrderChargeModel::create([
+                    "purchase_order_id" => $order->id,
+                    "purchase_order_product_id" => $purchaseOrderProducts->id,
+                    "vat_id" => 1,
+                    "vat_group_id" => null,
+                    "amount" => $price * 2 / 100,
+                ]);
+
+                $purchaseOrderProducts->total += $purchaseOrderCharge->amount;
+                $purchaseOrderProducts->save();
+                $subTotal +=  $purchaseOrderProducts->total;
+
+                $producStock =  self::$producStockModel::create([
+                    "data" => Carbon::now()->toDateString(),
+                    "stock_type" => 'purchase',
+                    "product_id" => $j,
+                    "qty" => $purchaseOrderProducts->qty,
+                    "bill_receipt_no" => $order->reference,
+                    "purchase_order_id" => $order->id,
+                ]);
+
+                $producStock->save();
+            }
+
+            $order->subtotal = $subTotal;
+            $order->total = $subTotal - $order->discount_on_all;
+            $order->save();
+
+            $productId += 3;
         }
     }
 }
