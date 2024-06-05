@@ -17,6 +17,8 @@ product tag (table)
 and product tag pibot  (table)
 
 website url slug
+website url slug
+
 
 
 
