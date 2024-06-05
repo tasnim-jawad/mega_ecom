@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana\Actions;
+namespace App\Modules\LocationManagement\Station\Actions;
 
 class Import
 {
-    static $model = \App\Modules\LocationManagement\Thana\Models\Model::class;
+    static $model = \App\Modules\LocationManagement\Station\Models\Model::class;
 
     public static function execute()
     {
@@ -12,6 +12,8 @@ class Import
             foreach (request()->data as $row) {
                  self::$model::create([
                     "country_id" => $row['country_id'],
+
+                    "state_division_id" => $row['state_division_id'],
 
                     "district_id" => $row['district_id'],
 

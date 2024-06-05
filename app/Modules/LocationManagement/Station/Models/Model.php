@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana\Models;
+namespace App\Modules\LocationManagement\Station\Models;
 
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Str;
 
 class Model extends EloquentModel
 {
-    protected $table = "thanas";
+    protected $table = "stations";
     protected $guarded = [];
 
     protected static function booted()

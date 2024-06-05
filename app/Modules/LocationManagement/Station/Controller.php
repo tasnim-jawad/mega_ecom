@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana;
+namespace App\Modules\LocationManagement\Station;
 
-use App\Modules\LocationManagement\Thana\Actions\All;
-use App\Modules\LocationManagement\Thana\Actions\Destroy;
-use App\Modules\LocationManagement\Thana\Actions\Show;
-use App\Modules\LocationManagement\Thana\Actions\Store;
-use App\Modules\LocationManagement\Thana\Actions\Update;
-use App\Modules\LocationManagement\Thana\Actions\SoftDelete;
-use App\Modules\LocationManagement\Thana\Actions\Restore;
-use App\Modules\LocationManagement\Thana\Actions\Import;
-use App\Modules\LocationManagement\Thana\Validations\BulkActionsValidation;
-use App\Modules\LocationManagement\Thana\Validations\GetAllValidation;
-use App\Modules\LocationManagement\Thana\Validations\Validation;
-use App\Modules\LocationManagement\Thana\Actions\BulkActions;
+use App\Modules\LocationManagement\Station\Actions\All;
+use App\Modules\LocationManagement\Station\Actions\Destroy;
+use App\Modules\LocationManagement\Station\Actions\Show;
+use App\Modules\LocationManagement\Station\Actions\Store;
+use App\Modules\LocationManagement\Station\Actions\Update;
+use App\Modules\LocationManagement\Station\Actions\SoftDelete;
+use App\Modules\LocationManagement\Station\Actions\Restore;
+use App\Modules\LocationManagement\Station\Actions\Import;
+use App\Modules\LocationManagement\Station\Validations\BulkActionsValidation;
+use App\Modules\LocationManagement\Station\Validations\GetAllValidation;
+use App\Modules\LocationManagement\Station\Validations\Validation;
+use App\Modules\LocationManagement\Station\Actions\BulkActions;
 use App\Http\Controllers\Controller as ControllersController;
 
 

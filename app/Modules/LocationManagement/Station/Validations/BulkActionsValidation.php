@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana\Validations;
+namespace App\Modules\LocationManagement\Station\Validations;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Validation\Rule;
 
-class GetAllValidation extends FormRequest
+class BulkActionsValidation extends FormRequest
 {
     /**
      * Determine if the  is authorized to make this request.
@@ -42,13 +42,15 @@ class GetAllValidation extends FormRequest
     public function rules(): array
     {
         return [
-            'limit' => 'required|sometimes',
-            'page' => 'required|sometimes',
-            'fields' => 'required|sometimes',
-            'sort_by_col' => 'required|sometimes',
-            'sort_type' => 'required|sometimes',
-            'status' => 'required|sometimes',
-
+            'action' => 'required|sometimes|in:active,inactive,delete',
+            'ids' => [
+                'array',
+                function ($attribute, $value, $fail) {
+                    if (empty($value)) {
+                        $fail('The ' . $attribute . ' must contain at least one item.');
+                    }
+                },
+            ],
         ];
     }
 }

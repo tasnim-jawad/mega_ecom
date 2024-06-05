@@ -38,3 +38,20 @@ include_once  base_path("app/Modules/ProductManagement/ProductVarientValue/Route
 include_once  base_path("app/Modules/LocationManagement/Country/Route.php");
 include_once  base_path("app/Modules/LocationManagement/StateDivision/Route.php");
 include_once  base_path("app/Modules/LocationManagement/District/Route.php");
+include_once  base_path("app/Modules/LocationManagement/Station/Route.php");
+
+/*
+|--------------------------------------------------------------------------
+| Purchage management Routes
+|--------------------------------------------------------------------------
+*/
+include_once  base_path("app/Modules/PurchageManagement/PurchaseOrder/Route.php");
+include_once  base_path("app/Modules/PurchageManagement/PurchaseReturnOrder/Route.php");
+/*
+|--------------------------------------------------------------------------
+| Sales management Routes
+|--------------------------------------------------------------------------
+*/
+include_once  base_path("app/Modules/SalesManagement/SalesEcommerceOrder/Route.php");
+include_once  base_path("app/Modules/SalesManagement/SalesInvoice/Route.php");
+include_once  base_path("app/Modules/SalesManagement/SalesOrder/Route.php");

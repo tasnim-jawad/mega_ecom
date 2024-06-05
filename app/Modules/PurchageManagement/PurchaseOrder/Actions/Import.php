@@ -15,8 +15,6 @@ class Import
 
                     "supplier_id" => $row['supplier_id'],
 
-                    "product_id" => $row['product_id'],
-
                     "date" => $row['date'],
 
                     "reference" => $row['reference'],

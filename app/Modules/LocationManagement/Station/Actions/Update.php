@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana\Actions;
+namespace App\Modules\LocationManagement\Station\Actions;
 
 class Update
 {
-    static $model = \App\Modules\LocationManagement\Thana\Models\Model::class;
+    static $model = \App\Modules\LocationManagement\Station\Models\Model::class;
 
     public static function execute($request,$slug)
     {

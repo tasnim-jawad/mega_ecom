@@ -1,10 +1,10 @@
 <?php
 
-use App\Modules\LocationManagement\Thana\Controller;
+use App\Modules\LocationManagement\Station\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
-    Route::prefix('thanas')->group(function () {
+    Route::prefix('stations')->group(function () {
         Route::get('', [Controller::class,'index']);
         Route::get('{slug}', [Controller::class,'show']);
         Route::post('store', [Controller::class,'store']);

@@ -7,15 +7,15 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     php artisan migrate --path='\App\Modules\LocationManagement\Thana\Database\create_thanas_table.php'
-     php artisan migrate --path='app/Modules/LocationManagement/Thana/Database/create_thanas_table.php'
+     php artisan migrate --path='\App\Modules\LocationManagement\Station\Database\create_stations_table.php'
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('thanas', function (Blueprint $table) {
+        Schema::create('stations', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('country_id')->nullable();
+            $table->bigInteger('state_division_id')->nullable();
             $table->bigInteger('district_id')->nullable();
             $table->string('name', 100)->nullable();
             $table->string('post_office', 100)->nullable();
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('thanas');
+        Schema::dropIfExists('stations');
     }
 };

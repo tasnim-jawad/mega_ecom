@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana\Validations;
+namespace App\Modules\LocationManagement\Station\Validations;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
@@ -43,6 +43,7 @@ class Validation extends FormRequest
     {
         return [
             'country_id' => 'required | sometimes',
+            'state_division_id' => 'required | sometimes',
             'district_id' => 'required | sometimes',
             'name' => 'required | sometimes',
             'post_office' => 'required | sometimes',
