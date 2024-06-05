@@ -25,7 +25,7 @@ class BulkActions
             }
 
             if (request()->input('action') == 'delete') {
-                if (request()->input('data') && count(request()->input('data'))) {
+                if (request()->input('ids') && count(request()->input('ids'))) {
                     $ids = request()->input('ids');
                     self::$model::whereIn('id', $ids)->delete();
                     return messageResponse("Items are deleted Successfully ");

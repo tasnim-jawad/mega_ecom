@@ -42,26 +42,46 @@ class Validation extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required | sometimes',
-            'type' => 'required | sometimes',
-            'short_description' => 'required | sometimes',
-            'description' => 'required | sometimes',
-            'product_menufecturer_id' => 'required | sometimes',
-            'product_brand_id' => 'required | sometimes',
-            'sku' => 'required | sometimes',
-            'product_unit_id' => 'required | sometimes',
-            'alert_quantity' => 'required | sometimes',
-            'seller_points' => 'required | sometimes',
-            'is_returnable' => 'required | sometimes',
-            'expiration_days' => 'required | sometimes',
-            'purchase_price' => 'required | sometimes',
-            // 'purchase_account' => 'required | sometimes',
-            'discount_type' => 'required | sometimes',
-            'discount_amount' => 'required | sometimes',
-            // 'tax_id' => 'required | sometimes',
-            'tax_type' => 'required | sometimes',
-            // 'vat_on_sale' => 'required | sometimes',
-            // 'vat_on_purchase' => 'required | sometimes',
+            'product_category_group_id' => 'sometimes | required',
+
+            'is_featured' => 'sometimes | required',
+            'is_new' => 'sometimes | required',
+            'is_available' => 'sometimes | required',
+            'is_pre_order' => 'sometimes | required',
+            'is_up_coming' => 'sometimes | required',
+            'is_emi_support' => 'sometimes | required',
+
+            'type' => 'sometimes | required',
+            'title' => 'sometimes | required',
+            'short_description' => 'sometimes | required',
+            'description' => 'sometimes | required',
+
+            'product_menufecturer_id' => 'sometimes | required',
+            'product_brand_id' => 'sometimes | required',
+            'sku' => 'sometimes | required',
+            'product_unit_id' => 'sometimes | required',
+
+            'alert_quantity' => 'sometimes | required',
+
+            'seller_points' => 'sometimes | required',
+            'is_returnable' => 'sometimes | required',
+            'expiration_days' => 'sometimes | required',
+
+            'price_type' => 'sometimes | required',
+
+            'purchase_price' => 'sometimes | required',
+
+            'tax_type' => 'sometimes | required',
+            'tax_amount' => 'sometimes | required',
+
+            'customer_sales_price' => 'sometimes | required',
+            'retailer_sales_price' => 'sometimes | required',
+            'minimum_sale_price' => 'sometimes | required',
+            'maximum_sale_price' => 'sometimes | required',
+
+            'discount_type' => 'sometimes | required',
+            'discount_amount' => 'sometimes | required',
+
             'status' => ['sometimes', Rule::in(['active', 'inactive'])],
         ];
     }

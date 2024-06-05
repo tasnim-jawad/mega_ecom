@@ -449,6 +449,7 @@ class Seeder extends SeederClass
                 'caption' => $item['title'],
                 'alt' => $item['title'],
                 'is_primary' => 1,
+                'is_secondary' => 0,
                 'is_thumb' => 0,
             ]);
         }

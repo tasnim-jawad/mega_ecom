@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana\Actions;
+namespace App\Modules\FileUploader\Actions;
 
 class All
 {
-    static $model = \App\Modules\LocationManagement\Thana\Models\Model::class;
+    static $model = \App\Modules\FileUploader\Models\Model::class;
 
     public static function execute($request)
     {
@@ -22,8 +22,8 @@ class All
             if (request()->has('search') && request()->input('search')) {
                 $searchKey = request()->input('search');
                 $data = $data->where(function ($q) use ($searchKey) {
-                    $q->where('name', $searchKey);
-                    $q->orWhere('name', 'like', '%' . $searchKey . '%');
+                    $q->where('title', $searchKey);
+                    $q->orWhere('description', 'like', '%' . $searchKey . '%');
                 });
             }
 

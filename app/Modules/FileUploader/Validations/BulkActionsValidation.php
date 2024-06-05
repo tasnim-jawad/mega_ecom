@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana\Validations;
+namespace App\Modules\FileUploader\Validations;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;

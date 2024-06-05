@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana\Actions;
+namespace App\Modules\FileUploader\Actions;
 
 
 
 class Show
 {
-    static $model = \App\Modules\LocationManagement\Thana\Models\Model::class;
+    static $model = \App\Modules\FileUploader\Models\Model::class;
 
     public static function execute($slug)
     {

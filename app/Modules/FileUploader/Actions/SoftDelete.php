@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana\Actions;
+namespace App\Modules\FileUploader\Actions;
 
-class Restore
+class SoftDelete
 {
-    static $model = \App\Modules\LocationManagement\Thana\Models\Model::class;
+    static $model = \App\Modules\FileUploader\Models\Model::class;
 
     public static function execute()
     {
@@ -12,9 +12,9 @@ class Restore
             if (!$data = self::$model::where('slug', request()->slug)->first()) {
                 return messageResponse('Data not found...', $data, 404, 'error');
             }
-            $data->status = 'active';
+            $data->status = 'inactive';
             $data->update();
-            return messageResponse('Item Successfully  Restored', $data, 200, 'success');
+            return messageResponse('Item Successfully soft deleted', [], 200, 'success');
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(),[], 500, 'server_error');
         }

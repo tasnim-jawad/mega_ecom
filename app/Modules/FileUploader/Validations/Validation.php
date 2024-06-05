@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana\Validations;
+namespace App\Modules\FileUploader\Validations;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Validation\Rule;
 
-class GetAllValidation extends FormRequest
+class Validation extends FormRequest
 {
     /**
      * Determine if the  is authorized to make this request.
@@ -42,13 +42,14 @@ class GetAllValidation extends FormRequest
     public function rules(): array
     {
         return [
-            'limit' => 'required|sometimes',
-            'page' => 'required|sometimes',
-            'fields' => 'required|sometimes',
-            'sort_by_col' => 'required|sometimes',
-            'sort_type' => 'required|sometimes',
-            'status' => 'required|sometimes',
-
+            'product_id' => 'required | sometimes',
+            'url' => 'required | sometimes',
+            'caption' => 'required | sometimes',
+            'is_primary' => 'required | sometimes',
+            'is_secondary' => 'required | sometimes',
+            'is_thumb' => 'required | sometimes',
+            'alt' => 'required | sometimes',
+            'status' => ['sometimes', Rule::in(['active', 'inactive'])],
         ];
     }
 }

@@ -44,7 +44,6 @@ class Validation extends FormRequest
         return [
             'product_wearhouse_id' => 'required | sometimes',
             'supplier_id' => 'required | sometimes',
-            'product_id' => 'required | sometimes',
             'date' => 'required | sometimes',
             'reference' => 'required | sometimes',
             'discount_on_all' => 'required | sometimes',

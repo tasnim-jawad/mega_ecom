@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Modules\LocationManagement\Thana;
+namespace App\Modules\FileUploader;
 
-use App\Modules\LocationManagement\Thana\Actions\All;
-use App\Modules\LocationManagement\Thana\Actions\Destroy;
-use App\Modules\LocationManagement\Thana\Actions\Show;
-use App\Modules\LocationManagement\Thana\Actions\Store;
-use App\Modules\LocationManagement\Thana\Actions\Update;
-use App\Modules\LocationManagement\Thana\Actions\SoftDelete;
-use App\Modules\LocationManagement\Thana\Actions\Restore;
-use App\Modules\LocationManagement\Thana\Actions\Import;
-use App\Modules\LocationManagement\Thana\Validations\BulkActionsValidation;
-use App\Modules\LocationManagement\Thana\Validations\GetAllValidation;
-use App\Modules\LocationManagement\Thana\Validations\Validation;
-use App\Modules\LocationManagement\Thana\Actions\BulkActions;
+use App\Modules\FileUploader\Actions\All;
+use App\Modules\FileUploader\Actions\Destroy;
+use App\Modules\FileUploader\Actions\Show;
+use App\Modules\FileUploader\Actions\Store;
+use App\Modules\FileUploader\Actions\Update;
+use App\Modules\FileUploader\Actions\SoftDelete;
+use App\Modules\FileUploader\Actions\Restore;
+use App\Modules\FileUploader\Actions\Import;
+use App\Modules\FileUploader\Validations\BulkActionsValidation;
+use App\Modules\FileUploader\Validations\GetAllValidation;
+use App\Modules\FileUploader\Validations\Validation;
+use App\Modules\FileUploader\Actions\BulkActions;
 use App\Http\Controllers\Controller as ControllersController;
 
 
