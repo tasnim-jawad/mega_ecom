@@ -14,24 +14,39 @@ return new class extends Migration
     {
         Schema::create('sales_invoices', function (Blueprint $table) {
             $table->id();
-            $table->integer('product_wearhouse_id')->nullable();
-            $table->integer('customer_id')->nullable();
-            $table->string('product_id', 100)->nullable();
-            $table->date('date')->nullable();
             $table->string('order_id', 100)->nullable();
-            $table->float('discount_on_all')->nullable();
-            $table->enum('discount_on_all_type', ['fixed','percentage'])->nullable();
-            $table->tinyInteger('is_quotation')->nullable();
-            $table->tinyInteger('is_order')->nullable();
-            $table->tinyInteger('is_invoiced')->nullable();
-            $table->tinyInteger('is_delivered')->nullable();
-            $table->tinyInteger('is_pais')->nullable();
-            $table->enum('order_type', ['quotation','ordered','invoiced'])->nullable();
-            $table->enum('order_status', [''])->nullable();
-            $table->float('total')->nullable();
+            $table->date('date')->nullable();
+
+            $table->enum('user_type', ['ecommerce', 'retail_order'])->nullable();
+            $table->bigInteger('customer_id')->nullable()->unsigned();
+
+            $table->tinyInteger('is_delivered')->default(0);
+            $table->enum('order_status', ['pending', 'acccepted', 'processing', 'on_the_way',  'delivered',  'cancelled', 'refunded'])->nullable();
+
+            $table->bigInteger('user_address_id')->nullable();
+            $table->enum('delivery_method', ['pickup', 'courier', 'home_delivery'])->nullable();
+            $table->string('delivery_address')->nullable();
+            $table->float('delivery_charge')->nullable();
+            $table->float('additional_charge')->nullable();
+
+            $table->bigInteger('product_coupon_id')->nullable();
+            $table->float('coupon_discount')->nullable();
+
+
+
             $table->float('subtotal')->nullable();
+            $table->float('discount')->nullable();
+            $table->enum('discount_type', ['fixed', 'percentage'])->nullable();
+            $table->float('total')->nullable();
+
+
+            $table->tinyInteger('is_paid')->nullable();
             $table->float('paid_amount')->nullable();
-            $table->enum('souce', ['pos','ecommerce','retail_order'])->nullable();
+
+            $table->string('payment_id', 20)->nullable();
+            $table->string('payment_method', 20)->nullable();
+
+
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();

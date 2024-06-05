@@ -33,7 +33,7 @@ class Seeder extends SeederClass
 
                 'order_id' => rand(1000000, 999999999),
                 'date' => Carbon::now()->toDateString(),
-                'user_type' => 3,
+                'user_type' => "ecommerce",
                 'customer_id' => 3,
                 'is_delivered' => 0,
                 'order_status' => 'pending',
@@ -56,9 +56,9 @@ class Seeder extends SeederClass
                 $price = [500, 700, 1000][rand(0, 2)];
 
                 $purchaseOrderProducts = self::$SalesOrderProductModel::create([
-                    "purchase_order_id" => $order->id,
+                    "sales_ecommerce_order_id" => $order->id,
                     "product_id" => $j,
-                    "purchase_price" => $price,
+                    "product_price" => $price,
                     "discount" => 50,
                     "qty" => 3,
                     "discount_type" => "fixed",
@@ -67,8 +67,8 @@ class Seeder extends SeederClass
                 ]);
 
                 $purchaseOrderCharge = self::$SalesOrderChargeModel::create([
-                    "purchase_order_id" => $order->id,
-                    "purchase_order_product_id" => $purchaseOrderProducts->id,
+                    "sales_order_id" => $order->id,
+                    "sales_order_product_id" => $purchaseOrderProducts->id,
                     "vat_id" => 1,
                     "vat_group_id" => null,
                     "amount" => $price * 2 / 100,
@@ -79,7 +79,7 @@ class Seeder extends SeederClass
                 $subTotal +=  $purchaseOrderProducts->total;
 
                 $producStock =  self::$producStockModel::create([
-                    "data" => Carbon::now()->toDateString(),
+                    "date" => Carbon::now()->toDateString(),
                     "stock_type" => 'purchase',
                     "product_id" => $j,
                     "qty" => $purchaseOrderProducts->qty,
