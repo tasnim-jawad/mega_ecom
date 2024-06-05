@@ -1,23 +1,21 @@
 <?php
 
-namespace App\Modules\UserManagement\User\Actions\User;
-
-use App\Modules\UserManagement\User\Validations\GetAllValidation;
+namespace App\Modules\LocationManagement\Thana\Actions;
 
 class All
 {
-    static $model = \App\Modules\UserManagement\User\Models\Model::class;
+    static $model = \App\Modules\LocationManagement\Thana\Models\Model::class;
 
-    public static function execute(GetAllValidation $request)
+    public static function execute($request)
     {
         try {
-
             $pageLimit = request()->input('limit') ?? 10;
             $orderByColumn = request()->input('sort_by_col');
             $orderByType = request()->input('sort_type');
             $status = request()->input('status');
-
-            $with = ['user_address', 'user_address.user_address_contact_person'];
+            $fields = request()->input('fields');
+            $with = [];
+            $condition = [];
 
             $data = self::$model::query();
 
@@ -25,13 +23,15 @@ class All
                 $searchKey = request()->input('search');
                 $data = $data->where(function ($q) use ($searchKey) {
                     $q->where('name', $searchKey);
-                    $q->orWhere('user_name', 'like', '%' . $searchKey . '%');
+                    $q->orWhere('name', 'like', '%' . $searchKey . '%');
                 });
             }
 
             if (request()->has('get_all') && (int)request()->input('get_all') === 1) {
                 $data = $data
                     ->with($with)
+                    ->select($fields)
+                    ->where($condition)
                     ->where('status', $status)
                     ->limit($pageLimit)
                     ->orderBy($orderByColumn, $orderByType)
@@ -39,11 +39,12 @@ class All
             } else {
                 $data = $data
                     ->with($with)
+                    ->select($fields)
+                    ->where($condition)
                     ->where('status', $status)
                     ->orderBy($orderByColumn, $orderByType)
                     ->paginate($pageLimit);
             }
-
             return entityResponse($data);
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(),[], 500, 'server_error');

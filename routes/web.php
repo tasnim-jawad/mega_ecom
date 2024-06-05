@@ -64,3 +64,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::post('login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
+
+

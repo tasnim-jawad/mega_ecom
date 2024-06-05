@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Modules\LocationManagement\Country\Validations;
+namespace App\Modules\LocationManagement\Thana\Validations;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Validation\Rule;
 
-class Validation extends FormRequest
+class GetAllValidation extends FormRequest
 {
     /**
      * Determine if the  is authorized to make this request.
@@ -42,11 +42,13 @@ class Validation extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required | sometimes',
-            'country_code' => 'required | sometimes',
-            'country_short_code' => 'required | sometimes',
-            'flag_url' => 'required | sometimes',
-            'status' => ['sometimes', Rule::in(['active', 'inactive'])],
+            'limit' => 'required|sometimes',
+            'page' => 'required|sometimes',
+            'fields' => 'required|sometimes',
+            'sort_by_col' => 'required|sometimes',
+            'sort_type' => 'required|sometimes',
+            'status' => 'required|sometimes',
+
         ];
     }
 }
