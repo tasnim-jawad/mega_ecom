@@ -9,6 +9,7 @@ class All
     public static function execute($request)
     {
         try {
+  
             $pageLimit = request()->input('limit') ?? 10;
             $orderByColumn = request()->input('sort_by_col');
             $orderByType = request()->input('sort_type');
@@ -18,6 +19,7 @@ class All
             $condition = [];
 
             $data = self::$model::query();
+           
 
             if (request()->has('search') && request()->input('search')) {
                 $searchKey = request()->input('search');
@@ -45,6 +47,7 @@ class All
                     ->orderBy($orderByColumn, $orderByType)
                     ->paginate($pageLimit);
             }
+
             return entityResponse($data);
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(),[], 500, 'server_error');

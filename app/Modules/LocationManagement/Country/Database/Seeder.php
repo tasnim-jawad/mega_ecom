@@ -24,7 +24,6 @@ class Seeder extends SeederClass
 
         $file = File::get($path);
         $data = json_decode($file, true);
-        $country_info = [];
         foreach ($data as $country) {
             self::$model::create([
                 'name' => $country['name'],

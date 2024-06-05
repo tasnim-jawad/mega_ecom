@@ -18,7 +18,7 @@ class Seeder extends SeederClass
         self::$model::truncate();
 
         $country = self::$countryModel::where('serial',1)->first();
-        // dd(self::$countryModel,$country);
+        $country_id = null;
         if ($country) {
             $country_id = $country->id;
         }

@@ -15,7 +15,7 @@ class Import
 
                     "country_code" => $row['country_code'],
 
-                    "cuntry_short_code" => $row['cuntry_short_code'],
+                    "country_short_code" => $row['country_short_code'],
 
                     "flag_url" => $row['flag_url'],
 

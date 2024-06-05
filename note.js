@@ -2,7 +2,7 @@
     make,table,migration,seed,include,all
 
     stap-1
-        php artisan make:module LocationManagement/Country [name:string,country_code:string,cuntry_short_code:string,flag_url:string]
+        php artisan make:module LocationManagement/Country [name:string,country_code:string,country_short_code:string,flag_url:string]
     stap-2
         tabile-e data size add korte hobe 20,100 etc
     stap-3
@@ -49,7 +49,7 @@
 
 /*
     location management
-        Country [name:string,country_code:string,cuntry_short_code:string,flag_url:string]
+        Country [name:string,country_code:string,country_short_code:string,flag_url:string]
         StateDivision [country_id:bigint,name:string]
         District [country_id:bigint,state_division_id:bigint,name:string]
         Thana [country_id:bigint,state_division_id:bigint,thana_id:bigint,name:string]

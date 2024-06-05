@@ -18,6 +18,11 @@ use App\Modules\ProductManagement\ProductUnitGroup\Database\Seeder as ProductUni
 use App\Modules\ProductManagement\ProductUnit\Database\Seeder as ProductUnitSeeder;
 use App\Modules\ProductManagement\ProductBarCode\Database\Seeder as ProductBarCodeSeeder;
 use App\Modules\ProductManagement\Product\Database\Seeder as ProductSeeder;
+//location seeder
+use App\Modules\LocationManagement\Country\Database\Seeder as CountrySeeder;
+use App\Modules\LocationManagement\StateDivision\Database\Seeder as StateDivisionSeeder;
+use App\Modules\LocationManagement\District\Database\Seeder as DistrictSeeder;
+use App\Modules\LocationManagement\Thana\Database\Seeder as ThanaSeeder;
 //vat management seeder
 use App\Modules\VatManagement\Vat\Database\Seeder as VatSeeder;
 use App\Modules\VatManagement\VatGroup\Database\Seeder as VatGroupSeeder;
@@ -48,6 +53,12 @@ class DatabaseSeeder extends Seeder
             ProductUnitSeeder::class,
             ProductBarCodeSeeder::class,
             ProductSeeder::class,
+            // location management
+            CountrySeeder::class,
+            StateDivisionSeeder::class,
+            DistrictSeeder::class,
+            ThanaSeeder::class,
+
             //vat management seeder
             VatSeeder::class,
             VatGroupSeeder::class,
