@@ -35,7 +35,11 @@ class All
                     ->where('status', $status)
                     ->limit($pageLimit)
                     ->orderBy($orderByColumn, $orderByType)
-                    ->get();
+                    ->get()
+                    ->map(function ($item) {
+                        $item->total_products = $item->products()->count();
+                        return $item;
+                    });
             } else {
                 $data = $data
                     ->with($with)
@@ -44,10 +48,14 @@ class All
                     ->where('status', $status)
                     ->orderBy($orderByColumn, $orderByType)
                     ->paginate($pageLimit);
+
+                foreach ($data->items() as $item) {
+                    $item->total_products = $item->products()->count();
+                }
             }
             return entityResponse($data);
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(),[], 500, 'server_error');
+            return messageResponse($e->getMessage(), [], 500, 'server_error');
         }
     }
 }

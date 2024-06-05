@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Modules\VatManagement\Vat\Database;
 
 use Illuminate\Database\Seeder as SeederClass;
@@ -14,10 +15,25 @@ class Seeder extends SeederClass
     {
 
         self::$model::truncate();
-        for ($i = 1; $i < 100; $i++) {
-        self::$model::create([
-            'title' => facker()->name,
-            'percentage' => facker()->name,
+        $data = [
+            [
+                'title' => 'Standard ',
+                'percentage' => '2',
+            ],
+            [
+                'title' => 'LC',
+                'percentage' => '1',
+            ],
+            [
+                'title' => 'Machinaries',
+                'percentage' => '30',
+            ]
+        ];
+
+        foreach ($data as $item) {
+            self::$model::create([
+                'title' => $item['title'],
+                'percentage' => $item['percentage'],
             ]);
         }
     }

@@ -16,6 +16,13 @@ return new class extends Migration
             $table->id();
             $table->integer('product_category_group_id')->nullable();
 
+            $table->tinyInteger('is_featured')->default(0);
+            $table->tinyInteger('is_new')->default(0);
+            $table->tinyInteger('is_available')->default(1);
+            $table->tinyInteger('is_pre_order')->default(0);
+            $table->tinyInteger('is_up_coming')->default(0);
+            $table->tinyInteger('is_emi_support')->default(0);
+
             $table->enum('type', ['service', 'product'])->nullable();
             $table->string('title')->nullable();
             $table->text('short_description')->nullable();

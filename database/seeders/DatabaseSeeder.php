@@ -23,6 +23,12 @@ use App\Modules\LocationManagement\Country\Database\Seeder as CountrySeeder;
 use App\Modules\LocationManagement\StateDivision\Database\Seeder as StateDivisionSeeder;
 use App\Modules\LocationManagement\District\Database\Seeder as DistrictSeeder;
 use App\Modules\LocationManagement\Thana\Database\Seeder as ThanaSeeder;
+//vat management seeder
+use App\Modules\VatManagement\Vat\Database\Seeder as VatSeeder;
+use App\Modules\VatManagement\VatGroup\Database\Seeder as VatGroupSeeder;
+//Purchase management seeder
+use App\Modules\PurchageManagement\PurchaseOrder\Database\Seeder as PurchaseOrderSeeder;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -53,6 +59,11 @@ class DatabaseSeeder extends Seeder
             DistrictSeeder::class,
             ThanaSeeder::class,
 
+            //vat management seeder
+            VatSeeder::class,
+            VatGroupSeeder::class,
+            //Purchase management seeder
+            PurchaseOrderSeeder::class,
         ]);
     }
 }

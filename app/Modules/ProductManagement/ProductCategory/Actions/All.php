@@ -13,7 +13,7 @@ class All
             $orderByColumn = request()->input('sort_by_col');
             $orderByType = request()->input('sort_type');
             $status = request()->input('status');
-            $fields = request()->input('fields');
+            $fields = request()->input('fields') ?? ['*'];
             $with = [];
             $condition = [];
 
@@ -27,7 +27,7 @@ class All
                 });
             }
 
-            if (request()->has('get_all') && (int)request()->input('get_all') === 1) {
+            if (request()->has('get_all') && (int)request()->input('get_all') === 1){
                 $data = $data
                     ->with($with)
                     ->select($fields)
@@ -35,8 +35,13 @@ class All
                     ->where('status', $status)
                     ->limit($pageLimit)
                     ->orderBy($orderByColumn, $orderByType)
-                    ->get();
+                    ->get()
+                    ->map(function ($item) {
+                        $item->total_products = $item->products()->count();
+                        return $item;
+                    });
             } else {
+
                 $data = $data
                     ->with($with)
                     ->select($fields)
@@ -44,10 +49,14 @@ class All
                     ->where('status', $status)
                     ->orderBy($orderByColumn, $orderByType)
                     ->paginate($pageLimit);
+
+                foreach($data->items() as $item ){
+                    $item->total_products = $item->products()->count();
+                }
             }
             return entityResponse($data);
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(),[], 500, 'server_error');
+            return messageResponse($e->getMessage(), [], 500, 'server_error');
         }
     }
 }
