@@ -4,5 +4,15 @@
     3/ product-categories/bulk-action -e empty file.kono kaj kora hoyni.
     4/ product-brands/bulk-action -e empty file.kono kaj kora hoyni.
     5/ countries/store -e country_symbol store hocche na.
-    5/ countries/update -e country_symbol update hocche na.
+    6/ countries/update -e country_symbol update hocche na.
+
+    7/ purchase-orders/bulk-action -e empty file.kono kaj kora hoyni.
+    8/ purchase-return-orders/bulk-action -e empty file.kono kaj kora hoyni.
+
+    9/ sales-ecommerce-orderss/store -e kichu column add hoy na.
+    10/ sales-ecommerce-orderss/import -e kaj hocche na.
+
+    11/ sales-invoices/store -e kichu column add hoy na.
+    12/ sales-invoices/import -e kaj hocche na.
+    12/ sales-orders/store -e store hocche na.order_status -e enum guli dewa hoy ni.
 */

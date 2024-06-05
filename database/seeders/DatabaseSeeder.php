@@ -22,7 +22,7 @@ use App\Modules\ProductManagement\Product\Database\Seeder as ProductSeeder;
 use App\Modules\LocationManagement\Country\Database\Seeder as CountrySeeder;
 use App\Modules\LocationManagement\StateDivision\Database\Seeder as StateDivisionSeeder;
 use App\Modules\LocationManagement\District\Database\Seeder as DistrictSeeder;
-use App\Modules\LocationManagement\Thana\Database\Seeder as ThanaSeeder;
+use App\Modules\LocationManagement\Station\Database\Seeder as StationSeeder;
 //vat management seeder
 use App\Modules\VatManagement\Vat\Database\Seeder as VatSeeder;
 use App\Modules\VatManagement\VatGroup\Database\Seeder as VatGroupSeeder;
@@ -59,7 +59,7 @@ class DatabaseSeeder extends Seeder
             CountrySeeder::class,
             StateDivisionSeeder::class,
             DistrictSeeder::class,
-            ThanaSeeder::class,
+            StationSeeder::class,
 
             //vat management seeder
             VatSeeder::class,

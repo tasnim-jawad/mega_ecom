@@ -1,14 +1,13 @@
 <?php
 
-namespace App\Modules\LocationManagement\StateDivision\Actions;
+namespace App\Modules\LocationManagement\Station\Actions;
 
 class BulkActions
 {
-    static $model = \App\Modules\LocationManagement\StateDivision\Models\Model::class;
+    static $model = \App\Modules\LocationManagement\Station\Models\Model::class;
 
     public static function execute()
     {
-        // dd(request()->all());
         try {
             if (request()->input('action') == 'active') {
                 if (request()->input('ids') && count(request()->input('ids'))) {
@@ -33,7 +32,7 @@ class BulkActions
                 }
             }
 
-            return messageResponse("Items are Successfully " . request()->input('action'), [],200, 'success');
+            return messageResponse("Items are Successfully " . request()->input('action'),[], 200, 'success');
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(),[], 500, 'server_error');
         }
