@@ -1,16 +1,13 @@
 <?php
 
-namespace App\Modules\SalesManagement\SalesEcommerceOrder\Models;
+namespace App\Modules\StockManagement\ProductStock\Models;
 
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Str;
 
-class Model extends EloquentModel
+class StockLogModel extends EloquentModel
 {
-
-    static $OrderProductModel = \App\Modules\SalesManagement\SalesEcommerceOrder\Models\SalesEcommerceOrderProductModel::class;
-
-    protected $table = "sales_ecommerce_orders";
+    protected $table = "product_stock_logs";
     protected $guarded = [];
 
     protected static function booted()
@@ -32,10 +29,5 @@ class Model extends EloquentModel
     public function scopeActive($q)
     {
         return $q->where('status', 'active');
-    }
-
-    public function order_products()
-    {
-        return $this->hasMany(self::$OrderProductModel, 'sales_ecommerce_order_id', 'id');
     }
 }

@@ -18,10 +18,11 @@ return new class extends Migration
 
             $table->tinyInteger('is_featured')->default(0);
             $table->tinyInteger('is_new')->default(0);
-            $table->tinyInteger('is_available')->default(1);
+            $table->tinyInteger('is_available')->default(1)->comment('everything is ok but can not buy');
             $table->tinyInteger('is_pre_order')->default(0);
             $table->tinyInteger('is_up_coming')->default(0);
             $table->tinyInteger('is_emi_support')->default(0);
+
 
             $table->enum('type', ['service', 'product'])->nullable();
             $table->string('title')->nullable();
@@ -30,7 +31,7 @@ return new class extends Migration
 
             $table->integer('product_menufecturer_id')->nullable();
             $table->integer('product_brand_id')->nullable();
-            $table->string('sku',50)->nullable();
+            $table->string('sku', 50)->nullable();
             $table->integer('product_unit_id')->nullable();
 
             $table->integer('alert_quantity')->nullable();
@@ -61,6 +62,7 @@ return new class extends Migration
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 150)->nullable();
+            $table->tinyInteger('is_hide')->default(0)->comment('emergency hide from frontend');
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();
         });

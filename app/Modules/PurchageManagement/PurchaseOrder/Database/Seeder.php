@@ -15,10 +15,7 @@ class Seeder extends SeederClass
     static $purchaseOrderProductsModel = \App\Modules\PurchageManagement\PurchaseOrder\Models\PurchaseOrderProductsModel::class;
     static $purchaseOrderChargeModel = \App\Modules\PurchageManagement\PurchaseOrder\Models\PurchaseChargeModel::class;
 
-    /**
-     * stock management model
-     */
-    static $producStockModel = \App\Modules\StockManagement\ProductStock\Models\Model::class;
+
 
     public function run(): void
     {
@@ -67,16 +64,20 @@ class Seeder extends SeederClass
                 $purchaseOrderProducts->save();
                 $subTotal +=  $purchaseOrderProducts->total;
 
-                $producStock =  self::$producStockModel::create([
-                    "date" => Carbon::now()->toDateString(),
+                $stockLogData = [
+                    "product_wearhouse_id" => $purchaseOrder->product_wearhouse_id,
+                    "date" => $purchaseOrder->date,
                     "stock_type" => 'purchase',
                     "product_id" => $j,
                     "qty" => $purchaseOrderProducts->qty,
-                    "bill_receipt_no" => $purchaseOrder->reference,
                     "purchase_order_id" => $purchaseOrder->id,
-                ]);
+                    "purchase_return_id" => null,
+                    "sales_order_id" => null,
+                    "sales_return_id" => null,
+                    "product_waste_id" => null,
+                ];
 
-                $producStock->save();
+                stockLogStore($stockLogData);
             }
 
             $purchaseOrder->subtotal = $subTotal;

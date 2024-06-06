@@ -27,7 +27,11 @@ use App\Modules\LocationManagement\Station\Database\Seeder as StationSeeder;
 use App\Modules\VatManagement\Vat\Database\Seeder as VatSeeder;
 use App\Modules\VatManagement\VatGroup\Database\Seeder as VatGroupSeeder;
 //Purchase management seeder
+use App\Modules\PurchageManagement\PurchaseOrder\Database\Seeder as ProductWareHouseSeeder;
 use App\Modules\PurchageManagement\PurchaseOrder\Database\Seeder as PurchaseOrderSeeder;
+//Stock management seeder
+use App\Modules\StockManagement\ProductWearHouseBranch\Database\Seeder as ProductWearHouseBranchSeeder;
+use App\Modules\StockManagement\ProductWearHouse\Database\Seeder as ProductWearHouseSeeder;
 //Sales order management seeder
 use App\Modules\SalesManagement\SalesEcommerceOrder\Database\Seeder as SalesEcommerceOrderSeeder;
 
@@ -64,8 +68,12 @@ class DatabaseSeeder extends Seeder
             //vat management seeder
             VatSeeder::class,
             VatGroupSeeder::class,
+            //Stock  management seeder
+            ProductWearHouseBranchSeeder::class,
+            ProductWearHouseSeeder::class,
             //Purchase management seeder
             PurchaseOrderSeeder::class,
+
             //Sales order management seeder
             SalesEcommerceOrderSeeder::class,
         ]);

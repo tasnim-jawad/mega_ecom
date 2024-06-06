@@ -13,6 +13,10 @@ class Store
      * stock management model
      */
     static $producStockModel = \App\Modules\StockManagement\ProductStock\Models\Model::class;
+    /**
+     * val management model
+     */
+    static $vatModel = \App\Modules\VatManagement\Vat\Models\Model::class;
 
     public static function execute($request)
     {
@@ -35,15 +39,26 @@ class Store
                         "total" => ($product->price * $product->qty) - $product->dicount,
                     ]);
 
-                    $purchaseOrderCharge = self::$purchaseOrderChargeModel::create([
-                        "purchase_order_id" => $purchaseOrder->id,
-                        "purchase_order_product_id" => $purchaseOrderProducts->id,
-                        "vat_id" => 1, //vat id kmne pabo
-                        "vat_group_id" => null,
-                        "amount" => $product->price * 2 / 100,
-                    ]);
+                    $vatTotal = 0;
 
-                    $purchaseOrderProducts->total += $purchaseOrderCharge->amount;
+                    foreach ($product->vat_lists as $vat_id) {
+                        $vat = self::$vatModel::find($vat_id);
+                        $vatAmount = $product->price * $vat->percentage / 100;
+                        $purchaseOrderCharge = self::$purchaseOrderChargeModel::create([
+                            "purchase_order_id" => $purchaseOrder->id,
+                            "purchase_order_product_id" => $purchaseOrderProducts->id,
+                            "vat_id" => $vat->vat_id,
+                            "vat_group_id" => null,
+                            "amount" => $vatAmount,
+                        ]);
+
+                        $vatTotal += $vatAmount;
+                    }
+
+
+
+
+                    $purchaseOrderProducts->total += $vatTotal;
                     $purchaseOrderProducts->save();
                     $subTotal +=  $purchaseOrderProducts->total;
 
@@ -57,6 +72,7 @@ class Store
                     ]);
 
                     $producStock->save();
+                    
                 }
 
                 $purchaseOrder->subtotal = $subTotal;
