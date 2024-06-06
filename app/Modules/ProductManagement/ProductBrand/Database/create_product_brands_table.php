@@ -14,12 +14,12 @@ return new class extends Migration
     {
         Schema::create('product_brands', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
-            $table->string('serial')->nullable();
-            $table->string('image')->nullable();
+            $table->string('title', 40)->nullable();
+            $table->Integer('serial')->nullable();
+            $table->tinyText('image')->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
-            $table->string('slug', 50)->nullable();
+            $table->string('slug', 150)->nullable();
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();
         });

@@ -7,8 +7,12 @@ use Illuminate\Support\Str;
 
 class Model extends EloquentModel
 {
+    static $productCategoryModel = "App\Modules\ProductManagement\ProductCategory\Models\Model";
+    static $productImageModel = "App\Modules\ProductManagement\Product\Models\ProductImageModel";
+
     protected $table = "products";
     protected $guarded = [];
+
 
     protected static function booted()
     {
@@ -19,7 +23,25 @@ class Model extends EloquentModel
             if (strlen($data->slug) > 150) {
                 $data->slug = substr($data->slug, strlen($data->slug) - 150, strlen($data->slug));
             }
+            if (auth()->check()) {
+                $data->creator = auth()->user()->id;
+            }
+            $data->save();
         });
+    }
+
+    public function product_categories()
+    {
+        return $this->belongsToMany(self::$productCategoryModel, 'product_category_products', 'product_id', 'product_category_id');
+    }
+
+    public function product_image()
+    {
+        return $this->hasOne(self::$productImageModel, 'product_id', 'id');
+    }
+    public function product_images()
+    {
+        return $this->hasMany(self::$productImageModel, 'product_id', 'id');
     }
 
     public function scopeActive($q)

@@ -21,15 +21,16 @@ return new class extends Migration
             $table->string('phone', 20)->nullable();
             $table->string('photo')->default('avatar.png');
             $table->bigInteger('role_id')->default(3);
-            $table->bigInteger('creator')->unsigned()->nullable();
-            $table->string('slug', 150)->nullable();
-            $table->enum('status', ['active', 'inactive'])->default('active');
             $table->tinyInteger('is_blocked')->default(0);
             $table->integer('no_of_attempt')->default(0);
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
+
+            $table->bigInteger('creator')->unsigned()->nullable();
+            $table->string('slug',50)->nullable();
+            $table->enum('status',['active','inactive'])->default('active');
             $table->timestamps();
-            $table->softDeletes();
+            // $table->softDeletes();
         });
     }
 
@@ -38,6 +39,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        // Schema::dropIfExists('users');
+        Schema::dropIfExists('users');
     }
 };

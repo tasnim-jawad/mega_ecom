@@ -14,23 +14,27 @@ return new class extends Migration
     {
         Schema::create('user_addresses', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->tinyInteger('is_shipping')->nullable();
             $table->tinyInteger('is_billing')->nullable();
-            $table->enum('address_types', ['office', 'pickup_point', 'store'])->nullable();
+            $table->enum('address_types', ['office', 'pickup_point', 'store','delivery','personal'])->nullable();
             $table->string('address')->nullable();
             $table->bigInteger('country_id')->nullable();
             $table->bigInteger('state_division_id')->nullable();
             $table->bigInteger('division_id')->nullable();
             $table->bigInteger('district_id')->nullable();
-            $table->bigInteger('thana_id')->nullable();
+            $table->bigInteger('station_id')->nullable();
             $table->bigInteger('city_id')->nullable();
             $table->string('zip_code')->nullable();
             $table->tinyInteger('is_present_address')->nullable();
             $table->bigInteger('is_permanent_address')->nullable();
+
+            $table->bigInteger('creator')->unsigned()->nullable();
+            $table->string('slug',50)->nullable();
+            $table->enum('status',['active','inactive'])->default('active');
             $table->timestamps();
-            $table->softDeletes();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            // $table->softDeletes();
         });
     }
     /**
@@ -38,6 +42,11 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_addresses');
+        Schema::table('user_addresses', function (Blueprint $table) {
+            $table->dropForeign(['user_id']);
+        });
+        Schema::table('user_addresses', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+        });
     }
 };

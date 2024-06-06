@@ -1,4 +1,5 @@
 <?php
+
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
@@ -20,11 +21,31 @@ if (!function_exists('entityResponse')) {
 }
 
 if (!function_exists('messageResponse')) {
-    function messageResponse($message = '', $statusCode = 200, $status = 'success')
+    function messageResponse($message = '', $data = [], $statusCode = 200, $status = 'success')
     {
-        return response(['status' => $status, 'statusCode' => $statusCode, 'message' => $message], $statusCode);
+        return response(['status' => $status, 'statusCode' => $statusCode, 'message' => $message, 'data' => $data], $statusCode);
     }
 }
+
+if (!function_exists('additionalValidation')) {
+    function additionalValidation($data)
+    {
+        $errorPayload = [];
+        if ($data && count($data) > 0) {
+            foreach ($data as $key => $value) {
+                $errorPayload[$value] = [
+                    $value . ' is required'
+                ];
+            }
+        }
+        return response()->json([
+            'status' => 'validation_error',
+            'errors' => $errorPayload
+        ], 422);
+    }
+}
+
+
 if (!function_exists('sendToTelegram')) {
     function sendToTelegram($chatId = '6555657006', $text = 'this is test message')
     {
@@ -185,4 +206,4 @@ function facker()
 
 
 // dd(__DIR__);
-include_once(__DIR__ . '\Account.php');
+include_once(__DIR__ . '\Stock.php');

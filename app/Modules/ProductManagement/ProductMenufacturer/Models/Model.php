@@ -19,6 +19,10 @@ class Model extends EloquentModel
             if (strlen($data->slug) > 150) {
                 $data->slug = substr($data->slug, strlen($data->slug) - 150, strlen($data->slug));
             }
+            if (auth()->check()) {
+                $data->creator = auth()->user()->id;
+            }
+            $data->save();
         });
     }
 

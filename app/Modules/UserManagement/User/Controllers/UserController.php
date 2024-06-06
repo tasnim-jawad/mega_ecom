@@ -3,7 +3,7 @@
 namespace App\Modules\UserManagement\User\Controllers;
 
 use App\Modules\UserManagement\User\Actions\User\All;
-use App\Modules\UserManagement\User\Actions\User\Restroy;
+use App\Modules\UserManagement\User\Actions\User\Destroy;
 use App\Modules\UserManagement\User\Actions\User\Show;
 use App\Modules\UserManagement\User\Actions\User\Store;
 use App\Modules\UserManagement\User\Actions\User\Update;
@@ -12,14 +12,17 @@ use App\Modules\UserManagement\User\Actions\User\BulkActions;
 use App\Modules\UserManagement\User\Actions\User\SoftDelete;
 use App\Modules\UserManagement\User\Actions\User\Restore;
 use App\Http\Controllers\Controller as ControllersController;
+use App\Modules\UserManagement\User\Actions\User\Import;
+use App\Modules\UserManagement\User\Validations\BulkActionsValidation;
+use App\Modules\UserManagement\User\Validations\GetAllValidation;
 
 class UserController extends ControllersController
 {
 
-    public function index()
+    public function index(GetAllValidation $request)
     {
 
-        $data = All::execute();
+        $data = All::execute($request);
         return $data;
     }
 
@@ -49,7 +52,7 @@ class UserController extends ControllersController
     }
     public function destroy()
     {
-        $data = Restroy::execute();
+        $data = Destroy::execute();
         return $data;
     }
     public function restore()
@@ -57,19 +60,16 @@ class UserController extends ControllersController
         $data = Restore::execute();
         return $data;
     }
-    public function bulkAction()
+    public function bulkAction(BulkActionsValidation $request)
     {
-        $data = BulkActions::execute();
+        $data = BulkActions::execute($request);
+        return $data;
+    }
+    public function import()
+    {
+        $data = Import::execute();
         return $data;
     }
 
-    public function checkUser()
-    {
-        if (auth()->check()) {
-            return response()->json([
-                'user' => auth()->user()->load(['role', 'permissions']),
-            ], 200);
-        }
-        return response()->json([""]);
-    }
+
 }

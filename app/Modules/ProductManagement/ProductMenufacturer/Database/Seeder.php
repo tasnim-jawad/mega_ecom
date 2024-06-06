@@ -15,11 +15,30 @@ class Seeder extends SeederClass
     {
 
         self::$model::truncate();
-        for ($i = 1; $i < 100; $i++) {
+        $data = [
+            [
+                "title" => "Asus",
+                "image" => "https://www.globalbrand.com.bd/image/cache/catalog/GBPL%20Brands/asus-100x100.jpg"
+            ],
+            [
+                "title" => "Lenovo",
+                "image" => "https://www.globalbrand.com.bd/image/cache/catalog/GBPL%20Brands/lenovo-100x100.jpg"
+            ],
+            [
+                "title" => "Brother",
+                "image" => "https://www.globalbrand.com.bd/image/cache/catalog/GBPL%20Brands/brother-color-1-100x100.png"
+            ],
+            [
+                "title" => "LG",
+                "image" => "https://www.globalbrand.com.bd/image/cache/catalog/GBPL%20Brands/lg-color-1-100x100.png"
+            ],
+        ];
+
+        foreach ($data as $key => $item) {
             self::$model::create([
-                'title' => facker()->name,
-                'serial' => $i,
-                'image' => facker()->imageUrl(),
+                'title' => $item['title'],
+                'serial' => 0,
+                'image' => $item['image'],
             ]);
         }
     }

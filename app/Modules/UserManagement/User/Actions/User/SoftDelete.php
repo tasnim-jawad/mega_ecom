@@ -12,11 +12,12 @@ class SoftDelete
     {
         try {
             // dd(request()->slug);
-            if (!$data = self::$model::where('slug',request()->slug)->first()) {
-                return messageResponse('Data not found...', 404, 'error');
+            if (!$data = self::$model::where('slug', request()->slug)->first()) {
+                return messageResponse('Data not found...',[], 404, 'error');
             }
-            $data->delete();
-            return messageResponse('Item Successfully soft deleted', 200, 'success');
+            $data->status = 'inactive';
+            $data->update();
+            return messageResponse('Item Successfully updated');
         } catch (\Exception $e) {
             return messageResponse($e->getMessage(), 500, 'server_error');
         }

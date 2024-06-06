@@ -14,29 +14,55 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
+            $table->integer('product_category_group_id')->nullable();
+
+            $table->tinyInteger('is_featured')->default(0);
+            $table->tinyInteger('is_new')->default(0);
+            $table->tinyInteger('is_available')->default(1)->comment('everything is ok but can not buy');
+            $table->tinyInteger('is_pre_order')->default(0);
+            $table->tinyInteger('is_up_coming')->default(0);
+            $table->tinyInteger('is_emi_support')->default(0);
+
+
             $table->enum('type', ['service', 'product'])->nullable();
+            $table->string('title')->nullable();
             $table->text('short_description')->nullable();
-            $table->text('description')->nullable();
-            $table->Integer('menufecturer_id')->nullable();
-            $table->Integer('brand_id')->nullable();
-            $table->Integer('sku')->nullable();
-            $table->string('unit')->nullable();
-            $table->Integer('alert_quantity')->nullable();
-            $table->string('saller_points')->nullable();
+            $table->longText('description')->nullable();
+
+            $table->integer('product_menufecturer_id')->nullable();
+            $table->integer('product_brand_id')->nullable();
+            $table->string('sku', 50)->nullable();
+            $table->integer('product_unit_id')->nullable();
+
+            $table->integer('alert_quantity')->nullable();
+
+            $table->string('seller_points')->nullable();
             $table->tinyInteger('is_returnable')->nullable();
             $table->string('expiration_days')->nullable();
-            $table->bigInteger('purchase_price')->nullable();
-            $table->string('purchase_account')->nullable();
-            $table->enum('discount_type', ['percent', 'flat'])->nullable();
-            $table->Integer('discount_amount')->nullable();
-            $table->string('tax_id')->nullable();
+
+            $table->enum('price_type', ['single', 'variant'])->nullable();
+
+            $table->float('purchase_price')->nullable();
+            // $table->string('purchase_account')->nullable();
+
+            // $table->string('tax_id')->nullable();
             $table->enum('tax_type', ['inclusive', 'exclusive'])->nullable();
-            $table->Integer('vat_on_sale')->nullable();
-            $table->Integer('vat_on_purchase')->nullable();
+            $table->float('tax_amount')->default(0)->unsigned();
+
+            // $table->integer('vat_on_sale')->nullable();
+            // $table->integer('vat_on_purchase')->nullable();
+
+            $table->float('customer_sales_price')->nullable()->unsigned();
+            $table->float('retailer_sales_price')->nullable()->unsigned();
+            $table->float('minimum_sale_price')->nullable()->unsigned();
+            $table->float('maximum_sale_price')->nullable()->unsigned();
+
+            $table->enum('discount_type', ['off', 'percent', 'flat'])->nullable();
+            $table->float('discount_amount')->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
-            $table->string('slug', 50)->nullable();
+            $table->string('slug', 150)->nullable();
+            $table->tinyInteger('is_hide')->default(0)->comment('emergency hide from frontend');
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();
         });

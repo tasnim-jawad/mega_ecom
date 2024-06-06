@@ -16,8 +16,8 @@ class UserAddressModel extends EloquentModel
         return $this->hasMany(self::$userAddressContactPersonModel, 'user_address_id', 'id');
     }
 
-    public function user()
-    {
-        return $this->belongsTo(self::$userModel, 'id', 'user_id');
-    }
+    // public function user()
+    // {
+    //     return $this->belongsTo(self::$userModel, 'id', 'user_id');
+    // }
 }

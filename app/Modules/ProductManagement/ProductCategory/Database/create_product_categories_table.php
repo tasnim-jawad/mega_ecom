@@ -14,14 +14,14 @@ return new class extends Migration
     {
         Schema::create('product_categories', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('product_category_group_id')->nullable();
             $table->string('title')->nullable();
-            $table->string('parent_id')->nullable();
-            $table->string('serial')->nullable();
-            $table->string('image')->nullable();
+            $table->bigInteger('parent_id')->nullable();
+            $table->bigInteger('product_category_group_id')->nullable();
+            $table->Integer('serial')->nullable();
+            $table->string('image',100)->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
-            $table->string('slug', 50)->nullable();
+            $table->string('slug', 150)->nullable();
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();
         });
