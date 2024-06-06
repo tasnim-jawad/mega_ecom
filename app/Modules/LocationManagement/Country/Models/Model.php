@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 
 class Model extends EloquentModel
 {
-    protected $table = "countries";
+    protected $table = "location_countries";
     protected $guarded = [];
     protected $casts = [
         'country_symbol' => 'array'

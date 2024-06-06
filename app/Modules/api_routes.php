@@ -61,3 +61,22 @@ include_once  base_path("app/Modules/PurchageManagement/PurchaseReturnOrder/Rout
 include_once  base_path("app/Modules/SalesManagement/SalesEcommerceOrder/Route.php");
 include_once  base_path("app/Modules/SalesManagement/SalesInvoice/Route.php");
 include_once  base_path("app/Modules/SalesManagement/SalesOrder/Route.php");
+include_once  base_path("app/Modules/SalesManagement/SalesQuotationOrder/Route.php");
+include_once  base_path("app/Modules/SalesManagement/SalesReturn/Route.php");
+
+/*
+|--------------------------------------------------------------------------
+| Stock management Routes
+|--------------------------------------------------------------------------
+*/
+include_once  base_path("app/Modules/StockManagement/ProductStock/Route.php");
+include_once  base_path("app/Modules/StockManagement/ProductWearHouse/Route.php");
+include_once  base_path("app/Modules/StockManagement/ProductWearHouseBranch/Route.php");
+
+/*
+|--------------------------------------------------------------------------
+| Vat management Routes
+|--------------------------------------------------------------------------
+*/
+include_once  base_path("app/Modules/VatManagement/Vat/Route.php");
+include_once  base_path("app/Modules/VatManagement/VatGroup/Route.php");

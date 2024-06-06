@@ -23,7 +23,7 @@ return new class extends Migration
             $table->bigInteger('state_division_id')->nullable();
             $table->bigInteger('division_id')->nullable();
             $table->bigInteger('district_id')->nullable();
-            $table->bigInteger('thana_id')->nullable();
+            $table->bigInteger('station_id')->nullable();
             $table->bigInteger('city_id')->nullable();
             $table->string('zip_code')->nullable();
             $table->tinyInteger('is_present_address')->nullable();

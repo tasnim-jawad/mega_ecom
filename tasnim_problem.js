@@ -15,4 +15,13 @@
     11/ sales-invoices/store -e kichu column add hoy na.
     12/ sales-invoices/import -e kaj hocche na.
     12/ sales-orders/store -e store hocche na.order_status -e enum guli dewa hoy ni.
+
+    13/SalesOrder-e order_status enum na thakay kono kichu store korte parchina. tai test korte parini.
+    14/SalesQuotationOrder-e order_status enum na thakay kono kichu store korte parchina. tai test korte parini.
+
+    15/ vats/bulk-action -e empty file. kono kaj kora hoyni.
+    16/ vat-groups/bulk-action -e empty file. kono kaj kora hoyni.
+
+    17/ customers/bulk-actions theka jekono user activ,inactive or delete kora jache.
+
 */

@@ -50,7 +50,7 @@ class Seeder extends SeederClass
                 'state_division_id' => rand(1, 200),
                 'division_id' => rand(1, 7),
                 'district_id' => rand(1, 64),
-                'thana_id' => rand(1, 1000),
+                'station_id' => rand(1, 1000),
                 'city_id' => rand(1, 1000),
                 'zip_code' => rand(1, 200),
                 'is_present_address' => rand(0, 1),
