@@ -28,18 +28,18 @@ class Seeder extends SeederClass
         self::$model::truncate();
         $productId = 1;
         for ($i = 1; $i < 5; $i++) {
+
             $subTotal = 0;
             $order =  self::$model::create([
-
-                'order_id' => rand(1000000, 999999999),
+                'order_id' => "ETEK" . rand(1000000, 999999999),
                 'date' => Carbon::now()->toDateString(),
                 'user_type' => "ecommerce",
-                'customer_id' => 3,
+                'user_id' => 3,
                 'is_delivered' => 0,
-                'order_status' => 'pending',
-                'user_address_id' => 1,
+                'order_status' => ['pending', 'accepted'][rand(0, 1)],
+                'user_address_id' => 5,
                 'delivery_method' => 'home_delivery',
-                'delivery_address' => "mirpur dhaka",
+                'delivery_address_id' => 6,
                 'delivery_charge' => 50,
                 'additional_charge' => 0,
                 'product_coupon_id' => null,
@@ -55,39 +55,49 @@ class Seeder extends SeederClass
 
                 $price = [500, 700, 1000][rand(0, 2)];
 
-                $purchaseOrderProducts = self::$SalesOrderProductModel::create([
+                $SalesOrderProduct = self::$SalesOrderProductModel::create([
                     "sales_ecommerce_order_id" => $order->id,
                     "product_id" => $j,
                     "product_price" => $price,
                     "discount" => 50,
+                    "price" => $price - 50,
                     "qty" => 3,
                     "discount_type" => "fixed",
                     "subtotal" => $price * 3,
                     "total" => ($price * 3) - 50,
                 ]);
 
-                $purchaseOrderCharge = self::$SalesOrderChargeModel::create([
+
+
+                $salesOrderCharge = self::$SalesOrderChargeModel::create([
                     "sales_order_id" => $order->id,
-                    "sales_order_product_id" => $purchaseOrderProducts->id,
+                    "sales_order_product_id" => $SalesOrderProduct->id,
                     "vat_id" => 1,
                     "vat_group_id" => null,
                     "amount" => $price * 2 / 100,
                 ]);
 
-                $purchaseOrderProducts->total += $purchaseOrderCharge->amount;
-                $purchaseOrderProducts->save();
-                $subTotal +=  $purchaseOrderProducts->total;
+                $SalesOrderProduct->total += $salesOrderCharge->amount;
+                $SalesOrderProduct->save();
+                $subTotal +=  $SalesOrderProduct->total;
 
-                $producStock =  self::$producStockModel::create([
-                    "date" => Carbon::now()->toDateString(),
+                $stockLogData = [
+                    "product_wearhouse_id" => 1,
+                    "purchase_order_id" => $SalesOrderProduct->id,
+                    "date" => $order->date,
                     "stock_type" => 'purchase',
                     "product_id" => $j,
-                    "qty" => $purchaseOrderProducts->qty,
-                    "bill_receipt_no" => $order->reference,
-                    "purchase_order_id" => $order->id,
-                ]);
+                    "qty" => $SalesOrderProduct->qty,
+                    "purchase_return_id" => null,
+                    "sales_order_id" => null,
+                    "sales_return_id" => null,
+                    "product_waste_id" => null,
+                ];
 
-                $producStock->save();
+                if ($order->order_status == 'accepted') {
+                    stockLogStore($stockLogData);
+                }
+
             }
 
             $order->subtotal = $subTotal;

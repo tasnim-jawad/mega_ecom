@@ -19,12 +19,12 @@ class Seeder extends SeederClass
 
         for ($i = 1; $i < 60; $i++) {
             self::$model::create([
-                'date' => Carbon::now(),
-                'stock_type' => 'initial',
-                'product_id' => $i,
-                'qty' => rand(1, 3),
-                'bill_receipt_no' => rand(1000000, 9999999),
-                'product_wearhouse_id' => 1,
+                // 'date' => Carbon::now(),
+                // 'stock_type' => 'initial',
+                // 'product_id' => $i,
+                // 'qty' => rand(1, 3),
+                // 'bill_receipt_no' => rand(1000000, 9999999),
+                // 'product_wearhouse_id' => 1,
             ]);
         }
     }

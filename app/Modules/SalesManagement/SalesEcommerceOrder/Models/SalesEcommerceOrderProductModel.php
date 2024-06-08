@@ -7,8 +7,12 @@ use Illuminate\Support\Str;
 
 class SalesEcommerceOrderProductModel extends EloquentModel
 {
+
+    static $stockLogModel = \App\Modules\StockManagement\ProductStock\Models\StockLogModel::class;
+
     protected $table = "sales_ecommerce_order_products";
     protected $guarded = [];
+    protected $appends = ['stock_available'];
 
     protected static function booted()
     {
@@ -29,5 +33,20 @@ class SalesEcommerceOrderProductModel extends EloquentModel
     public function scopeActive($q)
     {
         return $q->where('status', 'active');
+    }
+
+    protected function getStockAvailableAttribute()
+    {
+        // 'stock_type', ['initial', 'purchase', 'sales', 'return', 'waste']
+        $purchase = self::$stockLogModel::whereIn('stock_type', ['initial', 'purchase', 'return'])->sum('qty');
+        $sales = self::$stockLogModel::whereIn('stock_type', ['sales', 'waste'])->sum('qty');
+
+        $avalable =  $purchase - $sales;
+
+        if ($avalable < 0) {
+            return 0;
+        } else {
+            return $avalable;
+        }
     }
 }

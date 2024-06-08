@@ -1,16 +1,15 @@
 <?php
 
-namespace App\Modules\LocationManagement\Country\Actions;
+namespace App\Modules\SalesManagement\SalesEcommerceOrder\Actions;
 
-class Store
+class FrontendOrder
 {
-    static $model = \App\Modules\LocationManagement\Country\Models\Model::class;
+    static $model = \App\Modules\SalesManagement\SalesEcommerceOrder\Models\Model::class;
 
     public static function execute($request)
     {
         try {
             $requestData = $request->validated();
-            $requestData['country_symbol'] = json_encode($requestData['country_symbol']);
             if ($data = self::$model::query()->create($requestData)) {
                 return messageResponse('Item added successfully', $data, 201);
             }

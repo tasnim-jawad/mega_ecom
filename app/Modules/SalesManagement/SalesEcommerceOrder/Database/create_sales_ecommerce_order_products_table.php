@@ -15,15 +15,22 @@ return new class extends Migration
         Schema::create('sales_ecommerce_order_products', function (Blueprint $table) {
             $table->id();
             $table->integer('sales_ecommerce_order_id')->nullable();
+
             $table->integer('product_id')->nullable();
-            $table->float('product_price')->nullable();
-            $table->float('product_name')->nullable();
-            $table->integer('qty')->nullable();
-            $table->float('discount')->nullable();
+            $table->float('product_price')->default(0);
+            $table->float('product_name')->default(0);
+
             $table->enum('discount_type', ['fixed', 'percentage'])->nullable();
             $table->enum('tax', ['fixed', 'percentage'])->nullable();
-            $table->float('total')->nullable();
-            $table->float('subtotal')->nullable();
+
+            $table->float('discount')->default(0);
+            $table->float('price')->default(0);
+            $table->integer('qty')->default(0);
+
+            $table->float('subtotal')->default(0);
+            $table->float('tax_total')->default(0);
+
+            $table->float('total')->default(0);
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 150)->nullable();

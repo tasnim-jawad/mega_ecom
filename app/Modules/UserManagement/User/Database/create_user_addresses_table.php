@@ -17,7 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id')->nullable();
             $table->tinyInteger('is_shipping')->nullable();
             $table->tinyInteger('is_billing')->nullable();
-            $table->enum('address_types', ['office', 'pickup_point', 'store'])->nullable();
+            $table->enum('address_types', ['office', 'pickup_point', 'store','delivery','personal'])->nullable();
             $table->string('address')->nullable();
             $table->bigInteger('country_id')->nullable();
             $table->bigInteger('state_division_id')->nullable();
@@ -28,7 +28,6 @@ return new class extends Migration
             $table->string('zip_code')->nullable();
             $table->tinyInteger('is_present_address')->nullable();
             $table->bigInteger('is_permanent_address')->nullable();
-
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug',50)->nullable();

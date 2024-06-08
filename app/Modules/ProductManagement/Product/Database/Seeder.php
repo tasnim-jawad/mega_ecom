@@ -393,13 +393,16 @@ class Seeder extends SeederClass
                 $regularPrice = preg_replace('/[^0-9]/', '', $item['regular_price']);
             }
 
-            if ($item['regular_price'] != "") {
+            if ($item['del_price'] != "") {
                 $delPrice = preg_replace('/[^0-9]/', '', $item['del_price']);
             }
 
             if ($delPrice && $regularPrice) {
                 $discountPrice = $delPrice - $regularPrice;
             }
+
+            $regularPrice -= $discountPrice;
+
 
             $product = self::$model::create([
                 'product_category_group_id' => 1,
@@ -422,7 +425,7 @@ class Seeder extends SeederClass
 
                 'price_type' => "single",
 
-                'purchase_price' => $regularPrice - 6,
+                'purchase_price' => $regularPrice - 30,
 
                 'customer_sales_price' => $regularPrice,
                 'retailer_sales_price' => $regularPrice - 5,
@@ -436,13 +439,19 @@ class Seeder extends SeederClass
                 // 'vat_on_purchase' => facker()->name,
             ]);
 
+
+
+
+
             $product->product_categories()->attach([rand(1, 5), rand(6, 9)]);
 
             // $imageUrl = parse_url($item['image']);
             // $imagePath = $imageUrl['path'];
-            $image = file_get_contents($item['image']);
 
-            file_put_contents(public_path('uploads/d_products/' . $product->id . '.jpg'), $image);
+            //upload image in to public/uploads/d_products
+
+            // $image = file_get_contents($item['image']);
+            // file_put_contents(public_path('uploads/d_products/' . $product->id . '.jpg'), $image);
 
             $product->product_images()->create([
                 'url' => 'uploads/d_products/' . $product->id . '.jpg',
