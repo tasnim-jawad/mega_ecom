@@ -23,7 +23,6 @@ class Import
                 if ($isEmailExist) {
                     $existEmail[] = $row;
                 } else {
-
                     $userData = self::$model::create([
                         "name" => $row['name'],
                         "user_name" => $row['user_name'],

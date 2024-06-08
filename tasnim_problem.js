@@ -22,6 +22,7 @@
     15/ vats/bulk-action -e empty file. kono kaj kora hoyni.
     16/ vat-groups/bulk-action -e empty file. kono kaj kora hoyni.
 
+    
     17/ customers/bulk-actions theka jekono user activ,inactive or delete kora jache.
 
 */

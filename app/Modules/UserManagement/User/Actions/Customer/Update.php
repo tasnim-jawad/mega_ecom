@@ -16,6 +16,7 @@ class Update
     static $userEmployeeInformation = \App\Modules\UserManagement\User\Models\UserEmployeeInformationModel::class;
     public static function execute($request, $id)
     {
+        // dd($id);
         try {
 
 
@@ -34,10 +35,9 @@ class Update
                 }
             }
 
-            $userData->update($requestData);
 
             //store data
-            if ($userData = self::$model::create($requestData)) {
+            if ($userData->update($requestData)) {
                 $userCustomerInfoData = self::$userCustomerInfoModel::where('user_id', $id)->first();
                 $userCustomerInfoData->update([
                     'user_id' => $userData->id,
@@ -110,7 +110,7 @@ class Update
             }
 
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(),[], 500, 'server_error');
         }
     }
 }

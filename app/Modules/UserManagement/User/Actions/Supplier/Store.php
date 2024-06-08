@@ -18,8 +18,8 @@ class Store
             unset($requestData['confirmed']);
             //additional validation
             $additionalValidationData = [];
-            if (!$request->customer_type_id) {
-                $additionalValidationData[] = 'customer_type_id';
+            if (!$request->supplier_type_id) {
+                $additionalValidationData[] = 'supplier_type_id';
                 $response = additionalValidation($additionalValidationData);
                 if ($response) {
                     return $response;
@@ -29,7 +29,7 @@ class Store
 
             //store data
             if ($userData = self::$model::create($requestData)) {
-
+                
                 self::$userSupplierInfoModel::create([
                     'user_id' => $userData->id,
                     'supplier_type_id' => $request->supplier_type_id,
@@ -87,7 +87,7 @@ class Store
                 return self::$userShow::execute($userData->slug);
             }
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(),[], 500, 'server_error');
         }
     }
 }

@@ -25,18 +25,17 @@ class Update
             }
 
             $additionalValidationData = [];
-            if (!$request->customer_type_id) {
-                $additionalValidationData[] = 'customer_type_id';
+            if (!$request->supplier_type_id) {
+                $additionalValidationData[] = 'supplier_type_id';
                 $response = additionalValidation($additionalValidationData);
                 if ($response) {
                     return $response;
                 }
             }
 
-            $userData->update($requestData);
 
             //store data
-            if ($userData = self::$model::create($requestData)) {
+            if ($userData->update($requestData)) {
                 $userCustomerInfoData = self::$userSupplierInfoModel::where('user_id', $id)->first();
                 $userCustomerInfoData->update([
                     'user_id' => $userData->id,
@@ -109,7 +108,7 @@ class Update
                 return self::$userShow::execute($userData->slug);
             }
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(),[], 500, 'server_error');
         }
     }
 }
