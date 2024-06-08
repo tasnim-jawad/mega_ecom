@@ -23,7 +23,6 @@ class Import
                 if ($isEmailExist) {
                     $existEmail[] = $row;
                 } else {
-
                     $userData = self::$model::create([
                         "name" => $row['name'],
                         "user_name" => $row['user_name'],
@@ -40,8 +39,9 @@ class Import
                         "address" => $row['address'],
                         "country_id" => $row['country'] ?? null,
                         "state_division_id" => $row['state'] ?? null,
+                        'division_id' => $row['division_id'] ?? null,
                         "district_id" => $row['district'] ?? null,
-                        "thana_id" => $row['thana'] ?? null,
+                        "station_id" => $row['station'] ?? null,
                         "city_id" => $row['city'] ?? null,
                         "zip_code" => $row['zip_code'] ?? null,
                         "is_present_address" => $row['is_present_address'] == "yes" ? 1 : 0,

@@ -85,6 +85,8 @@ class Seeder extends SeederClass
                 'is_billing' => 0,
                 'address_types' => "delivery",
                 'address' => facker()->address,
+
+
                 'country_id' => 216,
                 'state_division_id' => 3,
                 'division_id' => 3,
@@ -94,6 +96,7 @@ class Seeder extends SeederClass
                 'zip_code' => 1213,
                 'is_present_address' => 1,
                 'is_permanent_address' => 0,
+
             ]);
 
             self::$userCustomerInformation::create([

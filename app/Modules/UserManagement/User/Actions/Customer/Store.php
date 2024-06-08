@@ -51,7 +51,7 @@ class Store
                             'state_division_id' => $address->state_division_id,
                             'division_id' => $address->division_id,
                             'district_id' => $address->district_id,
-                            'thana_id' => $address->thana_id,
+                            'station_id' => $address->station_id,
                             'city_id' => $address->city_id,
                             'zip_code' => $address->zip_code,
                             'is_present_address' => $address->is_present_address,
@@ -84,7 +84,7 @@ class Store
                 return self::$userShow::execute($userData->slug);
             }
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(),[], 500, 'server_error');
         }
     }
 }

@@ -13,8 +13,6 @@ class Import
                  self::$model::create([
                     "title" => $row['title'],
 
-                    "percentage" => $row['percentage'],
-
                 ]);
             }
             return messageResponse('Item Successfully updated', [], 200, 'success');
