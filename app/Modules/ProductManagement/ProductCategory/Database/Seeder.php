@@ -17,7 +17,6 @@ class Seeder extends SeederClass
         self::$model::truncate();
         /**
 
-]
          */
 
         $data =
