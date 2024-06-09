@@ -11,9 +11,6 @@ class Import
     static $roleModel = \App\Modules\UserManagement\UserRole\Models\Model::class;
     static $userAddress = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
     static $userAddressContactPerson = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
-    static $userCustomerInformation = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
-    static $userSupplierInformation = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
-    static $userEmployeeInformation = \App\Modules\UserManagement\User\Models\UserEmployeeInformationModel::class;
     public static function execute()
     {
         try {

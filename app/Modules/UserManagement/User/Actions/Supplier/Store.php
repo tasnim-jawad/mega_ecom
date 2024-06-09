@@ -8,7 +8,7 @@ class Store
     static $userAddress = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
     static $userAddressContactPerson = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
     static $userSupplierInfoModel = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
-    static $userShow = \App\Modules\UserManagement\User\Actions\Customer\Show::class;
+    static $userShow = \App\Modules\UserManagement\User\Actions\Supplier\Show::class;
     public static function execute($request)
     {
         try {

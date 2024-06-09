@@ -10,7 +10,7 @@ class Update
     static $userAddressModel = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
     static $userSupplierInfoModel = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
 
-    static $userShow = \App\Modules\UserManagement\User\Actions\Customer\Show::class;
+    static $userShow = \App\Modules\UserManagement\User\Actions\Supplier\Show::class;
     static $userAddressContactPersonModel = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
 
     public static function execute($request, $id)
@@ -36,14 +36,16 @@ class Update
 
             //store data
             if ($userData->update($requestData)) {
-                $userCustomerInfoData = self::$userSupplierInfoModel::where('user_id', $id)->first();
-                $userCustomerInfoData->update([
-                    'user_id' => $userData->id,
-                    'supplier_type_id' => $request->supplier_type_id,
-                    'supplier_id' => $request->supplier_id,
-                    'alt_email' => $request->alt_email,
-                    'alt_mobile_number' => $request->alt_mobile_number,
-                ]);
+                $userSupplierInfoData = self::$userSupplierInfoModel::where('user_id', $id)->first();
+                if($userSupplierInfoData){
+                    $userSupplierInfoData->update([
+                        'user_id' => $userData->id,
+                        'supplier_type_id' => $request->supplier_type_id,
+                        'supplier_id' => $request->supplier_id,
+                        'alt_email' => $request->alt_email,
+                        'alt_mobile_number' => $request->alt_mobile_number,
+                    ]);
+                }
                 if ($request->has('userAddress')) {
                     $existingAddressIds = $userData->user_address()->pluck('id')->toArray();
                     $newAddressIds = [];
