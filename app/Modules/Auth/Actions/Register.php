@@ -23,7 +23,7 @@ class Register
             $data['user'] = $user;
             return messageResponse('Successfully Registered', $data, 200, 'success');
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(), [],500, 'server_error');
         }
     }
 }

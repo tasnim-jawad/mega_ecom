@@ -35,7 +35,7 @@ class BulkActions
                 }
             }
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(), [],500, 'server_error');
         }
     }
 }

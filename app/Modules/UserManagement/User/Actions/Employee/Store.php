@@ -17,7 +17,7 @@ class Store
             $requestData = $request->validated();
             $requestData['role_id'] = 9;
             unset($requestData['confirmed']);
-            
+
 
 
             //store data
@@ -80,7 +80,7 @@ class Store
                 return messageResponse('Item added successfully', $userData, 201);
             }
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(), [],500, 'server_error');
         }
     }
 }

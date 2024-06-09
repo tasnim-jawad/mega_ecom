@@ -34,7 +34,7 @@ class All
             if (request()->has('get_all') && (int)request()->input('get_all') === 1) {
                 $data = $data
                     ->with($with)
-                    ->where('role_id', 9)
+                    ->where('role_id', 3)
                     ->where('status', $status)
                     ->limit($pageLimit)
                     ->orderBy($orderByColumn, $orderByType)
@@ -42,7 +42,7 @@ class All
             } else {
                 $data = $data
                     ->with($with)
-                    ->where('role_id', 9)
+                    ->where('role_id', 3)
                     ->where('status', $status)
                     ->orderBy($orderByColumn, $orderByType)
                     ->paginate($pageLimit);
@@ -52,7 +52,7 @@ class All
 
             return entityResponse($data);
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(), [],500, 'server_error');
         }
     }
 }
