@@ -89,7 +89,7 @@ class Update
             }
             return messageResponse('Item updated successfully');
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(), [], 500, 'server_error');
         }
     }
 }

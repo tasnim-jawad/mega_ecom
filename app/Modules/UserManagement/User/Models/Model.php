@@ -16,8 +16,10 @@ class Model extends Authenticatable
     static $userPermissionModel = \App\Modules\UserManagement\UserPermission\Models\Model::class;
     static $userAddressModel = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
     static $userAddressContactPersonModel = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
-    static $userContactInformationModel = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
+    static $userCustomerInformationModel = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
     static $userSupplierInformationModel = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
+    static $userEmployeeInformationModel = \App\Modules\UserManagement\User\Models\UserEmployeeInformationModel::class;
+    static $userRetailerInformationModel = \App\Modules\UserManagement\User\Models\UserRetailerInformationModel::class;
 
     protected $table = "users";
     protected $guarded = [];
@@ -77,12 +79,20 @@ class Model extends Authenticatable
     {
         return $this->hasMany(self::$userAddressContactPersonModel, 'user_id', 'id');
     }
-    public function user_contact_information()
+    public function user_customer_information()
     {
-        return $this->hasMany(self::$userContactInformationModel, 'user_id', 'id');
+        return $this->hasMany(self::$userCustomerInformationModel, 'user_id', 'id');
     }
     public function user_supplier_information()
     {
         return $this->hasMany(self::$userSupplierInformationModel, 'user_id', 'id');
+    }
+    public function user_employee_information()
+    {
+        return $this->hasMany(self::$userEmployeeInformationModel, 'user_id', 'id');
+    }
+    public function user_retailer_information()
+    {
+        return $this->hasMany(self::$userRetailerInformationModel, 'user_id', 'id');
     }
 }

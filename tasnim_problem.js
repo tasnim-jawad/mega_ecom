@@ -25,4 +25,8 @@
     
     17/ customers/bulk-actions theka jekono user activ,inactive or delete kora jache.
 
+    18/ employee/import -e import holeo success na holeo success message dicche .
+    19/ userManagement -e user_address_contact_person update na hoye notun kore add hocche . jotobar update dewa hocche totobar notun kore add hocche.
+
+
 */

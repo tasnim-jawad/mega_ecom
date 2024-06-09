@@ -7,13 +7,10 @@ use Illuminate\Support\Facades\Hash;
 class Import
 {
     static $model = \App\Modules\UserManagement\User\Models\Model::class;
-    static $userCustomerInfoModel = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
+    static $userSupplierInfoModel = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
     static $roleModel = \App\Modules\UserManagement\UserRole\Models\Model::class;
     static $userAddress = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
     static $userAddressContactPerson = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
-    static $userCustomerInformation = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
-    static $userSupplierInformation = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
-    static $userEmployeeInformation = \App\Modules\UserManagement\User\Models\UserEmployeeInformationModel::class;
     public static function execute()
     {
         try {
@@ -48,18 +45,19 @@ class Import
                         "is_permanent_address" => $row['is_permanent_address'] == "yes" ? 1 : 0,
                     ]);
 
-                    self::$userCustomerInfoModel::create([
+                    self::$userSupplierInfoModel::create([
                         'user_id' => $userData->id,
-                        'customer_type_id' => $row['customer_type_id'] ?? null,
-                        'website' => $row['website'] ?? null,
-                        'client_id' => $row['client_id'] ?? null,
+                        'supplier_type_id' => $row['supplier_type_id'] ?? null,
+                        'supplier_id' => $row['supplier_id'] ?? null,
+                        'alt_email' => $row['alt_email'] ?? null,
+                        'alt_mobile_number' => $row['alt_mobile_number'] ?? null,
                     ]);
                 }
             }
 
             return messageResponse('Items imported successfully');
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(), [],500, 'server_error');
         }
     }
 }

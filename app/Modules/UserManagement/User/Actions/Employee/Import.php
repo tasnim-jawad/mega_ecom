@@ -7,13 +7,10 @@ use Illuminate\Support\Facades\Hash;
 class Import
 {
     static $model = \App\Modules\UserManagement\User\Models\Model::class;
-    static $userCustomerInfoModel = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
+    static $userEmployeeInfoModel = \App\Modules\UserManagement\User\Models\UserEmployeeInformationModel::class;
     static $roleModel = \App\Modules\UserManagement\UserRole\Models\Model::class;
     static $userAddress = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
     static $userAddressContactPerson = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
-    static $userCustomerInformation = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
-    static $userSupplierInformation = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
-    static $userEmployeeInformation = \App\Modules\UserManagement\User\Models\UserEmployeeInformationModel::class;
     public static function execute()
     {
         try {
@@ -29,7 +26,7 @@ class Import
                         "user_name" => $row['user_name'],
                         "email" => $row['email'],
                         "password" => Hash::make($row['password']),
-                        "role_id" =>   3,
+                        "role_id" =>   9,
                     ]);
 
                     self::$userAddress::create([
@@ -49,11 +46,12 @@ class Import
                         "is_permanent_address" => $row['is_permanent_address'] == "yes" ? 1 : 0,
                     ]);
 
-                    self::$userCustomerInfoModel::create([
+                    self::$userEmployeeInfoModel::create([
                         'user_id' => $userData->id,
-                        'customer_type_id' => $row['customer_type_id'] ?? null,
-                        'website' => $row['website'] ?? null,
-                        'client_id' => $row['client_id'] ?? null,
+                        'gender' => $row['gender'] ?? null,
+                        'nick_name' => $row['nick_name'] ?? null,
+                        'employee_code' => $row['employee_code'] ?? null,
+                        'date_of_birth' => $row['date_of_birth'] ?? null,
                     ]);
                 }
             }
