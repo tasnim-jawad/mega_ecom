@@ -1,4 +1,7 @@
 <template>
+    <Head>
+        <title>product details</title>
+    </Head>
     <Layout>
         <section class="section-big-pt-space b-g-light">
             <div class="collection-wrapper">
@@ -14,163 +17,10 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-5">
-                                <div class="product-slick slick-initialized slick-slider">
-                                    <button class="slick-prev slick-arrow" aria-label="Previous" type="button"
-                                        style="display: block;">Previous</button>
-                                    <div class="slick-list draggable">
-                                        <div class="slick-track" style="opacity: 1; width: 1504px;">
-                                            <div class="slick-slide" data-slick-index="0" aria-hidden="true"
-                                                tabindex="-1"
-                                                style="width: 376px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
-                                                <div>
-                                                    <div style="width: 100%; display: inline-block;"><img
-                                                            src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/001.jpg"
-                                                            alt="" class="img-fluid image_zoom_cls-0" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="slick-slide" data-slick-index="1" aria-hidden="true"
-                                                tabindex="-1"
-                                                style="width: 376px; position: relative; left: -376px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
-                                                <div>
-                                                    <div style="width: 100%; display: inline-block;"><img
-                                                            src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/002.jpg"
-                                                            alt="" class="img-fluid image_zoom_cls-1" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="slick-slide" data-slick-index="2" aria-hidden="true"
-                                                tabindex="-1"
-                                                style="width: 376px; position: relative; left: -752px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
-                                                <div>
-                                                    <div style="width: 100%; display: inline-block;"><img
-                                                            src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/003.jpg"
-                                                            alt="" class="img-fluid image_zoom_cls-2" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="slick-slide slick-current slick-active" data-slick-index="3"
-                                                aria-hidden="false"
-                                                style="width: 376px; position: relative; left: -1128px; top: 0px; z-index: 999; opacity: 1;">
-                                                <div>
-                                                    <div style="width: 100%; display: inline-block;"><img
-                                                            src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/004.jpg"
-                                                            alt="" class="img-fluid image_zoom_cls-3" /></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="slick-next slick-arrow" aria-label="Next" type="button"
-                                        style="display: block;">Next</button>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0">
-                                        <div class="slider-nav slick-initialized slick-slider">
-                                            <div class="slick-list draggable">
-                                                <div class="slick-track"
-                                                    style="opacity: 1; width: 1474px; transform: translate3d(-804px, 0px, 0px);">
-                                                    <div class="slick-slide slick-cloned" data-slick-index="-3"
-                                                        aria-hidden="true" tabindex="-1" style="width: 134px;">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/002.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slick-slide slick-cloned" data-slick-index="-2"
-                                                        aria-hidden="true" tabindex="-1" style="width: 134px;">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/003.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slick-slide slick-cloned" data-slick-index="-1"
-                                                        aria-hidden="true" tabindex="-1" style="width: 134px;">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/004.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slick-slide" data-slick-index="0" aria-hidden="true"
-                                                        style="width: 134px;" tabindex="-1">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/001.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slick-slide" data-slick-index="1" aria-hidden="true"
-                                                        style="width: 134px;" tabindex="-1">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/002.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slick-slide" data-slick-index="2" aria-hidden="true"
-                                                        style="width: 134px;" tabindex="-1">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/003.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slick-slide slick-current slick-active"
-                                                        data-slick-index="3" aria-hidden="false" style="width: 134px;">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/004.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slick-slide slick-cloned slick-active"
-                                                        data-slick-index="4" aria-hidden="false" tabindex="-1"
-                                                        style="width: 134px;">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/001.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slick-slide slick-cloned slick-active"
-                                                        data-slick-index="5" aria-hidden="false" tabindex="-1"
-                                                        style="width: 134px;">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/002.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slick-slide slick-cloned" data-slick-index="6"
-                                                        aria-hidden="true" tabindex="-1" style="width: 134px;">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/003.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="slick-slide slick-cloned" data-slick-index="7"
-                                                        aria-hidden="true" tabindex="-1" style="width: 134px;">
-                                                        <div>
-                                                            <div style="width: 100%; display: inline-block;">
-                                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/004.jpg"
-                                                                    alt="" class="img-fluid" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div>
+                                    <img
+                                        src="https://themes.pixelstrap.com/bigdeal/assets/images/product-sidebar/001.jpg"
+                                        alt="" class="img-fluid image_zoom_cls-0" />
                                 </div>
                             </div>
                             <div class="col-lg-7">
@@ -636,7 +486,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="section-big-py-space  ratio_asos b-g-light">
             <div class="custom-container">

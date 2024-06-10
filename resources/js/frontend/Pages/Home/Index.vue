@@ -1,6 +1,8 @@
 <template>
     <Layout>
-
+        <Head>
+            <title>home page</title>
+        </Head>
         <HeroSlider />
 
         <BreakingNews />
@@ -16,9 +18,8 @@
         <JoinNewsLetter />
 
         <BottomDescription />
-
-
     </Layout>
+
 </template>
 <script>
 import Layout from "../../Shared/Layout.vue";
