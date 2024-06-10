@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\UserManagement\User\Validations;
+namespace App\Modules\UserManagement\UserRetailerType\Validations;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
@@ -42,18 +42,7 @@ class Validation extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required | sometimes',
-            'user_name' => 'required | sometimes',
-            'role_serial' => 'sometimes',
-            'email' => 'required|unique:users,email,' . $this->id,
-            'phone_number' => 'required | sometimes',
-            'photo' => 'sometimes',
-            'password' => 'required | sometimes',
-            'confirmed' => 'sometimes|required|same:password',
-            'role_id' => 'sometimes',
-            'is_blocked' => 'sometimes',
-            'no_of_attempt' => 'sometimes',
-
+            'title' => 'required | sometimes',
             'status' => ['sometimes', Rule::in(['active', 'inactive'])],
         ];
     }

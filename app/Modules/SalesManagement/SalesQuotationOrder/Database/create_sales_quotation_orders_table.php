@@ -27,7 +27,7 @@ return new class extends Migration
             $table->tinyInteger('is_delivered')->nullable();
             $table->tinyInteger('is_paid')->nullable();
             $table->enum('order_type', ['quotation','ordered','invoiced'])->nullable();
-            $table->enum('order_status', [''])->nullable();
+            $table->enum('order_status', ['pending', 'accepted', 'processing', 'on_the_way',  'delivered',  'cancelled', 'refunded'])->nullable();
             $table->float('total')->nullable();
             $table->float('subtotal')->nullable();
             $table->float('paid_amount')->nullable();
