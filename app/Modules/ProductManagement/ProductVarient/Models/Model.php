@@ -7,6 +7,8 @@ use Illuminate\Support\Str;
 
 class Model extends EloquentModel
 {
+    static $ProductVerientGroupModel = \App\Modules\ProductManagement\ProductVarientGroup\Models\Model::class;
+
     protected $table = "product_varients";
     protected $guarded = [];
 
@@ -29,5 +31,10 @@ class Model extends EloquentModel
     public function scopeActive($q)
     {
         return $q->where('status', 'active');
+    }
+
+    public function product_varient_group()
+    {
+        return $this->belongsTo(self::$ProductVerientGroupModel, 'product_varient_group_id');
     }
 }
