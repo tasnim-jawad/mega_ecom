@@ -17,6 +17,7 @@ return new class extends Migration
             $table->bigInteger('product_varient_group_id')->nullable();
             $table->string('title')->nullable();
             $table->tinyInteger('is_required')->nullable();
+            $table->enum('varient_type', ['text', 'color', 'checkbox', 'radio', 'input'])->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();

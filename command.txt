@@ -1,6 +1,7 @@
 ---user management -----
 ---user management -----
 
+
 php artisan make:module UserManagement/User [name:string-50,user_name:string-50,role_serial:tinyint,email:string-50,phone_number:string-20,photo:string-100,password:string-100,role_id:bigint,is_blocked:tinyint,no_of_attempt:int]
     user_addresses: user_id,is_shipping,is_billing,address_types (enum: office, pick up point, store),address,country_id,state_division_id,district_id,station_id,city_id,zip_code,is_present_address,is_permanent_address
     user_address_contact_persons: user_id,user_address_id,full_name,phone_number,email
@@ -64,6 +65,49 @@ php artisan make:module StockManagement/ProductWearHouseBranch [title:string-150
 ---Vat Management-----
 php artisan make:module VatManagement/Vat [title:string,percentage:float]
 php artisan make:module VatManagement/VatGroup [title:string]
+
+=======
+users: name,user_name,role_serial (default | customer),email,phone_number,photo
+user_addresses: user_id,is_shipping,is_billing,address_types (enum: office, pick up point, store),address,country_id,state_division_id,district_id,station_id,city_id,zip_code,is_present_address,is_permanent_address
+user_address_contact_persons: user_id,user_address_id,full_name,phone_number,email
+user_customer_informations: customer_type_id,website,client_id,user_id
+user_customer_types: title
+user_supplier_informations: supplier_type_id,email,mobile_number,supplier_id,user_id
+user_supplier_types: title
+user_retailer_informations: user_retailer_type_id,email,mobile_number,retailer_id,user_id
+user_retailer_types: title
+user_employee_informations: gender,nick_name,gender (enum: male, female, other),date_of_birth,user_id,employee_code
+
+
+
+---product management -----
+---product management -----
+php artisan make:module ProductManagement/ProductCategoryGroup [title:string]
+php artisan make:module ProductManagement/ProductCategory [title:string,parent_id:intiger,serial:intiger,image:string]
+php artisan make:module ProductManagement/ProductMenufacturer [title:string,serial:intiger,image:string]
+php artisan make:module ProductManagement/ProductBrand [title:string,serial:intiger,image:string]
+php artisan make:module ProductManagement/Product [title:string,type:enum,short_description:text,description:intiger,menufecturer_id:intiger,brand_id:intiger,sku:intiger,unit:intiger,alert_quantity:intiger,saller_points:string,is_returnable:tinyint,expiration_days:datetime,purchase_price,purchase_account:string,discount_type:enum,discount_amount:intiger,tax_id:initiger,tax_type:enum,vat_on_sale:intiger,vat_on_purchase:intiger]
+
+php artisan make:module ProductManagement/ProductCategoryWiseAdvertise [category_id:bigint,title:strign-100,is_promition:tinyint,image:strign-100,start_date:dat
+etime,end_data:datetime]
+
+---sales orders management-----
+php artisan make:module SalesManagement/SalesOrder [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_paid:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,source:enum-pos.ecommerce.retail_order]
+php artisan make:module SalesManagement/SalesReturn [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_paid:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,source:enum-pos.ecommerce.retail_order]
+php artisan make:module SalesManagement/SalesReturn [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_paid:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,source:enum-pos.ecommerce.retail_order]
+
+
+php artisan make:module SalesManagement/SalesQuotationOrder [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_paid:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,source:enum-pos.ecommerce.retail_order]
+
+php artisan make:module SalesManagement/SalesQuotationOrderDetails [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_paid:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,source:enum-pos.ecommerce.retail_order]
+
+php artisan make:module SalesManagement/SalesInvoice [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_paid:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,source:enum-pos.ecommerce.retail_order]
+
+php artisan make:module SalesManagement/SalesInvoiceDetails [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_paid:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,source:enum-pos.ecommerce.retail_order]
+
+php artisan make:module SalesManagement/SalesEcommerceOrder [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_paid:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,source:enum-pos.ecommerce.retail_order]
+
+php artisan make:module SalesManagement/SalesEcommerceOrderDetails [product_wearhouse_id:intiger,customer_id:intiger,product_id:initiger,date:date,order_id:string,discount_on_all:float,discount_on_all_type:enum-fixed.percentage,is_quotation:tinyint,is_order:tinyint,is_invoiced:tinyint,is_delivered:tinyint,is_paid:tinyint,order_type:enum-quotation.ordered.invoiced,order_status:enum,total:float,subtotal:float,paid_amount:float,source:enum-pos.ecommerce.retail_order]
 
 
 ---- hrm management-----

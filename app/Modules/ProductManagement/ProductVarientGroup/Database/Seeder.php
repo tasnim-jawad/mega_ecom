@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Modules\ProductManagement\ProductVarientGroup\Database;
 
 use Illuminate\Database\Seeder as SeederClass;
@@ -14,9 +15,16 @@ class Seeder extends SeederClass
     {
 
         self::$model::truncate();
-        for ($i = 1; $i < 100; $i++) {
-        self::$model::create([
-            'title' => facker()->name,
+        $data = [
+            "apparel",
+            "electronics",
+            "kitchen",
+            "grocery",
+        ];
+
+        foreach ($data as $item) {
+            self::$model::create([
+                'title' => $item,
             ]);
         }
     }

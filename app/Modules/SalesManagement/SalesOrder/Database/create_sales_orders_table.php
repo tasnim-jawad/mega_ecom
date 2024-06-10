@@ -31,7 +31,7 @@ return new class extends Migration
             $table->float('total')->nullable();
             $table->float('subtotal')->nullable();
             $table->float('paid_amount')->nullable();
-            $table->enum('souce', ['pos', 'ecommerce', 'retail_order'])->nullable();
+            $table->enum('source', ['pos', 'ecommerce', 'retail_order'])->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();
