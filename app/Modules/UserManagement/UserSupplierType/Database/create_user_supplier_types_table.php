@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('user_supplier_types', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
+            $table->string('title',50)->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();

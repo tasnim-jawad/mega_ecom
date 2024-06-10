@@ -6,3 +6,9 @@
         Station [country_id:bigint,district_id:bigint,name:string,post_office:string,post_code:string]
  */
 
+    // php artisan make:module StockManagement/ProductWearHouse 
+    // [title:string-150,image:string-100,product_wearhouse_branch_id:bigint]
+    // stock_type:enum-purchase.initial.sales.return.waste,
+/*
+
+*/

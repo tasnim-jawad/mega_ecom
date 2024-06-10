@@ -7,14 +7,14 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     php artisan migrate --path='\App\Modules\UserManagement\UserCustomerType\Database\create_user_customer_types_table.php'
+     php artisan migrate --path='\App\Modules\UserManagement\UserRetailerType\Database\create_user_retailer_types_table.php'
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('user_customer_types', function (Blueprint $table) {
+        Schema::create('user_retailer_types', function (Blueprint $table) {
             $table->id();
-            $table->string('title',50)->nullable();
+            $table->string('title', 50)->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_customer_types');
+        Schema::dropIfExists('user_retailer_types');
     }
 };
