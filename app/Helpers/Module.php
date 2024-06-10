@@ -127,7 +127,7 @@ if (!function_exists('bulkActions')) {
                         }
                     }
 
-                    return messageResponse("Items are Successfully " . request()->input('action'),[], 200, 'success');
+
                 } catch (\Exception \$e) {
                     return messageResponse(\$e->getMessage(),[], 500, 'server_error');
                 }
@@ -927,6 +927,8 @@ if (!function_exists('migration')) {
                         $type = 'tinyInteger';
                     } elseif ($type == 'date') {
                         $type = 'date';
+                    } elseif ($type == 'datetime') {
+                        $type = 'datetime';
                     } elseif ($type == 'enum') {
                         $type = 'enum';
                     } elseif ($type == 'float') {
@@ -940,6 +942,8 @@ if (!function_exists('migration')) {
                         $content .= "            \$table->{$type}('{$fieldName[0]}', ['{$enumString}'])->nullable();\n";
                     } else if ($type == 'string') {
                         $content .= "            \$table->string('{$fieldName[0]}', {$stringLimit})->nullable();\n";
+                    } else if ($type == 'tinyInteger') {
+                        $content .= "            \$table->tinyInteger('{$fieldName[0]}')->default(0);\n";
                     } else {
                         $content .= "            \$table->{$type}('{$fieldName[0]}')->nullable();\n";
                     }

@@ -21,6 +21,10 @@ class Store
 
                 $product->product_images()->attach($product_images);
 
+                StoreProductCategoryBrand($request->varients, $product_categories, $product);
+                StoreProductCategoryVarients($request->varients, $product_categories, $product);
+
+
                 return messageResponse('Item added successfully', $product, 201);
             }
         } catch (\Exception $e) {

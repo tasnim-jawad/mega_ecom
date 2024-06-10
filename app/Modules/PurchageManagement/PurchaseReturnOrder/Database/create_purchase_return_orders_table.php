@@ -20,7 +20,7 @@ return new class extends Migration
             $table->date('date')->nullable();
             $table->string('reference')->nullable();
             $table->Integer('discount_on_all')->nullable();
-            $table->enum('discount_on_all_type',['value1','value2'])->nullable();
+            $table->enum('discount_on_all_type',['percentage','fixed'])->nullable();
             $table->bigInteger('subtotal')->nullable();
             $table->bigInteger('total')->nullable();
 

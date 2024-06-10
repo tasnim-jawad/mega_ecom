@@ -27,13 +27,13 @@ class Seeder extends SeederClass
             'is_order' => facker()->name,
             'is_invoiced' => facker()->name,
             'is_delivered' => facker()->name,
-            'is_pais' => facker()->name,
+            'is_paid' => facker()->name,
             'order_type' => facker()->name,
             'order_status' => facker()->name,
             'total' => facker()->name,
             'subtotal' => facker()->name,
             'paid_amount' => facker()->name,
-            'souce' => facker()->name,
+            'source' => facker()->name,
             ]);
         }
     }

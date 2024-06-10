@@ -33,7 +33,7 @@ class Import
 
                     "is_delivered" => $row['is_delivered'],
 
-                    "is_pais" => $row['is_pais'],
+                    "is_paid" => $row['is_paid'],
 
                     "order_type" => $row['order_type'],
 
@@ -45,7 +45,7 @@ class Import
 
                     "paid_amount" => $row['paid_amount'],
 
-                    "souce" => $row['souce'],
+                    "source" => $row['source'],
 
                 ]);
             }

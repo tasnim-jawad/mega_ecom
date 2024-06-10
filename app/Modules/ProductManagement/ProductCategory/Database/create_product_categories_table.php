@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->bigInteger('parent_id')->nullable();
             $table->bigInteger('product_category_group_id')->nullable();
+            $table->tinyInteger('is_nav')->default(0);
+            $table->tinyInteger('is_featured')->default(0);
             $table->Integer('serial')->nullable();
             $table->string('image',100)->nullable();
 
