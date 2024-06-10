@@ -76,6 +76,7 @@ function StoreProductCategoryBrand($varients = [], $product_categories = [], $pr
 
 
 // product_category_brand(table) -> category_id ,brand_id,total_product : 1 , 5 , 20 (commonfn n api) totsproduct insert
+// product_category_brand(table) -> category_id ,brand_id,total_product : 1 , 5 , 20 (commonfn n api) totsproduct insert
 
 // product_category_varient->(table) category_id,varient_group_id,verient_id,varient_value_id,total_product
 
