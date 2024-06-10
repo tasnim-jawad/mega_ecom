@@ -5,14 +5,13 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
-|
-*/
 
+Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers'], function () {
+    Route::get('/nav-categories', 'Api\CategoryController@featured');
+    Route::get('/brands', 'Api\CategoryController@brands');
+    Route::get('/varients', 'Api\CategoryController@varients');
+
+    Route::get('/category/{slug}', 'Api\CategoryController@category');
+
+    Route::get('/featured-products', 'Api\ProductController@featured_products');
+});

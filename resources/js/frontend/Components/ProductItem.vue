@@ -3,8 +3,8 @@
         <div class="product-box">
             <div class="product-imgbox">
                 <div class="product-front">
-                    <Link :href="`/product-details/${product.name.replaceAll(' ','-')}`">
-                        <img :src="product.image" class="img-fluid" alt="product">
+                    <Link :href="`/product-details/${product.slug}`">
+                        <img :src="`/${product.product_image.url}`" class="img-fluid" alt="product">
                     </Link>
                     <a onclick="openCart()" class="buy_now_btn">
                         <i class="icon-shopping-cart icon"></i>
@@ -53,9 +53,9 @@
             <div class="product-detail">
                 <div class="detail-title">
                     <div class="detail-left">
-                        <Link :href="`/product-details/${product.name.replaceAll(' ','-')}`">
+                        <Link :href="`/product-details/${product.slug}`">
                             <h6 class="price-title">
-                                {{ product.name }}
+                                {{ product.title }}
                             </h6>
                         </Link>
                     </div>

@@ -1,71 +1,58 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>
-        ETEK
-    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    @inertiaHead
+    {{-- <title>
+        {{ isset($page['props']['event']['title']) ? 'ETEK | ' . $page['props']['event']['title'] : 'ETEK' }}
+    </title> --}}
+    @if (isset($page['props']['event']))
+        <meta name="twitter:card" content="{{ isset($page['props']['event']['card']) ? $page['props']['event']['card'] : 'summary' }}" />
+        <meta name="twitter:site" content="@sitename" />
+        <meta property="og:title" content="{{ isset($page['props']['event']['title']) ? 'My Website | ' . $page['props']['event']['title'] : 'My Website | Page' }}" />
+        <meta property="og:description" content="{{ isset($page['props']['event']['description']) ? $page['props']['event']['description'] : '' }}" />
+        <meta property="og:image" content="{{ isset($page['props']['event']['image']) ? $page['props']['event']['image'] : 'https://shefat.info/assets/website/assets/img/logo.png' }}" />
+    @endif
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="big-deal">
-    <meta name="keywords" content="big-deal">
-    <meta name="author" content="big-deal">
-    <link rel="shortcut icon" href="/frontend/images/etek_favicon.png"
-        type="image/x-icon">
-    <!--Google font-->
-    <link href="{{ asset('frontend') }}/assets/css/css" rel="stylesheet">
-    <link href="{{ asset('frontend') }}/assets/css/css(1)" rel="stylesheet">
-    <!--icon css-->
-    {{--
-    <link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/assets/css/font-awesome.css"> --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/assets/css/themify.css">
-    <!--Slick slider css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('frontend') }}/assets/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('frontend') }}/assets/css/slick-theme.css">
-    <!--Animate css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('frontend') }}/assets/css/animate.css">
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('frontend') }}/assets/css/bootstrap.css">
-    <!-- Theme css -->
-    <link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/assets/css/color4.css" media="screen" id="color">
-    {{-- <link rel="stylesheet" href="https://themes.pixelstrap.com/bigdeal/assets/css/color1.css"> --}}
+    <meta name="description" content="etek">
+    <meta name="keywords" content="etek enterprise">
+    <meta name="author" content="etek">
+    <link rel="shortcut icon" href="/frontend/images/etek_favicon.png" type="image/x-icon">
 
-    <!-- latest jquery-->
+    <meta property="og:title" content="ETEK Enterprise" />
+    <meta property="og:site_name" content="ETEK Enterprise" />
+    <meta property="og:description" content="A perfect It solution for building your dream pc. Let&#039;s Make Your Best Pc with us." />
+    <meta property="og:type" content="Ecommerce" />
+    <meta property="og:url" content="https://etek.com.bd" />
+    <meta property="og:image" content="https://etek.com.bd/frontend/images/etek_logo.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+
+    <meta name="twitter:title" content="ETEK Enterprise">
+    <meta name="twitter:description" content="A perfect It solution for building your dream pc. Let&#039;s Make Your Best Pc with us.">
+    <meta name="twitter:image" content="https://etek.com.bd/frontend/images/etek_logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/website.css">
     <script src="{{ asset('frontend') }}/assets/js/jquery-3.3.1.min.js.download"></script>
-    <!-- slick js-->
-    <script src="{{ asset('frontend') }}/assets/js/slick.js"></script>
-    <!-- tool tip js -->
-    <script src="{{ asset('frontend') }}/assets/js/tippy-popper.min.js.download"></script>
-    <script src="{{ asset('frontend') }}/assets/js/tippy-bundle.iife.min.js.download"></script>
-    <!-- popper js-->
     <script src="{{ asset('frontend') }}/assets/js/popper.min.js.download"></script>
-    <!-- Height js-->
-    <script src="{{ asset('frontend') }}/assets/js/equal-height.js.download"></script>
-    <!-- Timer js-->
-    <script src="{{ asset('frontend') }}/assets/js/menu.js"></script>
-    <!-- father icon -->
-    <script src="{{ asset('frontend') }}/assets/js/feather.min.js.download"></script>
-    <script src="{{ asset('frontend') }}/assets/js/feather-icon.js.download"></script>
-    <!-- Bootstrap js-->
-    <script src="{{ asset('frontend') }}/assets/js/bootstrap-notify.min.js.download"></script>
-    <!-- Bootstrap js-->
     <script src="{{ asset('frontend') }}/assets/js/bootstrap.js.download"></script>
-    <!-- Theme js-->
-    {{-- <script src="{{asset("frontend")}}/assets/js/slider-animat-three.js.download"></script> --}}
-    <script src="{{ asset('frontend') }}/assets/js/script.js"></script>
-    {{-- <script src="{{asset("frontend")}}/assets/js/timer2.js.download"></script> --}}
-    <script src="{{ asset('frontend') }}/assets/js/modal.js.download"></script>
+    <script defer src="{{ asset('frontend') }}/assets/js/script.js"></script>
+    <script defer src="{{ asset('frontend') }}/assets/js/modal.js"></script>
+
     @vite(['resources/js/frontend/app.js'])
-    @inertiaHead
 
     <link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/custom.css"">
 </head>
 
 <body>
     @inertia
+    {{-- <h1>loaded</h1> --}}
 </body>
 
 </html>
