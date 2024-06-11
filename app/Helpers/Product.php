@@ -1,4 +1,5 @@
 <?php
+
 use Carbon\Carbon;
 
 
@@ -7,10 +8,11 @@ use Carbon\Carbon;
   StoreProductCategoryVarients($varientd = [], $product_categories = [], $product)
  */
 
-function StoreProductCategoryVarients($varients = [], $product_categories = [], $product)
+function StoreProductCategoryVarients($varients = [], $product_categories = [])
 {
     $ProductModel = \App\Modules\ProductManagement\Product\Models\Model::class;
     $productCategoryVarientModel = \App\Modules\ProductManagement\Product\Models\ProductCategoryVarientModel::class;
+
 
 
     foreach ($product_categories as $catId) {
@@ -20,9 +22,8 @@ function StoreProductCategoryVarients($varients = [], $product_categories = [], 
             $totalProduct = $ProductModel::whereHas('product_categories', function ($q) use ($catId) {
                 $q->where('id', $catId);
             })
-                ->whereHas('product_verient_price', function ($q) use ($product, $item) {
-                    $q->where('product_id', $product->id)
-                        ->where('verient_value_id', $item['verient_value_id']);
+                ->whereHas('product_verient_price', function ($q) use ($item) {
+                    $q->where('verient_value_id', $item['verient_value_id']);
                 })
                 ->count();
 
@@ -40,33 +41,30 @@ function StoreProductCategoryVarients($varients = [], $product_categories = [], 
 
 /**
  * ```js
-  StoreProductCategoryVarients($varientd = [], $product_categories = [], $product)
+  StoreProductCategoryVarients( $product_categories = [], $brand_id = null,$product)
  */
 
-function StoreProductCategoryBrand($varients = [], $product_categories = [], $product)
+function StoreProductCategoryBrand($product_categories = [], $brand_id = null)
 {
     $ProductModel = \App\Modules\ProductManagement\Product\Models\Model::class;
-    $productCategoryVarientModel = \App\Modules\ProductManagement\Product\Models\ProductCategoryVarientModel::class;
+    $productCategoryBrandModel = \App\Modules\ProductManagement\Product\Models\ProductCategoryBrandModel::class;
 
 
     foreach ($product_categories as $catId) {
 
-        foreach ($varients as $item) {
 
-            $totalProduct = $ProductModel::whereHas('product_categories', function ($q) use ($catId) {
-                $q->where('id', $catId);
-            })
-                ->whereHas('product_verient_price', function ($q) use ($product, $item) {
-                    $q->where('product_id', $product->id)
-                        ->where('verient_value_id', $item['verient_value_id']);
-                })
-                ->count();
+        $totalProduct = $ProductModel::whereHas('product_categories', function ($q) use ($catId) {
+            $q->where('id', $catId);
+        })->where('brand_id', $brand_id)->count();
 
-            $productCategoryVarientModel::create([
-                "category_id" => $catId,
-                "verient_group_id" => $item['verient_group_id'],
-                "verient_id" => $item['verient_id'],
-                "verient_value_id" => $item['verient_value_id'],
+        $isExist = $productCategoryBrandModel::where('product_category_id', $catId)->where('product_brand_id', $brand_id)->first();
+        if ($isExist) {
+            $isExist->total_product = $totalProduct;
+            $isExist->save();
+        } else {
+            $productCategoryBrandModel::create([
+                "product_category_id" => $catId,
+                "product_brand_id" => $brand_id,
                 "total_product" => $totalProduct
             ]);
         }

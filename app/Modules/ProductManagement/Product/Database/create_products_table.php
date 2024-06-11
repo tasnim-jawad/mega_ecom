@@ -23,6 +23,7 @@ return new class extends Migration
             $table->tinyInteger('is_up_coming')->default(0);
             $table->tinyInteger('is_emi_support')->default(0);
 
+            $table->string('barcode', 100)->nullable();
 
             $table->enum('type', ['service', 'product'])->nullable();
             $table->string('title')->nullable();
@@ -42,7 +43,6 @@ return new class extends Migration
 
             $table->enum('price_type', ['single', 'variant'])->nullable();
 
-            $table->float('purchase_price')->nullable();
             // $table->string('purchase_account')->nullable();
 
             // $table->string('tax_id')->nullable();
@@ -52,11 +52,13 @@ return new class extends Migration
             // $table->integer('vat_on_sale')->nullable();
             // $table->integer('vat_on_purchase')->nullable();
 
+            $table->float('purchase_price')->nullable();
             $table->float('customer_sales_price')->nullable()->unsigned();
             $table->float('retailer_sales_price')->nullable()->unsigned();
             $table->float('minimum_sale_price')->nullable()->unsigned();
             $table->float('maximum_sale_price')->nullable()->unsigned();
-
+            $table->float('profit_margin_percent')->nullable();
+            
             $table->enum('discount_type', ['off', 'percent', 'flat'])->nullable();
             $table->float('discount_amount')->nullable();
 

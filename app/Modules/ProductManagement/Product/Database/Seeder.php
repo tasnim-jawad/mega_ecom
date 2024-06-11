@@ -434,16 +434,9 @@ class Seeder extends SeederClass
 
                 'tax_type' => ['inclusive', 'exclusive'][rand(0, 1)],
                 'tax_amount' => .5,
-                // 'tax_id' => facker()->name,
-                // 'vat_on_sale' => facker()->name,
-                // 'vat_on_purchase' => facker()->name,
+                'is_featured' => rand(0, 1),
+
             ]);
-
-
-            
-
-
-
 
 
             $product->product_categories()->attach([rand(1, 5), rand(6, 9)]);

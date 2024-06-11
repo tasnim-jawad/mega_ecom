@@ -16,27 +16,24 @@ return new class extends Migration
             $table->id();
 
             $table->integer('product_id')->nullable();
-            $table->integer('varient_group_id')->nullable();
-            $table->integer('varient_id')->nullable();
-            $table->integer('varient_value_id')->nullable();
+
+            $table->integer('product_varient_group_id')->nullable();
+            $table->integer('product_varient_varient_id')->nullable();
+            $table->integer('product_varient_value_id')->nullable();
+
             $table->string('varient_title', 150)->nullable();
             $table->string('sku', 50)->nullable();
             $table->string('hsn', 50)->nullable();
-            $table->string('barcode', 100)->nullable();
 
             $table->float('price')->nullable();
             $table->float('purchase_price')->nullable();
             $table->float('sales_price')->nullable();
-            $table->float('retail_sales_price')->nullable();
+            $table->float('retailer_sales_price')->nullable();
             $table->float('profit_margin_percent')->nullable();
 
             $table->float('mrp')->nullable();
             $table->integer('opening_stock')->nullable();
             $table->integer('wear_house_id')->nullable();
-
-            $table->integer('product_varient_group_id')->nullable();
-            $table->integer('product_varient_varient_id')->nullable();
-            $table->integer('product_varient_value_id')->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 150)->nullable();
