@@ -73,7 +73,7 @@
                     </div>
                     <div class="input-block">
                         <div class="input-box">
-                            <form class="big-deal-form ">
+                            <form class="hungry_coder-form ">
                                 <div class="input-group ">
                                     <div class="input-group-text">
                                         <span class="search"><i class="fa fa-search"></i></span>
@@ -198,11 +198,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="navbar-menu">
-
                             <div class="nav-block">
-
                                 <div class="nav-left">
-
                                     <nav class="navbar collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#navbarToggleExternalContent" aria-expanded="false">
                                         <button class="navbar-toggler" type="button">

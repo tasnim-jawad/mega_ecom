@@ -21,3 +21,4 @@ yarn-error.log
 /doc.js
 *.zip
 /**/*.zip
+public/backend/assets/css/fontawesome.css

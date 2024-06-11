@@ -132,8 +132,40 @@
         </div>
     </footer>
     <!-- footer end -->
+
     <!--Newsletter modal popup start-->
-    <div class="modal fade bd-example-modal-lg theme-modal" id="exampleModal" tabindex="-1" aria-hidden="true"
+    <div class="modal fade bd-example-modal-lg blackfriday-modal theme-modal " id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="rainbow">
+                    <span></span>
+                    <span></span>
+                    </div>
+                    <div class="offer-content ">
+                    <img src="/frontend/assets/images/black-friday.jpg" class="img-fluid bg-img" alt="">
+                    <div>
+                        <div>
+                            <h2><span>up to </span>80%</h2>
+                            <div class="lable">get  30% off + free shipping</div>
+                            <h3>black friday</h3>
+                            <div class="timer">
+                                <p id="demo4"><span>126<span class="timer-cal">Days</span></span><span>6<span class="timer-cal">Hrs</span></span><span>22<span class="timer-cal">Min</span></span><span>53<span class="timer-cal">Sec</span></span> </p>
+                            </div>
+                            <h4>Friday, 26 November 2021</h4>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Newsletter Modal popup end-->
+
+    <!--Newsletter modal popup start-->
+    <!-- <div class="modal fade bd-example-modal-lg theme-modal" id="exampleModal" tabindex="-1" aria-hidden="true"
         style="display: none;">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -148,8 +180,7 @@
                                         <h2>newsletter</h2>
                                         <p>Subscribe to our website mailling list <br> and get a Offer, Just for you!
                                         </p>
-                                        <form
-                                            action="https://pixelstrap.us19.list-manage.com/subscribe/post?u=5a128856334b598b395f1fc9b&amp;id=082f74cbda"
+                                        <form action="#"
                                             class="auth-form needs-validation" method="post"
                                             id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
                                             target="_blank">
@@ -173,7 +204,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--Newsletter Modal popup end-->
 
     <!-- Quick-view modal popup start-->
