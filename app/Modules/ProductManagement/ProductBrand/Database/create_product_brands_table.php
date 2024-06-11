@@ -16,6 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('title', 40)->nullable();
             $table->Integer('serial')->nullable();
+            $table->tinyInteger('is_featured')->nullable();
             $table->tinyText('image')->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();

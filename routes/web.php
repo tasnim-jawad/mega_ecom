@@ -28,3 +28,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::post('login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
 
 require_once __DIR__ . '/shefat_route.php';
+require_once __DIR__ . '/website_api_route.php';

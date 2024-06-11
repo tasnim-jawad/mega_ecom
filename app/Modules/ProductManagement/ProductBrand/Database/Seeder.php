@@ -430,6 +430,7 @@ class Seeder extends SeederClass
             self::$model::create([
                 'title' => $item['title'],
                 'serial' => 0,
+                'is_featured' => rand(0, 1),
                 'image' => $item['image'],
             ]);
         }

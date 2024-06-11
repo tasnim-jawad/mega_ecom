@@ -1,0 +1,32 @@
+-----category------
+-------------------
+-> category group -dn
+-> category by  group id -dn
+-> category ->pagination wise limit wise -dn
+-> subcategory by category id - dn
+-> only featured category -dn
+-> only nav category -dn
+
+-> get advertise by category id :{categorySlug}/category-advertise/
+-> single category
+-> category brands
+-> category varients
+-> category min and max price
+
+
+-----brand------
+is_featured add
+-------------------
+->brand list
+->featured brand
+
+-----products------
+-------------------
+->products limit(request)
+->featured products
+->featured product by category id :catogrySlug/product
+->product by category id
+->featured product by brand id :brandSlug/product
+->best selling product
+->product details
+

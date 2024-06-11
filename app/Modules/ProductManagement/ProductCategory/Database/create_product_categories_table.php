@@ -20,7 +20,20 @@ return new class extends Migration
             $table->tinyInteger('is_nav')->default(0);
             $table->tinyInteger('is_featured')->default(0);
             $table->Integer('serial')->nullable();
-            $table->string('image',100)->nullable();
+            $table->string('image', 100)->nullable();
+
+            $table->string('meta_title', 100)->nullable();
+            $table->string('meta_description', 150)->nullable();
+            $table->string('meta_keywords', 150)->nullable();
+            $table->string('search_keywords', 150)->nullable();
+
+            $table->string('page_header_title', 150)->nullable();
+            $table->string('page_header_description', 150)->nullable();
+            $table->string('page_full_description_title', 150)->nullable();
+            $table->string('page_full_description', 150)->nullable();
+
+            $table->string('related_product_title', 150)->nullable();
+
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 150)->nullable();

@@ -23,6 +23,99 @@ class Seeder extends SeederClass
             [
                 [
                     "image" => "https://m2ce.sindabad.com/media/catalog/category/subcategory/cat1629.jpg",
+                    "title" => "চাল ও খাদ্যশস্য",
+                    "subcategories" => [
+                        "Rice", "Dal", 'Atta', "salt"
+                    ]
+                ],
+                [
+                    "image" => "https://m2ce.sindabad.com/media/catalog/category/subcategory/cat2675.jpg",
+                    "title" => "তেল ও ঘি",
+                    "subcategories" => [
+                        "Cooking oil", "Gee"
+                    ]
+                ],
+                [
+                    "image" => "https://m2ce.sindabad.com/media/catalog/category/subcategory/cat2677.jpg",
+                    "title" => "যাবতীয় মসলা",
+                    "subcategories" => [
+                        "Spice", "Ready mix"
+                    ]
+                ],
+                [
+                    "image" => "https://m2ce.sindabad.com/media/catalog/category/subcategory/cat2696.jpg",
+                    "title" => "ডিম ও দুগ্ধপণ্য",
+                    "subcategories" => [
+                        "Eggs", "Powder milk", "Condensed milk", "Butter", 'milk powder'
+                    ]
+                ],
+                [
+                    "image" => "https://m2ce.sindabad.com/media/catalog/category/subcategory/cat2674.jpg",
+                    "title" => "পানীয়",
+                    "subcategories" => [
+                        'Tea', 'Coffee', 'Soda', 'Water', 'Juice'
+                    ]
+                ],
+                [
+                    "image" => "https://m2ce.sindabad.com/media/catalog/category/subcategory/cat2351.jpg",
+                    "title" => "স্ন্যাকস ও বেকারি",
+                    "subcategories" => [
+                        'Noodles', 'Snack', 'Bakery', 'Sweet', 'Chips'
+                    ]
+                ],
+                [
+                    "image" => "https://m2ce.sindabad.com/media/catalog/category/subcategory/cat2720.jpg",
+                    "title" => "সবজি ও ফলমূল",
+                    "subcategories" => [
+                        "fresh", "cold"
+                    ]
+                ],
+                [
+                    "image" => "https://m2ce.sindabad.com/media/catalog/category/subcategory/cat2872.jpg",
+                    "title" => "মাংস ও মাছ",
+                    "subcategories" => [
+                        'Meat'
+                    ]
+                ],
+                [
+                    "image" => "https://m2ce.sindabad.com/media/catalog/category/subcategory/cat2876.jpg",
+                    "title" => "হিমায়িত ও টিনজাত খাদ্য",
+                    "subcategories" => [
+                        'Frozen', 'Canned'
+                    ]
+                ]
+            ];
+
+
+        foreach ($data as $item) {
+
+            $category =  self::$model::create([
+                'title' => $item['title'],
+                'serial' => 0,
+                'product_category_group_id' => '1',
+                'parent_id' => 0,
+                'is_nav' => 1,
+                'image' => $item['image'],
+            ]);
+
+            if (isset($item['subcategories'])) {
+                foreach ($item['subcategories'] as $subcategory) {
+                    self::$model::create([
+                        'title' => $subcategory,
+                        'serial' => 0,
+                        'product_category_group_id' => '1',
+                        'parent_id' => $category->id,
+                        'is_nav' => 1,
+                        'image' => $item['image'],
+                    ]);
+                }
+            }
+        }
+
+        $data =
+            [
+                [
+                    "image" => "https://m2ce.sindabad.com/media/catalog/category/subcategory/cat1629.jpg",
                     "title" => "চাল ও খাদ্যশস্য"
                 ],
                 [

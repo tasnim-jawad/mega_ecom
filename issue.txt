@@ -7,6 +7,23 @@ https://www.figma.com/board/Z1zR8GkTgQ0ndyR1dzMx3L/mega-ecommerce?node-id=0-1&t=
 
 need a model for search key word  field (title) all search( keyword) will be store here
 
+tag management ->title
+tag product cateogry tag management
+tag product  tag management
+tag blog  tag management
+tag website  tag management
+
+
+
+product faq -> product_id , questions , ans, user_id, is_approved
+
+product retaled products -> product_id ,related_product_id
+category retaled products -> category_id ,related_product_id
+
+retaled compare products -> product_id ,related_product_id
+
+
+
 settings niya kaj kora lagbe
 
 seo table for full site (table)
@@ -24,9 +41,11 @@ order product exchange management
 
 
 
-command isue
+----command issue----
+
 command default value set
 search er somoy fields boasano lagbe
-
+unsigned add kora
+------------------------
 
 565645

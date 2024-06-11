@@ -80,3 +80,9 @@ include_once  base_path("app/Modules/StockManagement/ProductWearHouseBranch/Rout
 */
 include_once  base_path("app/Modules/VatManagement/Vat/Route.php");
 include_once  base_path("app/Modules/VatManagement/VatGroup/Route.php");
+/*
+|--------------------------------------------------------------------------
+| Website and Mobile api  Routes
+|--------------------------------------------------------------------------
+*/
+include_once  base_path("app/Modules/websiteApi/Category/Route.php");

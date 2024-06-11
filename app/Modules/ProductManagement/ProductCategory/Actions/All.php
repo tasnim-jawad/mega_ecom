@@ -17,7 +17,7 @@ class All
             $with = [];
             $condition = [];
 
-            $data = self::$model::query();
+            $data = self::$model::query()->where('parent_id', 0);
 
             if (request()->has('search') && request()->input('search')) {
                 $searchKey = request()->input('search');

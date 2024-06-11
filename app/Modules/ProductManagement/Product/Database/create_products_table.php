@@ -22,6 +22,8 @@ return new class extends Migration
             $table->tinyInteger('is_pre_order')->default(0);
             $table->tinyInteger('is_up_coming')->default(0);
             $table->tinyInteger('is_emi_support')->default(0);
+            $table->tinyInteger('is_best_selling')->default(0);
+            $table->bigInteger('total_sold')->default(0)->unsigned();
 
             $table->string('barcode', 100)->nullable();
 
@@ -58,9 +60,14 @@ return new class extends Migration
             $table->float('minimum_sale_price')->nullable()->unsigned();
             $table->float('maximum_sale_price')->nullable()->unsigned();
             $table->float('profit_margin_percent')->nullable();
-            
+
             $table->enum('discount_type', ['off', 'percent', 'flat'])->nullable();
             $table->float('discount_amount')->nullable();
+
+            $table->string('meta_title', 100)->nullable();
+            $table->string('meta_description', 150)->nullable();
+            $table->string('meta_keywords', 150)->nullable();
+            $table->string('search_keywords', 150)->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 150)->nullable();
