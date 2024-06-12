@@ -7,11 +7,11 @@
 -> only featured category -dn
 -> only nav category -dn
 
--> get advertise by category id :{categorySlug}/category-advertise/
--> single category
--> category brands
--> category varients
--> category min and max price
+-> get advertise by category id :{categorySlug}/category-advertise/ -dn
+-> single category -dn
+-> category wise brands -dn
+-> category wiese varients  -dn
+-> category wise min and max price -dn
 
 
 -----brand------

@@ -1,6 +1,8 @@
 <?php
+
 namespace App\Modules\ProductManagement\ProductCategoryWiseAdvertise\Database;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder as SeederClass;
 
 class Seeder extends SeederClass
@@ -14,14 +16,14 @@ class Seeder extends SeederClass
     {
 
         self::$model::truncate();
-        for ($i = 1; $i < 100; $i++) {
-        self::$model::create([
-            'category_id' => facker()->name,
-            'title' => facker()->name,
-            'is_promition' => facker()->name,
-            'image' => facker()->name,
-            'start_date' => facker()->name,
-            'end_data' => facker()->name,
+        for ($i = 1; $i < 10; $i++) {
+            self::$model::create([
+                'category_id' => rand(1, 10),
+                'title' => facker()->name,
+                'is_promition' => rand(0, 1),
+                'image' => facker()->imageUrl(1000, 400),
+                'start_date' => Carbon::now()->toDateString(),
+                'end_data' => Carbon::now()->addDays(10)->toDateString(),
             ]);
         }
     }

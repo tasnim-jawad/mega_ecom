@@ -12,6 +12,7 @@ use App\Modules\UserManagement\User\Database\Seeder as UserSeeder;
 //product seeder
 use App\Modules\ProductManagement\ProductCategoryGroup\Database\Seeder as ProductCategoryGroupSeeder;
 use App\Modules\ProductManagement\ProductCategory\Database\Seeder as ProductCategorySeeder;
+use App\Modules\ProductManagement\ProductCategoryWiseAdvertise\Database\Seeder as ProductCategoryWiseAdvertiseSeeder;
 
 use App\Modules\ProductManagement\ProductBrand\Database\Seeder as ProductBrandSeeder;
 use App\Modules\ProductManagement\ProductMenufacturer\Database\Seeder as ProductMenufacturerSeeder;
@@ -62,6 +63,7 @@ class DatabaseSeeder extends Seeder
             //product management seeder
             ProductCategoryGroupSeeder::class,
             ProductCategorySeeder::class,
+            ProductCategoryWiseAdvertiseSeeder::class,
 
             ProductBrandSeeder::class,
             ProductMenufacturerSeeder::class,

@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('product_category_wise_advertises', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('category_id')->nullable();
+            $table->bigInteger('product_category_id')->nullable();
             $table->string('title', 100)->nullable();
             $table->tinyInteger('is_promition')->default(0);
             $table->string('image', 100)->nullable();
