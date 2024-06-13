@@ -7,7 +7,7 @@
 -> only featured category -dn
 -> only nav category -dn
 
--> get advertise by category id :{categorySlug}/category-advertise/ -dn
+-> get advertise by category id  -dn
 -> single category -dn
 -> category wise brands -dn
 -> category wiese varients  -dn
@@ -15,18 +15,17 @@
 
 
 -----brand------
-is_featured add
 -------------------
-->brand list
-->featured brand
+->brand list -dn
+->featured brand -dn
 
 -----products------
 -------------------
-->products limit(request)
-->featured products
-->featured product by category id :catogrySlug/product
-->product by category id
-->featured product by brand id :brandSlug/product
-->best selling product
-->product details
+->products limit(request) -dn
+->featured products -dn
+->featured product by category id  -dn
+->product by category id -dn
+->featured product by brand id -dn
+->best selling product -dn
+->product details -dn
 
