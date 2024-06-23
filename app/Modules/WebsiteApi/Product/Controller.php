@@ -4,14 +4,13 @@ namespace App\Modules\WebsiteApi\Product;
 
 use App\Http\Controllers\Controller as ControllersController;
 
-
 use App\Modules\WebsiteApi\Product\Actions\GetAllProduct;
+use App\Modules\WebsiteApi\Product\Actions\GetAllBestSellingProduct;
 use App\Modules\WebsiteApi\Product\Actions\GetAllFeaturedProduct;
 use App\Modules\WebsiteApi\Product\Actions\GetAllFeaturedProductsByCategoryId;
 use App\Modules\WebsiteApi\Product\Actions\GetAllFeaturedProductsByBrandId;
 use App\Modules\WebsiteApi\Product\Actions\GetAllProductsByCategoryId;
 use App\Modules\WebsiteApi\Product\Actions\GetProductDetails;
-
 
 class Controller extends ControllersController
 {
@@ -19,6 +18,11 @@ class Controller extends ControllersController
     public function GetAllProduct()
     {
         $data = GetAllProduct::execute();
+        return $data;
+    }
+    public function GetAllBestSellingProduct()
+    {
+        $data = GetAllBestSellingProduct::execute();
         return $data;
     }
     public function GetAllFeaturedProduct()
