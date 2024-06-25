@@ -49,11 +49,11 @@
                                 </div>
                                 <div class="footer-contant">
                                     <ul class="contact-list">
-                                        <li><i class="fa fa-map-marker"></i>big deal store demo store
-                                            <br> india-<span>3654123</span>
+                                        <li><i class="fa fa-map-marker"></i>ETEK BD
+                                            <br> bangladesh-<span>3654123</span>
                                         </li>
                                         <li><i class="fa fa-phone"></i>call us: <span>123-456-7898</span></li>
-                                        <li><i class="fa fa-envelope-o"></i>email us: support@bigdeal.com</li>
+                                        <li><i class="fa fa-envelope-o"></i>email us: support@etek.com.bd</li>
                                         <li><i class="fa fa-fax"></i>fax <span>123456</span></li>
                                     </ul>
                                 </div>
@@ -195,7 +195,7 @@
                                 </div>
                                 <div class="imd-wrraper bg-size"
                                     style="background-image: url(&quot;../frontend/assets/images/2.jpg&quot;); background-size: cover; background-position: center center; display: block;">
-                                    <img src="frontend/assets/images/2(8).jpg" alt="newsletterimg"
+                                    <img src="/frontend/assets/images/2(8).jpg" alt="newsletterimg"
                                         class="img-fluid bg-img" style="display: none;">
                                 </div>
                             </div>
@@ -218,7 +218,7 @@
                         <div class="col-lg-6 col-xs-12">
                             <div class="quick-view-img bg-size"
                                 style="background-image: url(&quot;../assets/images/layout-1/product/3.jpg&quot;); background-size: cover; background-position: center center; display: block;">
-                                <img src="frontend/assets/images/3(8).jpg" alt="" class="img-fluid bg-img"
+                                <img src="/frontend/assets/images/3(8).jpg" alt="" class="img-fluid bg-img"
                                     style="display: none;">
                             </div>
                         </div>
@@ -376,7 +376,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
-                                                <div class="modal-body"><img src="frontend/assets/images/size-chart.jpg"
+                                                <div class="modal-body"><img src="/frontend/assets/images/size-chart.jpg"
                                                         alt="" class="img-fluid "></div>
                                             </div>
                                         </div>
@@ -459,7 +459,7 @@
                                 <div class="img-wraper">
                                     <a
                                         href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                        <img src="frontend/assets/images/1(8).jpg" alt="">
+                                        <img src="/frontend/assets/images/1(8).jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="media-body">
@@ -556,7 +556,7 @@
                     <li>
                         <div class="media">
                             <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="frontend/assets/images/1(8).jpg">
+                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/1(8).jpg">
                             </a>
                             <div class="media-body">
                                 <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
@@ -607,7 +607,7 @@
                     <li>
                         <div class="media">
                             <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="frontend/assets/images/2(9).jpg">
+                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/2(9).jpg">
                             </a>
                             <div class="media-body">
                                 <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
@@ -658,7 +658,7 @@
                     <li>
                         <div class="media">
                             <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="frontend/assets/images/3(9).jpg">
+                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/3(9).jpg">
                             </a>
                             <div class="media-body">
                                 <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
@@ -753,7 +753,7 @@
                     <li>
                         <div class="media">
                             <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="frontend/assets/images/1(8).jpg">
+                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/1(8).jpg">
                             </a>
                             <div class="media-body">
                                 <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
@@ -804,7 +804,7 @@
                     <li>
                         <div class="media">
                             <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="frontend/assets/images/2(9).jpg">
+                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/2(9).jpg">
                             </a>
                             <div class="media-body">
                                 <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
@@ -855,7 +855,7 @@
                     <li>
                         <div class="media">
                             <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="frontend/assets/images/3(9).jpg">
+                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/3(9).jpg">
                             </a>
                             <div class="media-body">
                                 <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
@@ -1008,7 +1008,7 @@
     <!-- <div class="product-notification" id="dismiss">
     <span onclick="dismiss();" class="btn-close" aria-hidden="true"></span>
     <div class="media">
-      <img class="me-2" src="frontend/assets/images/5(6).jpg" alt="Generic placeholder image">
+      <img class="me-2" src="/frontend/assets/images/5(6).jpg" alt="Generic placeholder image">
       <div class="media-body">
         <h5 class="mt-0 mb-1">Latest trending</h5>
         Cras sit amet nibh libero, in gravida nulla.
