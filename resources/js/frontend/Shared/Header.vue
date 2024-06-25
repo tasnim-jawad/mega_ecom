@@ -1,5 +1,6 @@
 <template>
     <header>
+        <!-- top header part -->
         <div class="top-header">
             <div class="custom-container">
                 <div class="row">
@@ -15,7 +16,6 @@
                                 <ul>
                                     <li><a><i class="fa fa-apple"></i></a></li>
                                     <li><a><i class="fa fa-android"></i></a></li>
-                                    <li><a><i class="fa fa-windows"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -24,17 +24,17 @@
                         <div class="top-header-right">
                             <div class="top-menu-block">
                                 <ul>
-                                    <li><a href="javascript:void(0)">gift cards</a></li>
-                                    <li><a href="javascript:void(0)">Notifications</a></li>
                                     <li><a href="javascript:void(0)">help &amp; contact</a></li>
                                     <li><a href="javascript:void(0)">todays deal</a></li>
                                     <li><a href="javascript:void(0)">track order</a></li>
-                                    <li><a href="javascript:void(0)">shipping </a></li>
-                                    <li><a href="javascript:void(0)">easy returns</a></li>
+                                    <!-- <li><a href="javascript:void(0)">Notifications</a></li> -->
+                                    <!-- <li><a href="javascript:void(0)">gift cards</a></li> -->
+                                    <!-- <li><a href="javascript:void(0)">shipping </a></li> -->
+                                    <!-- <li><a href="javascript:void(0)">easy returns</a></li> -->
                                 </ul>
                             </div>
                             <div class="language-block">
-                                <div class="language-dropdown">
+                                <!-- <div class="language-dropdown">
                                     <span class="language-dropdown-click">
                                         english <i class="fa fa-angle-down" aria-hidden="true"></i>
                                     </span>
@@ -54,34 +54,27 @@
                                         <li><a href="javascript:void(0)"><i class="fa fa-usd"></i>usd</a></li>
                                         <li><a href="javascript:void(0)"><i class="fa fa-eur"></i>eur</a></li>
                                     </ul>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- middle part -->
         <div class="layout-header2">
             <div class="custom-container">
                 <div class="main-menu-block">
                     <div class="header-left">
                         <div class="brand-logo logo-sm-center">
                             <Link href="/">
-                                <img src="/frontend/images/etek_logo.png" class="img-fluid  " alt="logo">
+                            <img src="/frontend/images/etek_logo.png" class="img-fluid  " alt="logo">
                             </Link>
                         </div>
                     </div>
                     <div class="input-block">
-                        <div class="input-box">
-                            <form class="hungry_coder-form ">
-                                <div class="input-group ">
-                                    <div class="input-group-text">
-                                        <span class="search"><i class="fa fa-search"></i></span>
-                                    </div>
-                                    <input type="search" class="form-control" placeholder="Search a Product">
-                                </div>
-                            </form>
-                        </div>
+                        <SearchBar />
                     </div>
                     <div class="header-right">
                         <div class="icon-block">
@@ -111,7 +104,7 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="mobile-setting" onclick="openSetting()">
+                                <!-- <li class="mobile-setting" onclick="openSetting()">
                                     <a href="javascript:void(0)">
                                         <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -123,18 +116,18 @@
                                             </path>
                                         </svg>
                                     </a>
-                                </li>
-                                <li class="mobile-wishlist item-count" onclick="openWishlist()">
-                                    <a href="javascript:void(0)">
-                                        <svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0">
-                                            </path>
-                                        </svg>
-                                        <div class="item-count-contain">
+                                </li> -->
+                                <li class="mobile-wishlist item-count">
+                                    <Link href="/profile/wish-list">
+                                    <svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0">
+                                        </path>
+                                    </svg>
+                                    <!-- <div class="item-count-contain">
                                             2
-                                        </div>
-                                    </a>
+                                        </div> -->
+                                    </Link>
                                 </li>
                                 <li class="mobile-cart item-count" onclick="openCart()">
                                     <a href="javascript:void(0)">
@@ -162,37 +155,16 @@
                             </ul>
                         </div>
                         <div class="menu-nav">
-                            <span class="toggle-nav">
+                            <span class="toggle-nav" @click="toggle_nav">
                                 <i class="fa fa-bars "></i>
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="searchbar-input">
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px" y="0px" width="28.931px" height="28.932px" viewBox="0 0 28.931 28.932"
-                            style="enable-background:new 0 0 28.931 28.932;" xml:space="preserve">
-                            <g>
-                                <path
-                                    d="M28.344,25.518l-6.114-6.115c1.486-2.067,2.303-4.537,2.303-7.137c0-3.275-1.275-6.355-3.594-8.672C18.625,1.278,15.543,0,12.266,0C8.99,0,5.909,1.275,3.593,3.594C1.277,5.909,0.001,8.99,0.001,12.266c0,3.276,1.275,6.356,3.592,8.674c2.316,2.316,5.396,3.594,8.673,3.594c2.599,0,5.067-0.813,7.136-2.303l6.114,6.115c0.392,0.391,0.902,0.586,1.414,0.586c0.513,0,1.024-0.195,1.414-0.586C29.125,27.564,29.125,26.299,28.344,25.518z M6.422,18.111c-1.562-1.562-2.421-3.639-2.421-5.846S4.86,7.983,6.422,6.421c1.561-1.562,3.636-2.422,5.844-2.422s4.284,0.86,5.845,2.422c1.562,1.562,2.422,3.638,2.422,5.845s-0.859,4.283-2.422,5.846c-1.562,1.562-3.636,2.42-5.845,2.42S7.981,19.672,6.422,18.111z">
-                                </path>
-                            </g>
-                        </svg>
-                    </span>
-                    <input type="text" class="form-control" placeholder="search your product">
-                    <span class="input-group-text close-searchbar">
-                        <svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0">
-                            </path>
-                        </svg>
-                    </span>
-                </div>
-            </div>
         </div>
+
+        <!-- bottom part -->
         <div class="category-header-2">
             <div class="custom-container">
                 <div class="row">
@@ -200,30 +172,23 @@
                         <div class="navbar-menu">
                             <div class="nav-block">
                                 <div class="nav-left">
-                                    <nav class="navbar collapsed" data-bs-toggle="collapse"
-                                        data-bs-target="#navbarToggleExternalContent" aria-expanded="false">
+                                    <nav class="navbar">
                                         <button class="navbar-toggler" type="button">
                                             <span class="navbar-icon"><i class="fa fa-arrow-down"></i></span>
                                         </button>
                                         <h5 class="mb-0  text-white title-font">Shop by category</h5>
                                     </nav>
-                                    <div class="nav-desk collapse" id="navbarToggleExternalContent" style="">
-                                        <ul class="nav-cat title-font">
-                                            <li>
-                                                <a href="category-page(left-sidebar).html">
-                                                    <img src="https://themes.pixelstrap.com/bigdeal/assets/images/layout-1/nav-img/01.png"
-                                                        alt="category-product">
-                                                    western ware
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                             <div class="menu-block navbar_main_menu">
                                 <nav id="main-nav">
-                                    <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+                                    <ul id="main-menu" ref="main_menu" class="sm pixelstrap sm-horizontal">
+                                        <li>
+                                            <div class="mobile-back text-right" @click="toggle_nav">
+                                                Back
+                                                <i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
                                         <li>
                                             <a class="dark-menu-item" href="javascript:void(0)">
                                                 Home
@@ -243,7 +208,7 @@
                                             <a class="dark-menu-item has-submenu" href="javascript:void(0)">Home
                                                 <span class="sub-arrow"></span></a>
                                             <ul>
-                                                <li><a href="index.html">mega store 1</a></li>
+                                                <li><a href="/">mega store 1</a></li>
                                             </ul>
                                         </li> -->
                                     </ul>
@@ -259,98 +224,9 @@
                                         <span>call us<span>123-456-76890</span></span>
                                     </div>
                                 </div>
-                                <div class="btn-group">
-                                    <div class="gift-block" data-bs-toggle="dropdown">
-                                        <div class="grif-icon">
-                                            <i class="icon-gift"></i>
-                                        </div>
-                                        <div class="gift-offer">
-                                            <p>gift box</p>
-                                            <span>Festivel Offer</span>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-menu gift-dropdown">
-                                        <div class="media">
-                                            <div class="me-3">
-                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/1.png"
-                                                    alt="Generic placeholder image">
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="mt-0">Billion Days</h5>
-                                                <p><img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/currency.png"
-                                                        class="cash" alt="curancy"> Flat Rs. 270 Rewards</p>
-                                            </div>
-                                        </div>
-                                        <div class="media">
-                                            <div class="me-3">
-                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/2.png"
-                                                    alt="Generic placeholder image" class="gift-bloc">
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="mt-0">Fashion Discount</h5>
-                                                <p><img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/fire.png"
-                                                        class="fire" alt="fire">Extra 10% off (upto Rs. 10,000*) </p>
-                                            </div>
-                                        </div>
-                                        <div class="media">
-                                            <div class="me-3">
-                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/3.png"
-                                                    alt="Generic placeholder image">
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="mt-0">75% off Store</h5>
-                                                <p>No coupon code is required.</p>
-                                            </div>
-                                        </div>
-                                        <div class="media">
-                                            <div class="me-3">
-                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/6.png"
-                                                    alt="Generic placeholder image">
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="mt-0">Upto 50% off</h5>
-                                                <p>Buy popular phones under Rs.20.</p>
-                                            </div>
-                                        </div>
-                                        <div class="media">
-                                            <div class="me-3">
-                                                <img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/5.png"
-                                                    alt="Generic placeholder image">
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="mt-0">Beauty store</h5>
-                                                <p><img src="https://themes.pixelstrap.com/bigdeal/assets/images/icon/currency.png"
-                                                        class="cash" alt="curancy"> Flat Rs. 270 Rewards</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="searchbar-input">
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px" y="0px" width="28.931px" height="28.932px" viewBox="0 0 28.931 28.932"
-                            style="enable-background:new 0 0 28.931 28.932;" xml:space="preserve">
-                            <g>
-                                <path
-                                    d="M28.344,25.518l-6.114-6.115c1.486-2.067,2.303-4.537,2.303-7.137c0-3.275-1.275-6.355-3.594-8.672C18.625,1.278,15.543,0,12.266,0C8.99,0,5.909,1.275,3.593,3.594C1.277,5.909,0.001,8.99,0.001,12.266c0,3.276,1.275,6.356,3.592,8.674c2.316,2.316,5.396,3.594,8.673,3.594c2.599,0,5.067-0.813,7.136-2.303l6.114,6.115c0.392,0.391,0.902,0.586,1.414,0.586c0.513,0,1.024-0.195,1.414-0.586C29.125,27.564,29.125,26.299,28.344,25.518z M6.422,18.111c-1.562-1.562-2.421-3.639-2.421-5.846S4.86,7.983,6.422,6.421c1.561-1.562,3.636-2.422,5.844-2.422s4.284,0.86,5.845,2.422c1.562,1.562,2.422,3.638,2.422,5.845s-0.859,4.283-2.422,5.846c-1.562,1.562-3.636,2.42-5.845,2.42S7.981,19.672,6.422,18.111z">
-                                </path>
-                            </g>
-                        </svg>
-                    </span>
-                    <input type="text" class="form-control" placeholder="search your product">
-                    <span class="input-group-text close-searchbar">
-                        <svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0">
-                            </path>
-                        </svg>
-                    </span>
                 </div>
             </div>
         </div>
@@ -359,7 +235,13 @@
 
 <script>
 import { Link } from '@inertiajs/vue3';
+import SearchBar from '../Components/SearchBar.vue';
 export default {
-    components: { Link }
+    components: { Link, SearchBar },
+    methods: {
+        toggle_nav: function(){
+            this.$refs.main_menu.classList.toggle('active');
+        }
+    }
 };
 </script>
