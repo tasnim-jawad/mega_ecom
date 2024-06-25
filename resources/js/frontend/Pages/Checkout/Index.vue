@@ -8,7 +8,7 @@
                     <div>
                         <h2>checkout</h2>
                         <ul>
-                            <li><a href="index.html">home</a></li>
+                            <li><a href="/">home</a></li>
                             <li><i class="fa fa-angle-double-right"></i></li>
                             <li><a href="javascript:void(0)">checkout</a></li>
                         </ul>
@@ -72,7 +72,7 @@
                                         <input type="text" name="field-name" value="" placeholder="">
                                     </div>
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <input type="checkbox" name="shipping-option" id="account-option">  
+                                        <input type="checkbox" name="shipping-option" id="account-option">
                                         <label for="account-option">Create An Account?</label>
                                     </div>
                                 </div>

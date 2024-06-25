@@ -2,7 +2,13 @@
     <section class="color_bg_banner">
         <div class="custom-container">
             <div class="website_banner">
-                <div class="left">
+                <div class="category_modal_toggler" @click="toggle_category">
+                    <img src="/frontend/images/categories24.svg" alt="">
+                    <span class="text">
+                        categories
+                    </span>
+                </div>
+                <div class="left" id="banner_left">
                     <left-category-list></left-category-list>
                 </div>
                 <div class="right">
@@ -74,5 +80,10 @@ export default {
     },
     created() {
     },
+    methods:{
+        toggle_category: function(){
+            document.getElementById('banner_left').classList.toggle('active')
+        }
+    }
 };
 </script>

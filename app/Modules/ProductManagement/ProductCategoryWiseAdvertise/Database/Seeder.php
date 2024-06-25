@@ -18,7 +18,7 @@ class Seeder extends SeederClass
         self::$model::truncate();
         for ($i = 1; $i < 10; $i++) {
             self::$model::create([
-                'category_id' => rand(1, 10),
+                'product_category_id' => rand(1, 10),
                 'title' => facker()->name,
                 'is_promition' => rand(0, 1),
                 'image' => facker()->imageUrl(1000, 400),
