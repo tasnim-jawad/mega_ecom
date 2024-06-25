@@ -6,84 +6,71 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class WebsiteController extends Controller
+class ProfileController extends Controller
 {
-    public function home()
-    {
-        return Inertia::render('Home/Index', [
-            'event' => [
-                'title' => 'ETEK Enterprise',
-                'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
-                'description' => 'Best eCommerce in bangladesh'
-            ]
-        ]);
+
+    public function __construct() {
+        $this->middleware('auth');
     }
 
-    public function blogs()
+    public function profile()
     {
-        return Inertia::render('Blogs/Index', [
+        return Inertia::render('Profile/Index', [
             'event' => [
-                'title' => 'ETEK Blogs',
+                'title' => 'Profile',
                 'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
                 'description' => 'Best eCommerce in bangladesh'
             ]
         ]);
     }
-
-    public function products($slug)
+    public function orders()
     {
-        return Inertia::render('Products/Index', [
-            'slug' => $slug,
+        return Inertia::render('Profile/pages/Orders', [
             'event' => [
-                'title' => 'ETEK Blogs',
+                'title' => 'Order History',
                 'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
                 'description' => 'Best eCommerce in bangladesh'
             ]
         ]);
     }
-
-    public function products_details($slug)
+    public function wish_list()
     {
-        return Inertia::render('Products/ProductDetails', [
-            'slug' => $slug,
+        return Inertia::render('Profile/pages/Wishlist', [
             'event' => [
-                'title' => 'ETEK Product Details',
+                'title' => 'Wish List',
                 'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
                 'description' => 'Best eCommerce in bangladesh'
             ]
         ]);
     }
-
-    public function cart()
+    public function account()
     {
-        return Inertia::render('Cart/Index', [
+        return Inertia::render('Profile/pages/Account', [
             'event' => [
-                'title' => 'ETEK Cart',
+                'title' => 'Account Information',
                 'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
                 'description' => 'Best eCommerce in bangladesh'
             ]
         ]);
     }
-
-    public function checkout()
+    public function address()
     {
-        return Inertia::render('Checkout/Index', [
+        return Inertia::render('Profile/pages/Address', [
             'event' => [
-                'title' => 'ETEK Checkout',
+                'title' => 'Order Address',
                 'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
                 'description' => 'Best eCommerce in bangladesh'
             ]
         ]);
     }
-    public function contact()
+    public function password()
     {
-        return Inertia::render('Contact/Index', [
+        return Inertia::render('Profile/pages/Password', [
             'event' => [
-                'title' => 'ETEK Contact Us',
+                'title' => 'Change Password',
                 'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
                 'description' => 'Best eCommerce in bangladesh'
             ]
         ]);
     }
-
 }
