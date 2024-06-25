@@ -27,7 +27,7 @@ class CategoryController extends Controller
     public function brands()
     {
         $data = Brand::select([
-            'id', 'title'
+            'id', 'title', 'image'
         ])
             ->where('status', 'active')
             ->orderBy('serial', 'ASC')

@@ -14,4 +14,5 @@ Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers'], function
     Route::get('/category/{slug}', 'Api\CategoryController@category');
 
     Route::get('/featured-products', 'Api\ProductController@featured_products');
+    Route::get('/product/{slug}', 'Api\ProductController@product');
 });
