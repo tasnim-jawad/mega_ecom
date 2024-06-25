@@ -47,7 +47,7 @@
 
     @vite(['resources/js/frontend/app.js'])
 
-    <link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/custom.css"">
+    <link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/custom.css">
 </head>
 
 <body>

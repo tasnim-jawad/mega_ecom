@@ -16,6 +16,10 @@ Route::group( ['namespace' => 'App\Http\Controllers' ],function(){
     Route::get('/checkout','Website\WebsiteController@checkout')->name('website_checkout');
 
     Route::get('/contact','Website\WebsiteController@contact')->name('website_contact');
+    Route::get('/about','Website\WebsiteController@about')->name('website_about');
+    Route::get('/terms_conditions','Website\WebsiteController@terms_conditions')->name('website_terms_conditions');
+    Route::get('/returns_exchanges','Website\WebsiteController@returns_exchanges')->name('website_returns_exchanges');
+    Route::get('/shipping_delivery','Website\WebsiteController@shipping_delivery')->name('website_shipping_delivery');
 
     Route::get('/uploads_variant','Website\TestController@uploads_variant');
 
