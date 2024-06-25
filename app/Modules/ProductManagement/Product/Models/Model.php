@@ -54,6 +54,9 @@ class Model extends EloquentModel
         return $this->hasMany(self::$productVariantPriceModel, 'product_id', 'id');
     }
 
+
+    
+
     public function scopeActive($q)
     {
         return $q->where('status', 'active');

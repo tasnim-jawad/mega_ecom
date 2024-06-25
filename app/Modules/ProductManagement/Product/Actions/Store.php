@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class Store
 {
+    
     static $model = \App\Modules\ProductManagement\Product\Models\Model::class;
     static $productImageModel = \App\Modules\ProductManagement\Product\Models\ProductImageModel::class;
 

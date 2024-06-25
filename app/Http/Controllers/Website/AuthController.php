@@ -35,7 +35,7 @@ class AuthController extends Controller
             "password" => ['required'],
         ]);
 
-        $user = User::whereAny(['user_name', 'email', 'phone'], request()->email)->first();
+        $user = User::whereAny(['user_name', 'email', 'phone_number'], request()->email)->first();
 
         $check_pass = Hash::check(request()->password, $user->password);
         if (!$check_pass) {

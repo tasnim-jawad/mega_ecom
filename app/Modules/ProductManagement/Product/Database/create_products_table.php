@@ -23,6 +23,7 @@ return new class extends Migration
             $table->tinyInteger('is_up_coming')->default(0);
             $table->tinyInteger('is_emi_support')->default(0);
             $table->tinyInteger('is_best_selling')->default(0);
+            $table->tinyInteger('is_trending')->default(0);
             $table->bigInteger('total_sold')->default(0)->unsigned();
 
             $table->string('barcode', 100)->nullable();
@@ -31,6 +32,7 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->text('short_description')->nullable();
             $table->longText('description')->nullable();
+            $table->string('video_url')->nullable();
 
             $table->integer('product_menufecturer_id')->nullable();
             $table->integer('product_brand_id')->nullable();
@@ -42,6 +44,10 @@ return new class extends Migration
             $table->string('seller_points')->nullable();
             $table->tinyInteger('is_returnable')->nullable();
             $table->string('expiration_days')->nullable();
+
+            $table->integer('product_warranty')->nullable()->comment('how many month');
+            $table->longText('warranty_policy')->nullable();
+            $table->longText('guarenty_policy')->nullable();
 
             $table->enum('price_type', ['single', 'variant'])->nullable();
 
@@ -60,6 +66,8 @@ return new class extends Migration
             $table->float('minimum_sale_price')->nullable()->unsigned();
             $table->float('maximum_sale_price')->nullable()->unsigned();
             $table->float('profit_margin_percent')->nullable();
+            $table->float('profit_margin_percent')->nullable();
+
 
             $table->enum('discount_type', ['off', 'percent', 'flat'])->nullable();
             $table->float('discount_amount')->nullable();
