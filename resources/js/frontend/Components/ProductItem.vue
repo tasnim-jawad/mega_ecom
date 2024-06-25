@@ -4,7 +4,7 @@
             <div class="product-imgbox">
                 <div class="product-front">
                     <Link :href="`/product-details/${product.slug}`">
-                        <img :src="`/${product.product_image.url}`" class="img-fluid" alt="product">
+                        <img :src="check_image_url(`${product.product_image?.url}`)" class="img-fluid" alt="product">
                     </Link>
                     <a onclick="openCart()" class="buy_now_btn">
                         <i class="icon-shopping-cart icon"></i>
@@ -77,6 +77,16 @@
 import { Link } from '@inertiajs/vue3'
 export default {
     components: { Link },
-    props: ['product']
+    props: ['product'],
+    methods: {
+        check_image_url: function (url) {
+            try {
+                new URL(url);
+                return url;
+            } catch (e) {
+                return "/"+url;
+            }
+        }
+    }
 }
 </script>
