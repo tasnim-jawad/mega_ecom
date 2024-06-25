@@ -12,13 +12,13 @@
                     class="form-horizontal">
                     <div class="multiple-form-group">
                         <div class="form-group required">
-                            <label for="input-firstname">First Name </label>
-                            <input type="text" name="firstname" value="shefat" placeholder="First Name"
-                                id="input-firstname" class="form-control">
+                            <label for="input-name">Name </label>
+                            <input type="text" name="name" value="shefat" placeholder="Name"
+                                id="input-name" class="form-control">
                         </div>
                         <div class="form-group required">
-                            <label for="input-lastname">Last Name</label>
-                            <input type="text" name="lastname" value="masum" placeholder="Last Name" id="input-lastname"
+                            <label for="input-user_name">User Name</label>
+                            <input type="text" name="user_name" value="masum" placeholder="User Name" id="input-user_name"
                                 class="form-control">
                         </div>
                     </div>
@@ -28,13 +28,9 @@
                             id="input-email" class="form-control">
                     </div>
                     <div class="form-group required">
-                        <label for="input-telephone">Telephone</label>
-                        <input type="tel" name="telephone" value="01646376015" placeholder="Telephone" readonly=""
-                            id="input-telephone" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="input-fax">Fax</label>
-                        <input type="text" name="fax" value="" placeholder="Fax" id="input-fax" class="form-control">
+                        <label for="input-phone_number">Phone Number</label>
+                        <input type="tel" name="phone_number" value="01646376015" placeholder="Phone Number" readonly=""
+                            id="input-phone_number" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-primary">Continue</button>
                 </form>
