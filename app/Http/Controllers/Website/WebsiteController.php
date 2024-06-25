@@ -85,5 +85,45 @@ class WebsiteController extends Controller
             ]
         ]);
     }
+    public function about()
+    {
+        return Inertia::render('About/Index', [
+            'event' => [
+                'title' => 'ETEK About Us',
+                'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
+                'description' => 'Best eCommerce in bangladesh'
+            ]
+        ]);
+    }
+    public function terms_conditions()
+    {
+        return Inertia::render('TermsConditions/Index', [
+            'event' => [
+                'title' => 'ETEK Terms & Conditions',
+                'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
+                'description' => 'Best eCommerce in bangladesh'
+            ]
+        ]);
+    }
+    public function returns_exchanges()
+    {
+        return Inertia::render('ReturnsExchanges/Index', [
+            'event' => [
+                'title' => 'ETEK Returns & Exchanges',
+                'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
+                'description' => 'Best eCommerce in bangladesh'
+            ]
+        ]);
+    }
+    public function shipping_Delivery()
+    {
+        return Inertia::render('ShippingDelivery/Index', [
+            'event' => [
+                'title' => 'ETEK Shipping & Delivery',
+                'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
+                'description' => 'Best eCommerce in bangladesh'
+            ]
+        ]);
+    }
 
 }

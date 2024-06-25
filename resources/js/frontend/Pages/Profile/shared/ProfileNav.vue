@@ -10,8 +10,15 @@
                 <ul>
                     <li class="profile_nav_top">
                         <div class="profile_image">
-                            <img v-if="user.photo" :src="check_image_url(user.photo)" alt="user-profile-pic">
-                            <img :src="check_image_url('avatar.png')" alt="user-profile-pic">
+                            <img v-if="previewUrl" :src="check_image_url(previewUrl)" alt="user-profile-pic">
+                            <img v-else-if="user.photo" :src="check_image_url(user.photo)" alt="user-profile-pic">
+                            <img v-else :src="check_image_url('avatar.png')" alt="user-profile-pic">
+                            <div class="upload_icon">
+                                <a href="javascript:void(0)" @click.prevent="triggerFileInput">
+                                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <input class="d-none" type="file" ref="fileInput" accept="image/*" @change="previewImage" >
                         </div>
                         <div>
                             <h4>
@@ -57,18 +64,20 @@
     </div>
 </template>
 <script>
-import { router } from '@inertiajs/vue3'
+
 export default {
     props: {
         auth: Object,
     },
     data: ()=>({
         user: {},
+        previewUrl: null,
     }),
     created(){
         let data = window.page_data();
         if(data.props.auth){
             this.user = data.props.auth;
+            this.previewUrl =  this.user?.photo
         }else{
             window.location.reload();
         }
@@ -81,7 +90,17 @@ export default {
             } catch (e) {
                 return "/"+url;
             }
-        }
+        },
+        triggerFileInput() {
+            this.$refs.fileInput.click();
+        },
+        previewImage(event) {
+            const file = event.target.files[0];
+            if (file) {
+                this.previewUrl = URL.createObjectURL(file);
+                console.log(this.previewUrl);
+            }
+        },
     }
 }
 </script>

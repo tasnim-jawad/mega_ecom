@@ -35,11 +35,11 @@
                                 </div>
                                 <div class="footer-contant">
                                     <ul>
-                                        <li><a href="javascript:void(0)">about us</a></li>
-                                        <li><a href="javascript:void(0)">contact us</a></li>
-                                        <li><a href="javascript:void(0)">terms &amp; conditions</a></li>
-                                        <li><a href="javascript:void(0)">returns &amp; exchanges</a></li>
-                                        <li><a href="javascript:void(0)">shipping &amp; delivery</a></li>
+                                        <li><Link href="/about">about us</Link></li>
+                                        <li><Link href="/contact">contact us</Link></li>
+                                        <li><Link href="/terms_conditions">terms &amp; conditions</Link></li>
+                                        <li><Link href="/returns_exchanges">returns &amp; exchanges</Link></li>
+                                        <li><Link href="/shipping_delivery">shipping &amp; delivery</Link></li>
                                     </ul>
                                 </div>
                             </div>
