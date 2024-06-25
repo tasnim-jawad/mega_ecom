@@ -38,11 +38,12 @@ class Seeder extends SeederClass
             $userData = self::$userModel::create([
                 "name" => "Mr " . $role->name,
                 "user_name" =>  $role->name,
+                "role_serial" =>  $role->serial,
                 "email" => $role->name . "@gmail.com",
+                "phone_number" => rand(99999999999, 999999999999),
+                "photo" => facker()->imageUrl(300, 300),
                 "password" => Hash::make('@12345678'),
                 "role_id" => $role->serial,
-                "phone" => rand(99999999999, 999999999999),
-                "photo" => facker()->imageUrl(300, 300),
             ]);
             $userData->permissions()->attach([1, 2, 3, 4]);
             $userData->save();
@@ -85,6 +86,8 @@ class Seeder extends SeederClass
                 'is_billing' => 0,
                 'address_types' => "delivery",
                 'address' => facker()->address,
+
+
                 'country_id' => 216,
                 'state_division_id' => 3,
                 'division_id' => 3,
@@ -94,6 +97,7 @@ class Seeder extends SeederClass
                 'zip_code' => 1213,
                 'is_present_address' => 1,
                 'is_permanent_address' => 0,
+
             ]);
 
             self::$userCustomerInformation::create([

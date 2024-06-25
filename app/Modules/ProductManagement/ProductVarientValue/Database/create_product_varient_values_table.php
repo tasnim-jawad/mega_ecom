@@ -14,10 +14,12 @@ return new class extends Migration
     {
         Schema::create('product_varient_values', function (Blueprint $table) {
             $table->id();
-            $table->string('product_varient_group_id')->nullable();
-            $table->string('product_varient_id')->nullable();
-            $table->string('title')->nullable();
-            $table->tinyInteger('is_default')->nullable();
+            $table->bigInteger('product_varient_group_id')->nullable();
+            $table->bigInteger('product_varient_id')->nullable();
+            $table->string('title', 50)->nullable()->comment('varient title'); //
+            $table->string('value', 20)->nullable()->comment('varient value ex:red, blue, etc');
+            $table->string('value2', 20)->nullable()->comment('varient value 2 ex:  #00000,#11111');
+            $table->tinyInteger('is_default')->default(0);
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();

@@ -32,7 +32,7 @@ class Login
                 return response()->json(['status' => 'error', 'message' => 'Sorry,user not found'], 404);
             }
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(), [],500, 'server_error');
         }
     }
 }

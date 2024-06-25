@@ -17,7 +17,6 @@ class Seeder extends SeederClass
         self::$model::truncate();
         /**
 
-]
          */
 
         $data =
@@ -68,6 +67,7 @@ class Seeder extends SeederClass
                 'serial' => 0,
                 'product_category_group_id' => '1',
                 'parent_id' => 0,
+                'is_nav' => 1,
                 'image' => $item['image'],
             ]);
         }
@@ -113,6 +113,7 @@ class Seeder extends SeederClass
                 'serial' => 0,
                 'product_category_group_id' => '2',
                 'parent_id' => 0,
+                'is_featured' => 0,
                 'image' => $item['image'],
             ]);
         }
@@ -147,6 +148,7 @@ class Seeder extends SeederClass
                 'serial' => 0,
                 'product_category_group_id' => '3',
                 'parent_id' => 0,
+                'is_featured' => 1,
                 'image' => $item['image'],
             ]);
         }
@@ -189,6 +191,7 @@ class Seeder extends SeederClass
                 'serial' => 0,
                 'product_category_group_id' => '4',
                 'parent_id' => 0,
+                'is_nav' => 1,
                 'image' => $item['image'],
             ]);
         }

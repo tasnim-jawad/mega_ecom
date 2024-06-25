@@ -207,3 +207,4 @@ function facker()
 
 // dd(__DIR__);
 include_once(__DIR__ . '\Stock.php');
+include_once(__DIR__ . '\Product.php');

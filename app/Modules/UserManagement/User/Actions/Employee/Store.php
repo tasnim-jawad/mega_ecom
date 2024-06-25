@@ -7,35 +7,27 @@ class Store
     static $model = \App\Modules\UserManagement\User\Models\Model::class;
     static $userAddress = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
     static $userAddressContactPerson = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
-    static $userSupplierInfoModel = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
-    static $userShow = \App\Modules\UserManagement\User\Actions\Customer\Show::class;
+    static $userEmployeeInfoModel = \App\Modules\UserManagement\User\Models\UserEmployeeInformationModel::class;
+    // static $userShow = \App\Modules\UserManagement\User\Actions\Customer\Show::class;
     public static function execute($request)
     {
+        // dd(request()->all());
         try {
             // dd($request->userAddress);
             $requestData = $request->validated();
             $requestData['role_id'] = 9;
             unset($requestData['confirmed']);
-            //additional validation
-            $additionalValidationData = [];
-            if (!$request->customer_type_id) {
-                $additionalValidationData[] = 'customer_type_id';
-                $response = additionalValidation($additionalValidationData);
-                if ($response) {
-                    return $response;
-                }
-            }
+
 
 
             //store data
             if ($userData = self::$model::create($requestData)) {
 
-                self::$userSupplierInfoModel::create([
+                self::$userEmployeeInfoModel::create([
                     'user_id' => $userData->id,
                     'gender' => $request->gender,
                     'nick_name' => $request->nick_name,
-                    'gender' => $request->gender,
-                    'employee_code' => $request->date_of_birth,
+                    'employee_code' => $request->employee_code,
                     'date_of_birth' => $request->date_of_birth,
                 ]);
 
@@ -55,7 +47,7 @@ class Store
                             'state_division_id' => $address->state_division_id,
                             'division_id' => $address->division_id,
                             'district_id' => $address->district_id,
-                            'thana_id' => $address->thana_id,
+                            'station_id' => $address->station_id,
                             'city_id' => $address->city_id,
                             'zip_code' => $address->zip_code,
                             'is_present_address' => $address->is_present_address,
@@ -88,7 +80,7 @@ class Store
                 return messageResponse('Item added successfully', $userData, 201);
             }
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(), [],500, 'server_error');
         }
     }
 }

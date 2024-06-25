@@ -35,7 +35,7 @@
                             </div>
                             <div class="media-banner-box">
                                 <div class="media">
-                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" /> </a>
+                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" /> </a>
                                     <div class="media-body">
                                         <div class="media-contant">
                                             <div>
@@ -130,7 +130,7 @@
                             </div>
                             <div class="media-banner-box">
                                 <div class="media">
-                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" /> </a>
+                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" /> </a>
                                     <div class="media-body">
                                         <div class="media-contant">
                                             <div>
@@ -225,7 +225,7 @@
                             </div>
                             <div class="media-banner-box">
                                 <div class="media">
-                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" /> </a>
+                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" /> </a>
                                     <div class="media-body">
                                         <div class="media-contant">
                                             <div>
@@ -320,7 +320,7 @@
                             </div>
                             <div class="media-banner-box">
                                 <div class="media">
-                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" /> </a>
+                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" /> </a>
                                     <div class="media-body">
                                         <div class="media-contant">
                                             <div>
@@ -447,7 +447,7 @@
                                                                                                     class="bg-size"
                                                                                                     style="background-image: url('../frontend/assets/images/8.jpg'); background-size: cover; background-position: center center; display: block;"
                                                                                                 >
-                                                                                                    <img src="frontend/assets/images/8.jpg" alt="hot-deal" class="img-fluid bg-img" style="display: none;" />
+                                                                                                    <img src="/frontend/assets/images/8.jpg" alt="hot-deal" class="img-fluid bg-img" style="display: none;" />
                                                                                                 </div>
                                                                                             </div>
                                                                                         </a>
@@ -463,7 +463,7 @@
                                                                                                     class="bg-size"
                                                                                                     style="background-image: url('../frontend/assets/images/5.jpg'); background-size: cover; background-position: center center; display: block;"
                                                                                                 >
-                                                                                                    <img src="frontend/assets/images/5.jpg" alt="hot-deal" class="img-fluid bg-img" style="display: none;" />
+                                                                                                    <img src="/frontend/assets/images/5.jpg" alt="hot-deal" class="img-fluid bg-img" style="display: none;" />
                                                                                                 </div>
                                                                                             </div>
                                                                                         </a>
@@ -479,7 +479,7 @@
                                                                                                     class="bg-size"
                                                                                                     style="background-image: url('../frontend/assets/images/7.jpg'); background-size: cover; background-position: center center; display: block;"
                                                                                                 >
-                                                                                                    <img src="frontend/assets/images/7.jpg" alt="hot-deal" class="img-fluid bg-img" style="display: none;" />
+                                                                                                    <img src="/frontend/assets/images/7.jpg" alt="hot-deal" class="img-fluid bg-img" style="display: none;" />
                                                                                                 </div>
                                                                                             </div>
                                                                                         </a>
@@ -495,7 +495,7 @@
                                                                                                     class="bg-size"
                                                                                                     style="background-image: url('../frontend/assets/images/4.jpg'); background-size: cover; background-position: center center; display: block;"
                                                                                                 >
-                                                                                                    <img src="frontend/assets/images/4(1).jpg" alt="hot-deal" class="img-fluid bg-img" style="display: none;" />
+                                                                                                    <img src="/frontend/assets/images/4(1).jpg" alt="hot-deal" class="img-fluid bg-img" style="display: none;" />
                                                                                                 </div>
                                                                                             </div>
                                                                                         </a>
@@ -637,57 +637,57 @@
                                                                         <div class="slick-track" style="opacity: 1; height: 1518px; transform: translate3d(0px, -414px, 0px);">
                                                                             <div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/5.jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/5.jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/7.jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/7.jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/4(1).jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/4(1).jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/8.jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/8.jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/5.jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/5.jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/7.jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/7.jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/4(1).jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/4(1).jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/8.jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/8.jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/5.jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/5.jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/7.jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/7.jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 142px;">
                                                                                 <div>
-                                                                                    <div style="width: 100%; display: inline-block;"><img src="frontend/assets/images/4(1).jpg" alt="hot-deal" class="img-fluid" /></div>
+                                                                                    <div style="width: 100%; display: inline-block;"><img src="/frontend/assets/images/4(1).jpg" alt="hot-deal" class="img-fluid" /></div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -713,7 +713,7 @@
                             </div>
                             <div class="media-banner-box">
                                 <div class="media">
-                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" /> </a>
+                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" /> </a>
                                     <div class="media-body">
                                         <div class="media-contant">
                                             <div>
@@ -808,7 +808,7 @@
                             </div>
                             <div class="media-banner-box">
                                 <div class="media">
-                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" /> </a>
+                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" /> </a>
                                     <div class="media-body">
                                         <div class="media-contant">
                                             <div>
@@ -903,7 +903,7 @@
                             </div>
                             <div class="media-banner-box">
                                 <div class="media">
-                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" /> </a>
+                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" /> </a>
                                     <div class="media-body">
                                         <div class="media-contant">
                                             <div>
@@ -998,7 +998,7 @@
                             </div>
                             <div class="media-banner-box">
                                 <div class="media">
-                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" /> </a>
+                                    <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" /> </a>
                                     <div class="media-body">
                                         <div class="media-contant">
                                             <div>
@@ -1132,12 +1132,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -1245,12 +1245,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -1358,12 +1358,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -1471,12 +1471,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -1584,12 +1584,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -1697,12 +1697,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -1810,12 +1810,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -1923,12 +1923,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -2046,12 +2046,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -2159,12 +2159,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -2272,12 +2272,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -2385,12 +2385,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -2498,12 +2498,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -2611,12 +2611,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -2724,12 +2724,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -2837,12 +2837,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -2960,12 +2960,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -3073,12 +3073,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -3186,12 +3186,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -3299,12 +3299,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -3412,12 +3412,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -3525,12 +3525,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -3638,12 +3638,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -3751,12 +3751,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -3874,12 +3874,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -3987,12 +3987,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -4100,12 +4100,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -4213,12 +4213,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -4326,12 +4326,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -4439,12 +4439,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -4552,12 +4552,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -4665,12 +4665,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -4788,12 +4788,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -4901,12 +4901,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -5014,12 +5014,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -5127,12 +5127,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -5240,12 +5240,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -5353,12 +5353,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -5466,12 +5466,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -5579,12 +5579,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -5702,12 +5702,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a4.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -5815,12 +5815,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -5928,12 +5928,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/6.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -6041,12 +6041,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a7.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -6154,12 +6154,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a8.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -6267,12 +6267,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a1.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -6380,12 +6380,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a2.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -6493,12 +6493,12 @@
                                                                 <div class="product-imgbox">
                                                                     <div class="product-front">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="product-back">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
+                                                                            <img src="/frontend/assets/images/a3.jpg" class="img-fluid" alt="product" />
                                                                         </a>
                                                                     </div>
                                                                     <div class="new-label3">
@@ -6749,7 +6749,7 @@
                     <div class="col-md-4">
                         <div class="collection-banner-main banner-1">
                             <div class="collection-img bg-size" style="background-image: url('../frontend/assets/images/3.jpg'); background-size: cover; background-position: center center; display: block;">
-                                <img src="frontend/assets/images/3(3).jpg" class="img-fluid bg-img" alt="banner" style="display: none;" />
+                                <img src="/frontend/assets/images/3(3).jpg" class="img-fluid bg-img" alt="banner" style="display: none;" />
                             </div>
                             <div class="collection-banner-contain">
                                 <div>
@@ -6768,7 +6768,7 @@
                     <div class="col-md-4">
                         <div class="collection-banner-main banner-1">
                             <div class="collection-img bg-size" style="background-image: url('../frontend/assets/images/4.jpg'); background-size: cover; background-position: center center; display: block;">
-                                <img src="frontend/assets/images/4(3).jpg" class="img-fluid bg-img" alt="banner" style="display: none;" />
+                                <img src="/frontend/assets/images/4(3).jpg" class="img-fluid bg-img" alt="banner" style="display: none;" />
                             </div>
                             <div class="collection-banner-contain">
                                 <div>
@@ -6787,7 +6787,7 @@
                     <div class="col-md-4">
                         <div class="collection-banner-main banner-1">
                             <div class="collection-img bg-size" style="background-image: url('../frontend/assets/images/5.jpg'); background-size: cover; background-position: center center; display: block;">
-                                <img src="frontend/assets/images/5(2).jpg" class="img-fluid bg-img" alt="banner" style="display: none;" />
+                                <img src="/frontend/assets/images/5(2).jpg" class="img-fluid bg-img" alt="banner" style="display: none;" />
                             </div>
                             <div class="collection-banner-contain">
                                 <div>
@@ -6842,7 +6842,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -6941,7 +6941,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -7040,7 +7040,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -7147,7 +7147,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -7246,7 +7246,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -7345,7 +7345,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -7452,7 +7452,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -7551,7 +7551,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -7650,7 +7650,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -7757,7 +7757,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -7856,7 +7856,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -7955,7 +7955,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -8062,7 +8062,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -8161,7 +8161,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -8260,7 +8260,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -8367,7 +8367,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -8466,7 +8466,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -8565,7 +8565,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -8672,7 +8672,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -8771,7 +8771,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -8870,7 +8870,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -8977,7 +8977,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -9076,7 +9076,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -9175,7 +9175,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -9282,7 +9282,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -9381,7 +9381,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -9480,7 +9480,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -9587,7 +9587,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -9686,7 +9686,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -9785,7 +9785,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -9892,7 +9892,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -9991,7 +9991,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -10090,7 +10090,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -10197,7 +10197,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -10296,7 +10296,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -10395,7 +10395,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -10502,7 +10502,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -10601,7 +10601,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -10700,7 +10700,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -10807,7 +10807,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -10906,7 +10906,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -11005,7 +11005,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -11112,7 +11112,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -11211,7 +11211,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -11310,7 +11310,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -11417,7 +11417,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -11516,7 +11516,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -11615,7 +11615,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -11722,7 +11722,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -11821,7 +11821,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -11920,7 +11920,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -12037,7 +12037,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -12136,7 +12136,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -12235,7 +12235,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -12342,7 +12342,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -12441,7 +12441,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -12540,7 +12540,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -12647,7 +12647,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -12746,7 +12746,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -12845,7 +12845,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -12952,7 +12952,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -13051,7 +13051,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -13150,7 +13150,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -13257,7 +13257,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -13356,7 +13356,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -13455,7 +13455,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -13562,7 +13562,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -13661,7 +13661,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -13760,7 +13760,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -13867,7 +13867,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -13966,7 +13966,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -14065,7 +14065,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -14172,7 +14172,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -14271,7 +14271,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -14370,7 +14370,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -14477,7 +14477,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -14576,7 +14576,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -14675,7 +14675,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -14782,7 +14782,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -14881,7 +14881,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -14980,7 +14980,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -15087,7 +15087,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -15186,7 +15186,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -15285,7 +15285,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -15392,7 +15392,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -15491,7 +15491,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -15590,7 +15590,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -15697,7 +15697,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -15796,7 +15796,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -15895,7 +15895,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -16002,7 +16002,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -16101,7 +16101,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -16200,7 +16200,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -16307,7 +16307,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -16406,7 +16406,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -16505,7 +16505,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -16612,7 +16612,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -16711,7 +16711,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -16810,7 +16810,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -16917,7 +16917,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -17016,7 +17016,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -17115,7 +17115,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -17232,7 +17232,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -17331,7 +17331,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -17430,7 +17430,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -17537,7 +17537,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -17636,7 +17636,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -17735,7 +17735,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -17842,7 +17842,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -17941,7 +17941,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -18040,7 +18040,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -18147,7 +18147,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -18246,7 +18246,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -18345,7 +18345,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -18452,7 +18452,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -18551,7 +18551,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -18650,7 +18650,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -18757,7 +18757,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -18856,7 +18856,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -18955,7 +18955,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -19062,7 +19062,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -19161,7 +19161,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -19260,7 +19260,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -19367,7 +19367,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -19466,7 +19466,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -19565,7 +19565,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -19672,7 +19672,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -19771,7 +19771,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -19870,7 +19870,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -19977,7 +19977,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -20076,7 +20076,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -20175,7 +20175,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -20282,7 +20282,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -20381,7 +20381,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -20480,7 +20480,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -20587,7 +20587,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -20686,7 +20686,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -20785,7 +20785,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -20892,7 +20892,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -20991,7 +20991,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -21090,7 +21090,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -21197,7 +21197,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -21296,7 +21296,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -21395,7 +21395,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -21502,7 +21502,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -21601,7 +21601,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -21700,7 +21700,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -21807,7 +21807,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -21906,7 +21906,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -22005,7 +22005,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -22112,7 +22112,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -22211,7 +22211,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -22310,7 +22310,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -22427,7 +22427,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -22526,7 +22526,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -22625,7 +22625,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -22732,7 +22732,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -22831,7 +22831,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -22930,7 +22930,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -23037,7 +23037,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -23136,7 +23136,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -23235,7 +23235,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -23342,7 +23342,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -23441,7 +23441,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -23540,7 +23540,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -23647,7 +23647,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -23746,7 +23746,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -23845,7 +23845,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -23952,7 +23952,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -24051,7 +24051,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -24150,7 +24150,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -24257,7 +24257,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -24356,7 +24356,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -24455,7 +24455,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -24562,7 +24562,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -24661,7 +24661,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -24760,7 +24760,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -24867,7 +24867,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -24966,7 +24966,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -25065,7 +25065,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -25172,7 +25172,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -25271,7 +25271,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -25370,7 +25370,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -25477,7 +25477,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -25576,7 +25576,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -25675,7 +25675,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -25782,7 +25782,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -25881,7 +25881,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -25980,7 +25980,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -26087,7 +26087,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -26186,7 +26186,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -26285,7 +26285,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -26392,7 +26392,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -26491,7 +26491,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -26590,7 +26590,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -26697,7 +26697,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -26796,7 +26796,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -26895,7 +26895,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -27002,7 +27002,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -27101,7 +27101,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -27200,7 +27200,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/3(1).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -27307,7 +27307,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/4.jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -27406,7 +27406,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/1(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -27505,7 +27505,7 @@
                                                                 <div class="media-banner-box">
                                                                     <div class="media">
                                                                         <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1">
-                                                                            <img src="frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
+                                                                            <img src="/frontend/assets/images/2(2).jpg" class="img-fluid" alt="banner" />
                                                                         </a>
                                                                         <div class="media-body">
                                                                             <div class="media-contant">
@@ -28031,7 +28031,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/2(4).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/2(4).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         furniture
@@ -28045,7 +28045,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/3(4).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/3(4).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         bag
@@ -28059,7 +28059,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/4.png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/4.png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         tools
@@ -28073,7 +28073,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/5(3).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/5(3).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         grocery
@@ -28087,7 +28087,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/6(1).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/6(1).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         camera
@@ -28101,7 +28101,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/7.png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/7.png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         shoes
@@ -28115,7 +28115,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/1(4).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/1(4).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="0">
                                                         flower
@@ -28129,7 +28129,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/2(4).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/2(4).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="0">
                                                         furniture
@@ -28143,7 +28143,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/3(4).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/3(4).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="0">
                                                         bag
@@ -28157,7 +28157,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/4.png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/4.png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="0">
                                                         tools
@@ -28171,7 +28171,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/5(3).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/5(3).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="0">
                                                         grocery
@@ -28185,7 +28185,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/6(1).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/6(1).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="0">
                                                         camera
@@ -28199,7 +28199,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/7.png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/7.png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         shoes
@@ -28213,7 +28213,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/1(4).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/1(4).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         flower
@@ -28227,7 +28227,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/2(4).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/2(4).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         furniture
@@ -28241,7 +28241,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/3(4).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/3(4).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         bag
@@ -28255,7 +28255,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/4.png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/4.png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         tools
@@ -28269,7 +28269,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/5(3).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/5(3).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         grocery
@@ -28283,7 +28283,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/6(1).png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/6(1).png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         camera
@@ -28297,7 +28297,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="category-contain">
                                                     <div class="img-wrapper">
-                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/7.png" alt="category  " class="img-fluid" /> </a>
+                                                        <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/7.png" alt="category  " class="img-fluid" /> </a>
                                                     </div>
                                                     <a href="https://themes.pixelstrap.com/bigdeal/html/category-page(left-sidebar).html" class="btn-rounded" tabindex="-1">
                                                         shoes
@@ -28337,10 +28337,10 @@
                                                 <div class="product-box">
                                                     <div class="product-imgbox">
                                                         <div class="product-front">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/1(3).jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="product-back">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/a1.jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/a1.jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="new-label3">
                                                             <div>new</div>
@@ -28446,10 +28446,10 @@
                                                 <div class="product-box">
                                                     <div class="product-imgbox">
                                                         <div class="product-front">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/2(3).jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="product-back">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/a2.jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/a2.jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="new-label3">
                                                             <div>new</div>
@@ -28555,10 +28555,10 @@
                                                 <div class="product-box">
                                                     <div class="product-imgbox">
                                                         <div class="product-front">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/3(2).jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="product-back">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/a3.jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/a3.jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="new-label3">
                                                             <div>new</div>
@@ -28664,10 +28664,10 @@
                                                 <div class="product-box">
                                                     <div class="product-imgbox">
                                                         <div class="product-front">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/4(2).jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="product-back">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/a4.jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/a4.jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="new-label3">
                                                             <div>new</div>
@@ -28773,10 +28773,10 @@
                                                 <div class="product-box">
                                                     <div class="product-imgbox">
                                                         <div class="product-front">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/5(1).jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="product-back">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="new-label3">
                                                             <div>new</div>
@@ -28882,10 +28882,10 @@
                                                 <div class="product-box">
                                                     <div class="product-imgbox">
                                                         <div class="product-front">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/6.jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/6.jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="product-back">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="frontend/assets/images/a5.jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="0"> <img src="/frontend/assets/images/a5.jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="new-label3">
                                                             <div>new</div>
@@ -28991,10 +28991,10 @@
                                                 <div class="product-box">
                                                     <div class="product-imgbox">
                                                         <div class="product-front">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/7(1).jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="product-back">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/a7.jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/a7.jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="new-label3">
                                                             <div>new</div>
@@ -29100,10 +29100,10 @@
                                                 <div class="product-box">
                                                     <div class="product-imgbox">
                                                         <div class="product-front">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/8(1).jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="product-back">
-                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1"> <img src="frontend/assets/images/a8.jpg" class="img-fluid" alt="product" /> </a>
+                                                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html" tabindex="-1"> <img src="/frontend/assets/images/a8.jpg" class="img-fluid" alt="product" /> </a>
                                                         </div>
                                                         <div class="new-label3">
                                                             <div>new</div>
@@ -29227,7 +29227,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="testimonial-contain">
                                                     <div class="media">
-                                                        <div class="testimonial-img"><img src="frontend/assets/images/3(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
+                                                        <div class="testimonial-img"><img src="/frontend/assets/images/3(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
                                                         <div class="media-body">
                                                             <h5>mark jecno</h5>
                                                             <p>
@@ -29245,7 +29245,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="testimonial-contain">
                                                     <div class="media">
-                                                        <div class="testimonial-img"><img src="frontend/assets/images/1(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
+                                                        <div class="testimonial-img"><img src="/frontend/assets/images/1(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
                                                         <div class="media-body">
                                                             <h5>mark jecno</h5>
                                                             <p>
@@ -29263,7 +29263,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="testimonial-contain">
                                                     <div class="media">
-                                                        <div class="testimonial-img"><img src="frontend/assets/images/2(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
+                                                        <div class="testimonial-img"><img src="/frontend/assets/images/2(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
                                                         <div class="media-body">
                                                             <h5>mark jecno</h5>
                                                             <p>
@@ -29281,7 +29281,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="testimonial-contain">
                                                     <div class="media">
-                                                        <div class="testimonial-img"><img src="frontend/assets/images/3(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
+                                                        <div class="testimonial-img"><img src="/frontend/assets/images/3(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
                                                         <div class="media-body">
                                                             <h5>mark jecno</h5>
                                                             <p>
@@ -29299,7 +29299,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="testimonial-contain">
                                                     <div class="media">
-                                                        <div class="testimonial-img"><img src="frontend/assets/images/1(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
+                                                        <div class="testimonial-img"><img src="/frontend/assets/images/1(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
                                                         <div class="media-body">
                                                             <h5>mark jecno</h5>
                                                             <p>
@@ -29317,7 +29317,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="testimonial-contain">
                                                     <div class="media">
-                                                        <div class="testimonial-img"><img src="frontend/assets/images/2(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
+                                                        <div class="testimonial-img"><img src="/frontend/assets/images/2(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
                                                         <div class="media-body">
                                                             <h5>mark jecno</h5>
                                                             <p>
@@ -29335,7 +29335,7 @@
                                             <div style="width: 100%; display: inline-block;">
                                                 <div class="testimonial-contain">
                                                     <div class="media">
-                                                        <div class="testimonial-img"><img src="frontend/assets/images/3(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
+                                                        <div class="testimonial-img"><img src="/frontend/assets/images/3(5).jpg" class="img-fluid rounded-circle" alt="testimonial" /></div>
                                                         <div class="media-body">
                                                             <h5>mark jecno</h5>
                                                             <p>
@@ -29372,7 +29372,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/3(6).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/3(6).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29382,7 +29382,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/5(4).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/5(4).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29392,7 +29392,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/7(2).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/7(2).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29402,7 +29402,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/9.jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/9.jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29412,7 +29412,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/11.jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/11.jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29422,7 +29422,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/13.jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/13.jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29432,7 +29432,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/2(6).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/2(6).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29442,7 +29442,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/1(6).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/1(6).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29452,7 +29452,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/3(6).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/3(6).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29462,7 +29462,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/5(4).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/5(4).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29472,7 +29472,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/7(2).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/7(2).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29482,7 +29482,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/9.jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/9.jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29492,7 +29492,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/11.jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/11.jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29502,7 +29502,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/13.jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/13.jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29512,7 +29512,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/2(6).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/2(6).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29522,7 +29522,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/1(6).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/1(6).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29532,7 +29532,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/3(6).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/3(6).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29542,7 +29542,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/5(4).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/5(4).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29552,7 +29552,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/7(2).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/7(2).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29562,7 +29562,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/9.jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/9.jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29572,7 +29572,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/11.jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/11.jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29582,7 +29582,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/13.jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/13.jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>
@@ -29592,7 +29592,7 @@
                                             <div>
                                                 <div style="width: 100%; display: inline-block;">
                                                     <div class="instagram-box">
-                                                        <img src="frontend/assets/images/2(6).jpg" class="img-fluid" alt="insta" />
+                                                        <img src="/frontend/assets/images/2(6).jpg" class="img-fluid" alt="insta" />
                                                         <div class="insta-cover"><i class="fa fa-instagram"></i></div>
                                                     </div>
                                                 </div>

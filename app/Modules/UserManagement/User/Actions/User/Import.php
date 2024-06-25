@@ -44,7 +44,7 @@ class Import
                         "country_id" => $row['country'] ?? null,
                         "state_division_id" => $row['state'] ?? null,
                         "district_id" => $row['district'] ?? null,
-                        "thana_id" => $row['thana'] ?? null,
+                        "station_id" => $row['station'] ?? null,
                         "city_id" => $row['city'] ?? null,
                         "zip_code" => $row['zip_code'] ?? null,
                         "is_present_address" => $row['is_present_address'] == "yes" ? 1 : 0,
@@ -65,7 +65,7 @@ class Import
 
             return messageResponse('Items imported successfully');
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(), [],500, 'server_error');
         }
     }
 }

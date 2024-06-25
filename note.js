@@ -52,11 +52,16 @@
         Country [name:string,country_code:string,country_short_code:string,flag_url:string]
         StateDivision [country_id:bigint,name:string]
         District [country_id:bigint,state_division_id:bigint,name:string]
-        Thana [country_id:bigint,state_division_id:bigint,thana_id:bigint,name:string]
-        City [country_id:bigint,state_division_id:bigint,thana_id:bigint,city_id:bigint,name:string]
+        Thana [country_id:bigint,state_division_id:bigint,station_id:bigint,name:string]
+        City [country_id:bigint,state_division_id:bigint,station_id:bigint,city_id:bigint,name:string]
 
 
  */
 // test change
 // test change again
-// ehsan change again
+// ehsan change agai
+/*
+
+    
+
+*/

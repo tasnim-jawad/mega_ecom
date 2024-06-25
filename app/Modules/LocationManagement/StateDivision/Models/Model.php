@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 
 class Model extends EloquentModel
 {
-    protected $table = "state_divisions";
+    protected $table = "location_state_divisions";
     protected $guarded = [];
 
     protected static function booted()

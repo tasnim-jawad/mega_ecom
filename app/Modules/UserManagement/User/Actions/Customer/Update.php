@@ -11,9 +11,6 @@ class Update
     static $userCustomerInfoModel = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
     static $userShow = \App\Modules\UserManagement\User\Actions\Customer\Show::class;
     static $userAddressContactPerson = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
-    static $userCustomerInformation = \App\Modules\UserManagement\User\Models\UserCustomerInformationModel::class;
-    static $userSupplierInformation = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
-    static $userEmployeeInformation = \App\Modules\UserManagement\User\Models\UserEmployeeInformationModel::class;
     public static function execute($request, $id)
     {
         try {
@@ -34,10 +31,9 @@ class Update
                 }
             }
 
-            $userData->update($requestData);
 
             //store data
-            if ($userData = self::$model::create($requestData)) {
+            if ($userData->update($requestData)) {
                 $userCustomerInfoData = self::$userCustomerInfoModel::where('user_id', $id)->first();
                 $userCustomerInfoData->update([
                     'user_id' => $userData->id,
@@ -62,7 +58,7 @@ class Update
                             'state_division_id' => $address->state_division_id,
                             'division_id' => $address->division_id,
                             'district_id' => $address->district_id,
-                            'thana_id' => $address->thana_id,
+                            'station_id' => $address->station_id,
                             'city_id' => $address->city_id,
                             'zip_code' => $address->zip_code,
                             'is_present_address' => $address->is_present_address,
@@ -110,7 +106,7 @@ class Update
             }
 
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(),[], 500, 'server_error');
         }
     }
 }

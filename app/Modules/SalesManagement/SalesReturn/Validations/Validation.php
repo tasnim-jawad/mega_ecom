@@ -53,13 +53,13 @@ class Validation extends FormRequest
             'is_order' => 'required | sometimes',
             'is_invoiced' => 'required | sometimes',
             'is_delivered' => 'required | sometimes',
-            'is_pais' => 'required | sometimes',
+            'is_paid' => 'required | sometimes',
             'order_type' => 'required | sometimes',
             'order_status' => 'required | sometimes',
             'total' => 'required | sometimes',
             'subtotal' => 'required | sometimes',
             'paid_amount' => 'required | sometimes',
-            'souce' => 'required | sometimes',
+            'source' => 'required | sometimes',
             'status' => ['sometimes', Rule::in(['active', 'inactive'])],
         ];
     }

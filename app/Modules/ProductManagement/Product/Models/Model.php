@@ -7,8 +7,10 @@ use Illuminate\Support\Str;
 
 class Model extends EloquentModel
 {
-    static $productCategoryModel = "App\Modules\ProductManagement\ProductCategory\Models\Model";
-    static $productImageModel = "App\Modules\ProductManagement\Product\Models\ProductImageModel";
+    static $productCategoryModel = \App\Modules\ProductManagement\ProductCategory\Models\Model::class;
+    static $productBrandModel = \App\Modules\ProductManagement\ProductBrand\Models\Model::class;
+    static $productImageModel = \App\Modules\ProductManagement\Product\Models\ProductImageModel::class;
+    static $productVariantPriceModel = \App\Modules\ProductManagement\Product\Models\ProductVarientPriceModel::class;
 
     protected $table = "products";
     protected $guarded = [];
@@ -32,7 +34,11 @@ class Model extends EloquentModel
 
     public function product_categories()
     {
-        return $this->belongsToMany(self::$productCategoryModel, 'product_category_products', 'product_id', 'product_category_id');
+        return $this->belongsToMany(self::$productCategoryModel, 'product_category_products', 'product_id', 'product_category_id', 'id');
+    }
+    public function product_brand()
+    {
+        return $this->belongsTo(self::$productBrandModel, 'product_brand_id');
     }
 
     public function product_image()
@@ -42,6 +48,10 @@ class Model extends EloquentModel
     public function product_images()
     {
         return $this->hasMany(self::$productImageModel, 'product_id', 'id');
+    }
+    public function product_verient_price()
+    {
+        return $this->hasMany(self::$productVariantPriceModel, 'product_id', 'id');
     }
 
     public function scopeActive($q)

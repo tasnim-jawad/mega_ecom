@@ -14,7 +14,7 @@ class All
             $orderByType = request()->input('sort_type');
             $status = request()->input('status');
             $fields = request()->input('fields');
-            $with = [];
+            $with = ['product_varient_group:id,title'];
             $condition = [];
 
             $data = self::$model::query();

@@ -12,11 +12,20 @@ use App\Modules\UserManagement\User\Database\Seeder as UserSeeder;
 //product seeder
 use App\Modules\ProductManagement\ProductCategoryGroup\Database\Seeder as ProductCategoryGroupSeeder;
 use App\Modules\ProductManagement\ProductCategory\Database\Seeder as ProductCategorySeeder;
+
 use App\Modules\ProductManagement\ProductBrand\Database\Seeder as ProductBrandSeeder;
 use App\Modules\ProductManagement\ProductMenufacturer\Database\Seeder as ProductMenufacturerSeeder;
+
 use App\Modules\ProductManagement\ProductUnitGroup\Database\Seeder as ProductUnitGroupSeeder;
 use App\Modules\ProductManagement\ProductUnit\Database\Seeder as ProductUnitSeeder;
+
 use App\Modules\ProductManagement\ProductBarCode\Database\Seeder as ProductBarCodeSeeder;
+
+use App\Modules\ProductManagement\ProductVarientGroup\Database\Seeder as ProducVariantGroupSeeder;
+use App\Modules\ProductManagement\ProductVarient\Database\Seeder as ProductVariantSeeder;
+use App\Modules\ProductManagement\ProductVarientValue\Database\Seeder as ProductVariantValueSeeder;
+
+
 use App\Modules\ProductManagement\Product\Database\Seeder as ProductSeeder;
 //location seeder
 use App\Modules\LocationManagement\Country\Database\Seeder as CountrySeeder;
@@ -53,11 +62,20 @@ class DatabaseSeeder extends Seeder
             //product management seeder
             ProductCategoryGroupSeeder::class,
             ProductCategorySeeder::class,
+
             ProductBrandSeeder::class,
             ProductMenufacturerSeeder::class,
+
             ProductUnitGroupSeeder::class,
             ProductUnitSeeder::class,
+
             ProductBarCodeSeeder::class,
+
+            ProducVariantGroupSeeder::class,
+            ProductVariantSeeder::class,
+            ProductVariantValueSeeder::class,
+
+
             ProductSeeder::class,
             // location management
             CountrySeeder::class,

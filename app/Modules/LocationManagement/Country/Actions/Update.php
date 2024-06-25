@@ -13,6 +13,7 @@ class Update
                 return messageResponse('Data not found...',$data, 404, 'error');
             }
             $requestData = $request->validated();
+            $requestData['country_symbol'] = json_encode($requestData['country_symbol']);
             $data->update($requestData);
             return messageResponse('Item updated successfully',$data, 201);
         } catch (\Exception $e) {

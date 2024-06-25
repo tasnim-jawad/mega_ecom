@@ -10,7 +10,7 @@ class Update
     static $userAddressModel = \App\Modules\UserManagement\User\Models\UserAddressModel::class;
     static $userSupplierInfoModel = \App\Modules\UserManagement\User\Models\UserSupplierInformationModel::class;
 
-    static $userShow = \App\Modules\UserManagement\User\Actions\Customer\Show::class;
+    static $userShow = \App\Modules\UserManagement\User\Actions\Supplier\Show::class;
     static $userAddressContactPersonModel = \App\Modules\UserManagement\User\Models\UserAddressContactPersonModel::class;
 
     public static function execute($request, $id)
@@ -25,26 +25,27 @@ class Update
             }
 
             $additionalValidationData = [];
-            if (!$request->customer_type_id) {
-                $additionalValidationData[] = 'customer_type_id';
+            if (!$request->supplier_type_id) {
+                $additionalValidationData[] = 'supplier_type_id';
                 $response = additionalValidation($additionalValidationData);
                 if ($response) {
                     return $response;
                 }
             }
 
-            $userData->update($requestData);
 
             //store data
-            if ($userData = self::$model::create($requestData)) {
-                $userCustomerInfoData = self::$userSupplierInfoModel::where('user_id', $id)->first();
-                $userCustomerInfoData->update([
-                    'user_id' => $userData->id,
-                    'supplier_type_id' => $request->supplier_type_id,
-                    'supplier_id' => $request->supplier_id,
-                    'alt_email' => $request->alt_email,
-                    'alt_mobile_number' => $request->alt_mobile_number,
-                ]);
+            if ($userData->update($requestData)) {
+                $userSupplierInfoData = self::$userSupplierInfoModel::where('user_id', $id)->first();
+                if($userSupplierInfoData){
+                    $userSupplierInfoData->update([
+                        'user_id' => $userData->id,
+                        'supplier_type_id' => $request->supplier_type_id,
+                        'supplier_id' => $request->supplier_id,
+                        'alt_email' => $request->alt_email,
+                        'alt_mobile_number' => $request->alt_mobile_number,
+                    ]);
+                }
                 if ($request->has('userAddress')) {
                     $existingAddressIds = $userData->user_address()->pluck('id')->toArray();
                     $newAddressIds = [];
@@ -62,7 +63,7 @@ class Update
                             'state_division_id' => $address->state_division_id,
                             'division_id' => $address->division_id,
                             'district_id' => $address->district_id,
-                            'thana_id' => $address->thana_id,
+                            'station_id' => $address->station_id,
                             'city_id' => $address->city_id,
                             'zip_code' => $address->zip_code,
                             'is_present_address' => $address->is_present_address,
@@ -109,7 +110,7 @@ class Update
                 return self::$userShow::execute($userData->slug);
             }
         } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+            return messageResponse($e->getMessage(),[], 500, 'server_error');
         }
     }
 }

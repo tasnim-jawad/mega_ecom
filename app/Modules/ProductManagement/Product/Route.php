@@ -20,6 +20,11 @@ Route::prefix('v1')->group(function () {
         Route::get('{slug}/stock', [Controller::class, 'bulkAction']);
         Route::get('{categorySlug}/count', [Controller::class, 'bulkAction']);
         Route::get('{barandSlug}/count', [Controller::class, 'bulkAction']);
+        
+        Route::get('{barandSlug}/count', [Controller::class, 'bulkAction']);
+        Route::get('{barandSlug}/count', [Controller::class, 'bulkAction']);
+
+
 
         Route::get('{slug}', [Controller::class, 'show']);
     });
