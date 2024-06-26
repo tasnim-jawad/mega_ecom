@@ -7,99 +7,66 @@
                 </h2>
             </div>
             <div class="box-account box-info">
-
-                <form action="" method="post"
-                    enctype="multipart/form-data" class="form-horizontal">
-                    <div class="multiple-form-group">
-                        <div class="form-group required">
-                            <label for="input-firstname">First Name</label>
-                            <input type="text" name="firstname" value="shefat" placeholder="First Name"
-                                id="input-firstname" class="form-control" />
-                        </div>
-                        <div class="form-group required">
-                            <label for="input-lastname">Last Name</label>
-                            <input type="text" name="lastname" value="masum" placeholder="Last Name" id="input-lastname"
-                                class="form-control" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="input-company">Company</label>
-                        <input type="text" name="company" value="" placeholder="Company" id="input-company"
+                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                    <div class="form-group required">
+                        <label for="input-address">Address</label>
+                        <input type="text" name="address" v-model="form.address" placeholder="Address" id="input-address"
                             class="form-control" />
                     </div>
                     <div class="form-group required">
-                        <label for="input-address-1">Address 1</label>
-                        <input type="text" name="address_1" value="" placeholder="Address 1" id="input-address-1"
-                            class="form-control" />
+                        <label for="input-country">Country</label>
+                        <select name="country_id" id="input-country" class="form-control">
+                            <option value=""> --- Please Select --- </option>
+                            <option selected value="216">Bangladesh</option>
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <label for="input-address-2">Address 2</label>
-                        <input type="text" name="address_2" value="" placeholder="Address 2" id="input-address-2"
-                            class="form-control" />
+                    <div class="form-group required">
+                        <label for="input-division">Division</label>
+                        <select name="division_id" id="input-division" class="form-control" v-model="division_id">
+                            <option value=""> --- Please Select --- </option>
+                            <option v-for="(division,index) in divisions" :key="index" :value="division.id">{{ division.name }}</option>
+                            <!-- <option value="216">borishal</option>
+                            <option value="216">khulna</option> -->
+                        </select>
                     </div>
-                    <div class="multiple-form-group">
-                        <div class="form-group required">
-                            <label for="input-city">City</label>
-                            <input type="text" name="city" value="" placeholder="City" id="input-city"
-                                class="form-control" />
-                        </div>
-                        <div class="form-group required">
-                            <label for="input-postcode">Post Code</label>
-                            <input type="text" name="postcode" value="" placeholder="Post Code" id="input-postcode"
-                                class="form-control" />
-                        </div>
+                    <div class="form-group required">
+                        <label for="input-district">District</label>
+                        <select name="district_id" id="input-district" class="form-control">
+                            <option value=""> --- Please Select --- </option>
+                            <option value="216">norshingdi</option>
+                            <option value="216">belkuchi</option>
+                            <option value="216">jamalpur</option>
+                        </select>
                     </div>
 
-                    <div class="multiple-form-group">
-                        <div class="form-group required">
-                            <label for="input-country">Country</label>
-                            <select name="country_id" id="input-country" class="form-control">
-                                <option value=""> --- Please Select --- </option>
-                                <option value="244">Aaland Islands</option>
-                                <option value="1">Afghanistan</option>
-                                <option value="2">Albania</option>
-                                <option value="3">Algeria</option>
-                                <option value="239">Zimbabwe</option>
-                            </select>
-                        </div>
-                        <div class="form-group required">
-                            <label for="input-zone">Region / State</label>
-                            <select name="zone_id" id="input-zone" class="form-control">
-                                <option value=""> --- Please Select --- </option>
-                                <option value="322"> Dhaka City</option>
-                                <option value="323"> Khulna City</option>
-                                <option value="324"> Rajshahi City</option>
-                                <option value="4231"> Rangpur City</option>
-                                <option value="321">Chittagong City</option>
-                                <option value="4233">Gazipur City</option>
-                                <option value="4232">Others</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Default Address</label>
-                        <label class="radio-inline">
-                            <input type="radio" name="default" value="1" checked="checked" />
-                            Yes
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="default" value="0" />
-                            No
-                        </label>
+                    <div class="form-group required">
+                        <label for="input-station">Station</label>
+                        <select name="station_id" id="input-station" class="form-control">
+                            <option value=""> --- Please Select --- </option>
+                            <option value="322"> khilgaon </option>
+                            <option value="323"> kafrul</option>
+                            <option value="324"> mirpur</option>
+                            <option value="4231"> khagrachori</option>
+                            <option value="321">Chittagong City</option>
+                            <option value="4233">Gazipur City</option>
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Continue</button>
                 </form>
-
-
             </div>
         </div>
     </ProfileLayout>
 </template>
 
 <script>
+import axios from "axios";
 import ProfileLayout from "../shared/ProfileLayout.vue";
+import { useForm } from '@inertiajs/vue3'
 export default {
     components: { ProfileLayout },
+    props:{
+        user_address:Object,
+    },
     data: ()=>({
         bread_cumb: [
             {
@@ -112,8 +79,65 @@ export default {
                 url: '/profile/address',
                 active: true,
             },
-        ]
+        ],
+        divisions:null,
+        districts:null,
+        stations:null,
+
+        division_id:null,
+
+        form: useForm({
+            address: null,
+            country_id: null,
+            division_id: null,
+            district_id: null,
+            station_id: null,
+        })
     }),
+    created(){
+        console.log(this.user_address);
+        this.form.reset()
+        for (const key in this.user_address) {
+            if (Object.hasOwnProperty.call(this.user_address, key)) {
+                const element = this.user_address[key];
+                this.form[key] = element
+            }
+        }
+
+        this.all_division();
+        
+    },
+    watch:{
+        division_id:function(divisionId){
+            this.get_district_by_division_id(divisionId);
+        } 
+    },
+    methods:{
+        all_division:async function(){
+            let response =await axios.get('/api/v1/state-divisions', {
+                    params: {
+                        sort_by_col: 'id',
+                        sort_type: 'asc',
+                        status: 'active',
+                        fields: ['id', 'name'],
+                        get_all:1,
+                    }
+                })
+            this.divisions = response.data.data
+        },
+        get_district_by_division_id:async function(division_id){
+            let response =await axios.get(`/api/v1/get-district-by-division-id/${division_id}`, {
+                    params: {
+                        sort_by_col: 'id',
+                        sort_type: 'asc',
+                        status: 'active',
+                        fields: ['id', 'name']
+                    }
+                })
+
+            this.districts = response.data.data    
+        }
+    }
 };
 </script>
 

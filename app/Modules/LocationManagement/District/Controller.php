@@ -10,6 +10,7 @@ use App\Modules\LocationManagement\District\Actions\Update;
 use App\Modules\LocationManagement\District\Actions\SoftDelete;
 use App\Modules\LocationManagement\District\Actions\Restore;
 use App\Modules\LocationManagement\District\Actions\Import;
+use App\Modules\LocationManagement\District\Actions\getDistrictByDivisionId;
 use App\Modules\LocationManagement\District\Validations\BulkActionsValidation;
 use App\Modules\LocationManagement\District\Validations\GetAllValidation;
 use App\Modules\LocationManagement\District\Validations\Validation;
@@ -67,6 +68,11 @@ class Controller extends ControllersController
     public function bulkAction(BulkActionsValidation $request)
     {
         $data = BulkActions::execute($request);
+        return $data;
+    }
+    public function getDistrictByDivisionId( $division_id )
+    {
+        $data = getDistrictByDivisionId::execute($division_id);
         return $data;
     }
 

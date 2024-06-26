@@ -14,5 +14,8 @@ Route::prefix('v1')->group(function () {
         Route::post('restore', [Controller::class,'restore']);
         Route::post('import', [Controller::class,'import']);
         Route::post('bulk-action', [Controller::class, 'bulkAction']);
+        
     });
+    // others api 
+    Route::get('/get-district-by-division-id/{division_id}', [Controller::class,'getDistrictByDivisionId']);
 });

@@ -13,10 +13,11 @@
                             <img v-if="previewUrl" :src="check_image_url(previewUrl)" alt="user-profile-pic">
                             <img v-else-if="user.photo" :src="check_image_url(user.photo)" alt="user-profile-pic">
                             <img v-else :src="check_image_url('avatar.png')" alt="user-profile-pic">
-                            <div class="upload_icon">
-                                <a href="javascript:void(0)" @click.prevent="triggerFileInput">
+                            <div class="upload_icon" @click.prevent="triggerFileInput">
+                                <a href="javascript:void(0)">
                                     <i class="fa fa-picture-o" aria-hidden="true"></i>
                                 </a>
+                                <p>Change profile picture</p>
                             </div>
                             <input class="d-none" type="file" ref="fileInput" accept="image/*" @change="previewImage" >
                         </div>

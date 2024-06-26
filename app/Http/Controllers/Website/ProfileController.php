@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
+use App\Modules\UserManagement\User\Models\UserAddressModel;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -50,17 +52,21 @@ class ProfileController extends Controller
                 'title' => 'Account Information',
                 'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
                 'description' => 'Best eCommerce in bangladesh'
-            ]
+            ],
+            'user_info' => auth()->user(),
         ]);
     }
     public function address()
     {
+        $address = UserAddressModel::where('user_id',auth()->user()->id)->where('address_types','delivery')->latest()->first();
+        
         return Inertia::render('Profile/pages/Address', [
             'event' => [
                 'title' => 'Order Address',
                 'image' => 'https://etek.com.bd/frontend/images/etek_logo.png',
                 'description' => 'Best eCommerce in bangladesh'
-            ]
+            ],
+            'user_address' => $address,
         ]);
     }
     public function password()
@@ -72,5 +78,23 @@ class ProfileController extends Controller
                 'description' => 'Best eCommerce in bangladesh'
             ]
         ]);
+    }
+
+    public function edit_account(){
+        // dd(request()->all());
+        $this->validate(request(), [
+            "name" => ['required'],
+            "user_name" => ['required'],
+            "email" => ['required', 'unique:users,email,'.auth()->user()->id],
+            "phone_number" => ['required','unique:users,phone_number,'.auth()->user()->id],
+        ]);
+
+        $user = User::find(auth()->user()->id);
+        // dd($user);
+        $user->fill(request()->all());
+        $user->save();
+
+        return redirect()->back();
+
     }
 }
