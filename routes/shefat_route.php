@@ -30,6 +30,8 @@ Route::group( ['namespace' => 'App\Http\Controllers' ],function(){
     Route::get('/profile/address','Website\ProfileController@address')->name('website_profile_address');
     Route::get('/profile/password','Website\ProfileController@password')->name('website_profile_password');
 
+    Route::post('/profile/edit-account','Website\ProfileController@edit_account')->name('website_edit_account');
+
     Route::get('/login','Website\AuthController@login')->name('login');
     Route::post('/login','Website\AuthController@login_submit')->name('login_submit');
 
@@ -45,3 +47,6 @@ Route::group( ['namespace' => 'App\Http\Controllers' ],function(){
 //         ]
 //     ]);
 // });
+Route::get('/test',function(){
+    dd(auth()->user());
+});
