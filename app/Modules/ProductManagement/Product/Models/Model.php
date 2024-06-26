@@ -15,6 +15,8 @@ class Model extends EloquentModel
     protected $table = "products";
     protected $guarded = [];
 
+    protected $appends = ['current_price','amount_in_percent'];
+
 
     protected static function booted()
     {
@@ -30,6 +32,10 @@ class Model extends EloquentModel
             }
             $data->save();
         });
+    }
+    public function scopeActive($q)
+    {
+        return $q->where('status', 'active');
     }
 
     public function product_categories()
@@ -53,12 +59,37 @@ class Model extends EloquentModel
     {
         return $this->hasMany(self::$productVariantPriceModel, 'product_id', 'id');
     }
-
-
-    
-
-    public function scopeActive($q)
+    public function getCurrentPriceAttribute()
     {
-        return $q->where('status', 'active');
+
+        $price = $this->purchase_price;
+
+        if ($this->discount_amount && $this->discount_type) {
+            switch ($this->discount_type) {
+                case 'off':
+                    $price -= $this->discount_amount;
+                    break;
+                case 'percent':
+                    $price -= ($this->purchase_price * ($this->discount_amount / 100));
+                    break;
+                case 'flat':
+                    $price -= $this->discount_amount;
+                    break;
+            }
+        }
+
+        return $price;
+    }
+
+    public function getAmountInPercentAttribute()
+    {
+        if (($this->discount_amount && $this->discount_type) && $this->discount_type != 'percent') {
+            switch ($this->discount_type) {
+                case 'off' || 'flat':
+                    return ($this->discount_amount / $this->purchase_price) * 100;
+            }
+        }
+
+        return 0;
     }
 }

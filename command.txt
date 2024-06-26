@@ -148,3 +148,12 @@ php artisan make:module AccountAndPayments account_transaction_attachments [acco
 
 --- account and payments---
 --- END---
+
+--- BannerManagement---
+--- BannerManagement---
+
+php artisan make:module BannerManagement/HomeBanner [title:string-100,image:string-100,short_des:string-100,offer_title:string-50,button_url:string-150]
+php artisan make:module BannerManagement/HomeSideBanner [banner_one:string-150,banner_two:string-150,banner_three:string-150,banner_four:string-150]
+
+--- BannerManagement---
+--- END---

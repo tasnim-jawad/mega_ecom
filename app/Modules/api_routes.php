@@ -81,9 +81,17 @@ include_once  base_path("app/Modules/VatManagement/Vat/Route.php");
 include_once  base_path("app/Modules/VatManagement/VatGroup/Route.php");
 /*
 |--------------------------------------------------------------------------
+| Banner management and Mobile api  Routes
+|--------------------------------------------------------------------------
+*/
+include_once  base_path("app/Modules/BannerManagement/HomeBanner/Route.php");
+include_once  base_path("app/Modules/BannerManagement/HomeSideBanner/Route.php");
+/*
+|--------------------------------------------------------------------------
 | Website and Mobile api  Routes
 |--------------------------------------------------------------------------
 */
+
 include_once  base_path("app/Modules/websiteApi/Category/Route.php");
 include_once  base_path("app/Modules/websiteApi/Brand/Route.php");
 include_once  base_path("app/Modules/websiteApi/Product/Route.php");
