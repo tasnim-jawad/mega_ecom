@@ -10,7 +10,7 @@ class Delete
     {
         try {
             if (!$data=self::$model::find($id)) {
-                return messageResponse('Data not found...', 404, 'error');
+                return messageResponse('Data not found...',$data, 404, 'error');
             }
             $data->delete();
             return messageResponse('Item Successfully deleted', 200, 'success');

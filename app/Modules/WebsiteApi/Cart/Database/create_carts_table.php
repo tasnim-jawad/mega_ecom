@@ -16,6 +16,9 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('user_id')->nullable();
             $table->bigInteger('product_id')->nullable();
+            $table->string('product_name')->nullable();
+            $table->integer('quantity')->nullable();
+            $table->float('current_ price')->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();
@@ -31,4 +34,8 @@ return new class extends Migration
     {
         Schema::dropIfExists('carts');
     }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 83204433019340f14bcc9bcba5e84d3b7d4fd4b8

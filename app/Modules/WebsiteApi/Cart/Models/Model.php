@@ -9,6 +9,7 @@ class Model extends EloquentModel
 {
     protected $table = "carts";
     protected $guarded = [];
+    static $productModel = \App\Modules\ProductManagement\Product\Models\Model::class;
 
     protected static function booted()
     {
@@ -30,4 +31,14 @@ class Model extends EloquentModel
     {
         return $q->where('status', 'active');
     }
+<<<<<<< HEAD
 }
+=======
+
+
+    public function product()
+    {
+        return $this->belongsTo(self::$productModel, "product_id");
+    }
+}
+>>>>>>> 83204433019340f14bcc9bcba5e84d3b7d4fd4b8

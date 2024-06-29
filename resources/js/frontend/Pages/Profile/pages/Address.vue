@@ -25,7 +25,7 @@
                         <label for="input-division">Division</label>
                         <select name="division_id" id="input-division" class="form-control" v-model="division_id">
                             <option value=""> --- Please Select --- </option>
-                            <option v-for="(division,index) in divisions" :key="index" 
+                            <option v-for="(division,index) in divisions" :key="index"
                                         :value="division.id"
                                         :selected="division.id == form.division_id" >{{ division.name }}</option>
                         </select>
@@ -34,7 +34,7 @@
                         <label for="input-district">District</label>
                         <select name="district_id" id="input-district" class="form-control" v-model="district_id" :disabled="isSelectDistrictDisabled">
                             <option value=""> --- Please Select --- </option>
-                            <option v-for="(district,index) in districts" :key="index" 
+                            <option v-for="(district,index) in districts" :key="index"
                                         :value="district.id"
                                         :selected="district.id == form.district_id">{{ district.name }}</option>
                         </select>
@@ -44,7 +44,7 @@
                         <label for="input-station">Station</label>
                         <select name="station_id" id="input-station" class="form-control" v-model="form.station_id" :disabled="isSelectStationDisabled">
                             <option value=""> --- Please Select --- </option>
-                            <option v-for="(station,index) in stations" :key="index" 
+                            <option v-for="(station,index) in stations" :key="index"
                                         :value="station.id"
                                         :selected="station.id == form.station_id">{{ station.name }}</option>
                         </select>
@@ -117,7 +117,7 @@ export default {
         },
         district_id:function(districtId){
             this.get_station_by_district_id(districtId);
-        } 
+        }
     },
     methods:{
         edit_address: function () {

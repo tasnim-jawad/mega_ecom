@@ -15,13 +15,14 @@ class Seeder extends SeederClass
     {
 
         self::$model::truncate();
-        for ($i = 1; $i < 5; $i++) {
+        for ($i = 1; $i < 10; $i++) {
             self::$model::create([
                 'title' => facker()->name,
                 'short_des' => facker()->name,
                 'offer_title' => facker()->name,
                 'button_url' => facker()->name,
                 'image' => facker()->imageUrl(1100, 500),
+                'is_show' => rand(0, 1),
             ]);
         }
     }
