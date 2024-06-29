@@ -79,11 +79,6 @@ export default {
     },
     methods: {
         edit_account: function () {
-            // axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('[name="csrf-token"]').content;
-            // axios.post('login', new FormData(event.target))
-            //     .then(res => { })
-            console.log("edit submit clicked",this.form.name,this.form.user_name);
-            
             this.form.clearErrors();
             this.form.post('/profile/edit-account');
         }

@@ -32,6 +32,7 @@ Route::group( ['namespace' => 'App\Http\Controllers' ],function(){
 
     Route::post('/profile/edit-account','Website\ProfileController@edit_account')->name('website_edit_account');
     Route::post('/profile/edit-address','Website\ProfileController@edit_address')->name('website_edit_address');
+    Route::post('/profile/change-password','Website\ProfileController@change_password')->name('website_change_password');
 
     Route::get('/login','Website\AuthController@login')->name('login');
     Route::post('/login','Website\AuthController@login_submit')->name('login_submit');

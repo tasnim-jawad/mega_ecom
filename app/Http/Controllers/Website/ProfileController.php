@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Modules\UserManagement\User\Models\UserAddressModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Inertia\Inertia;
 
 class ProfileController extends Controller
@@ -114,5 +115,24 @@ class ProfileController extends Controller
 
         return redirect()->back();
 
+    }
+
+    public function change_password(){
+        // dd(request()->all());
+        $this->validate(request(), [
+            "old_password" => ['required'],
+            "new_password" => ['required','string','min:8','confirmed']
+        ]);
+
+        $user = User::find(auth()->user()->id);
+
+        if (!Hash::check(request()->old_password, $user->password)) {
+            return back()->withErrors(['old_password' => 'The provided password does not match your current password.']);
+        }
+
+        $user->password = Hash::make(request()->new_password);
+        $user->save();
+
+        return redirect()->back()->with('success', 'Password changed successfully.');
     }
 }

@@ -41,6 +41,10 @@ class HandleInertiaRequests extends Middleware
                     ? $request->user()->only('slug', 'name', 'user_name', 'email', 'phone_number', 'photo') // Add more fields as needed
                     : null;
             },
+            'flash' => [
+                'success' => $request->session()->get('success'),
+                'error' => $request->session()->get('error'),
+            ]
         ]);
     }
 }
