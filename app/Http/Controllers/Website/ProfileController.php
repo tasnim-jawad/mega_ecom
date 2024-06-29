@@ -59,7 +59,7 @@ class ProfileController extends Controller
     public function address()
     {
         $address = UserAddressModel::where('user_id',auth()->user()->id)->where('address_types','delivery')->latest()->first();
-        
+
         return Inertia::render('Profile/pages/Address', [
             'event' => [
                 'title' => 'Order Address',
@@ -93,6 +93,24 @@ class ProfileController extends Controller
         // dd($user);
         $user->fill(request()->all());
         $user->save();
+
+        return redirect()->back();
+
+    }
+    public function edit_address(){
+        // dd(request()->all());
+        $this->validate(request(), [
+            "address" => ['required'],
+            "country_id" => ['required'],
+            "division_id" => ['required'],
+            "district_id" => ['required'],
+            "station_id" => ['required'],
+        ]);
+
+        $address = UserAddressModel::where('user_id',auth()->user()->id)->where('id',request()->id)->first();
+        // dd($address);
+        $address->fill(request()->all());
+        $address->save();
 
         return redirect()->back();
 

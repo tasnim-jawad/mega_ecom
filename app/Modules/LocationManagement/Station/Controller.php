@@ -10,6 +10,7 @@ use App\Modules\LocationManagement\Station\Actions\Update;
 use App\Modules\LocationManagement\Station\Actions\SoftDelete;
 use App\Modules\LocationManagement\Station\Actions\Restore;
 use App\Modules\LocationManagement\Station\Actions\Import;
+use App\Modules\LocationManagement\Station\Actions\getStationByDistrictId;
 use App\Modules\LocationManagement\Station\Validations\BulkActionsValidation;
 use App\Modules\LocationManagement\Station\Validations\GetAllValidation;
 use App\Modules\LocationManagement\Station\Validations\Validation;
@@ -67,6 +68,11 @@ class Controller extends ControllersController
     public function bulkAction(BulkActionsValidation $request)
     {
         $data = BulkActions::execute($request);
+        return $data;
+    }
+    public function getStationByDistrictId($district_id)
+    {
+        $data = getStationByDistrictId::execute($district_id);
         return $data;
     }
 
