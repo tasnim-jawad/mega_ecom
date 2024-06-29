@@ -34,8 +34,4 @@ return new class extends Migration
     {
         Schema::dropIfExists('carts');
     }
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 83204433019340f14bcc9bcba5e84d3b7d4fd4b8
