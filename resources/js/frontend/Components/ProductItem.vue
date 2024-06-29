@@ -118,17 +118,10 @@
                     </div>
                     <div class="detail-right">
                         <div class="check-price">
-<<<<<<< HEAD
                             $ {{ ( Math.random() * 999 ).toFixed(2) }}
                         </div>
                         <div class="price">
                             $ {{ ( Math.random() * 100 ).toFixed(2) }}
-=======
-                            $ {{ (Math.random() * 999).toFixed(2) }}
-                        </div>
-                        <div class="price">
-                            $ {{ (Math.random() * 100).toFixed(2) }}
->>>>>>> 83204433019340f14bcc9bcba5e84d3b7d4fd4b8
                         </div>
                     </div>
                 </div>
@@ -138,32 +131,18 @@
     </div>
 </template>
 <script>
-<<<<<<< HEAD
-import { Link } from '@inertiajs/vue3'
-export default {
-    components: { Link },
-    props: ['product'],
-=======
 
 import { mapActions, mapState } from "pinia";
 import { common_store } from "../Store/common_store";
 export default {
     props: ["product"],
 
->>>>>>> 83204433019340f14bcc9bcba5e84d3b7d4fd4b8
     methods: {
         check_image_url: function (url) {
             try {
                 new URL(url);
                 return url;
             } catch (e) {
-<<<<<<< HEAD
-                return "/"+url;
-            }
-        }
-    }
-}
-=======
                 return "/" + url;
             }
         },
@@ -175,5 +154,4 @@ export default {
         }),
     },
 };
->>>>>>> 83204433019340f14bcc9bcba5e84d3b7d4fd4b8
 </script>

@@ -31,9 +31,6 @@ class Model extends EloquentModel
     {
         return $q->where('status', 'active');
     }
-<<<<<<< HEAD
-}
-=======
 
 
     public function product()
@@ -41,4 +38,3 @@ class Model extends EloquentModel
         return $this->belongsTo(self::$productModel, "product_id");
     }
 }
->>>>>>> 83204433019340f14bcc9bcba5e84d3b7d4fd4b8

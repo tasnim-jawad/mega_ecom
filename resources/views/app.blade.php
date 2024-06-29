@@ -44,6 +44,7 @@
     <script src="{{ asset('frontend') }}/assets/js/bootstrap.js.download"></script>
     <script defer src="{{ asset('frontend') }}/assets/js/script.js"></script>
     <script defer src="{{ asset('frontend') }}/assets/js/modal.js"></script>
+    <script defer src="plugins/sweet_alert.js"></script>
 
     @vite(['resources/js/frontend/app.js'])
 
