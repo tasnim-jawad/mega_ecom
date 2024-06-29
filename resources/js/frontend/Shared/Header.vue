@@ -148,9 +148,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div class="item-count-contain">
-                                        3
-                                    </div>
+                                    <div class="item-count-contain">{{ all_cart_data.length }}</div>
                                 </li>
                             </ul>
                         </div>
@@ -234,14 +232,28 @@
 </template>
 
 <script>
-import { Link } from '@inertiajs/vue3';
-import SearchBar from '../Components/SearchBar.vue';
+import { Link } from "@inertiajs/vue3";
+import SearchBar from "../Components/SearchBar.vue";
+import { common_store } from "../Store/common_store";
+import { mapActions, mapState } from "pinia";
 export default {
     components: { Link, SearchBar },
+    created: async function () {
+        await this.get_all_cart_data();
+    },
     methods: {
-        toggle_nav: function(){
-            this.$refs.main_menu.classList.toggle('active');
-        }
-    }
+        toggle_nav: function () {
+            this.$refs.main_menu.classList.toggle("active");
+        },
+
+        ...mapActions(common_store, {
+            get_all_cart_data: "get_all_cart_data",
+        }),
+    },
+    computed: {
+        ...mapState(common_store, {
+            all_cart_data: "all_cart_data",
+        }),
+    },
 };
 </script>

@@ -1,164 +1,146 @@
 <template>
     <Layout>
         <div class="breadcrumb-main ">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="breadcrumb-contain">
-                    <div>
-                        <h2>cart</h2>
-                        <ul>
-                            <li><a href="javascript:void(0)">home</a></li>
-                            <li><i class="fa fa-angle-double-right"></i></li>
-                            <li><a href="javascript:void(0)">cart</a></li>
-                        </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="breadcrumb-contain">
+                            <div>
+                                <h2>cart</h2>
+                                <ul>
+                                    <li><a href="javascript:void(0)">home</a></li>
+                                    <li><i class="fa fa-angle-double-right"></i></li>
+                                    <li><a href="javascript:void(0)">cart</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<section class="cart-section section-big-py-space b-g-light">
-    <div class="custom-container">
-        <div class="row">
-            <div class="col-sm-12">
-                <table class="table cart-table table-responsive-xs">
-                    <thead>
-                    <tr class="table-head">
-                        <th scope="col">image</th>
-                        <th scope="col">product name</th>
-                        <th scope="col">price</th>
-                        <th scope="col">quantity</th>
-                        <th scope="col">action</th>
-                        <th scope="col">total</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <a href="javascript:void(0)"><img src="https://themes.pixelstrap.com/bigdeal/assets/images/layout-3/product/1.jpg" alt="cart" class=" "></a>
-                        </td>
-                        <td><a href="javascript:void(0)">cotton shirt</a>
-                            <div class="mobile-cart-content">
-                                <div class="col-xs-3">
-                                    <div class="qty-box">
-                                        <div class="input-group">
-                                            <input type="text" name="quantity" class="form-control input-number" value="1">
+        <section class="cart-section section-big-py-space b-g-light">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table class="table cart-table table-responsive-xs">
+                            <thead>
+                                <tr class="table-head">
+                                    <th scope="col">image</th>
+                                    <th scope="col">product name</th>
+                                    <th scope="col">price</th>
+                                    <th scope="col">quantity</th>
+                                    <th scope="col">action</th>
+                                    <th scope="col">total</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr v-for="cart in all_cart_data" :key="cart.id">
+                                    <td>
+                                        <Link :href="`/product-details/${cart?.product?.slug}`"><img
+                                            :src="`/${cart.product.product_image.url}`" alt="cart" class=" "></Link>
+                                    </td>
+                                    <td>
+                                        <Link :href="`/product-details/${cart?.product?.slug}`">{{ cart.product.title }}
+                                        </Link>
+                                        <div class="mobile-cart-content">
+                                            <div class="col-xs-3">
+                                                <div class="qty-box">
+                                                    <div class="input-group">
+                                                        <input type="number" name="quantity"
+                                                            class="form-control input-number" v-model="cart.quantity"
+                                                            @keyup="
+                                    cart_quantity_update(
+                                        cart.id,
+                                        null,
+                                        $event.target.value
+                                    )
+                                    ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <h2 class="td-color">${{ cart.product.current_price }}</h2>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <h2 class="td-color">
+                                                    <Link :href="`/product-details/${cart?.product?.slug}`"
+                                                        class="icon"><i class="ti-close"></i></Link>
+                                                </h2>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-3">
-                                    <h2 class="td-color">$63.00</h2></div>
-                                <div class="col-xs-3">
-                                    <h2 class="td-color"><a href="javascript:void(0)" class="icon"><i class="ti-close"></i></a></h2></div>
-                            </div>
-                        </td>
-                        <td>
-                            <h2>$63.00</h2></td>
-                        <td>
-                            <div class="qty-box">
-                                <div class="input-group">
-                                    <input type="number" name="quantity" class="form-control input-number" value="1">
-                                </div>
-                            </div>
-                        </td>
-                        <td><a href="javascript:void(0)" class="icon"><i class="ti-close"></i></a></td>
-                        <td>
-                            <h2 class="td-color">$4539.00</h2></td>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <a href="javascript:void(0)"><img src="https://themes.pixelstrap.com/bigdeal/assets/images/layout-3/product/4.jpg" alt="cart" class=" "></a>
-                        </td>
-                        <td><a href="javascript:void(0)">cotton shirt</a>
-                            <div class="mobile-cart-content">
-                                <div class="col-xs-3">
-                                    <div class="qty-box">
-                                        <div class="input-group">
-                                            <input type="number" name="quantity" class="form-control input-number" value="1">
+                                    </td>
+                                    <td>
+                                        <h2>${{ cart.product.current_price }}</h2>
+                                    </td>
+                                    <td>
+                                        <div class="qty-box">
+                                            <div class="input-group">
+                                                <input type="number" name="quantity" class="form-control input-number"
+                                                    v-model="cart.quantity" @keyup="
+                                    cart_quantity_update(
+                                        cart.id,
+                                        null,
+                                        $event.target.value
+                                    )
+                                    ">
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-3">
-                                    <h2 class="td-color">$63.00</h2></div>
-                                <div class="col-xs-3">
-                                    <h2 class="td-color"><a href="javascript:void(0)" class="icon"><i class="ti-close"></i></a></h2></div>
-                            </div>
-                        </td>
-                        <td>
-                            <h2>$63.00</h2></td>
-                        <td>
-                            <div class="qty-box">
-                                <div class="input-group">
-                                    <input type="number" name="quantity" class="form-control input-number" value="1">
-                                </div>
-                            </div>
-                        </td>
-                        <td><a href="javascript:void(0)" class="icon"><i class="ti-close"></i></a></td>
-                        <td>
-                            <h2 class="td-color">$4539.00</h2></td>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <a href="javascript:void(0)"><img src="https://themes.pixelstrap.com/bigdeal/assets/images/layout-3/product/3.jpg" alt="cart" class=" "></a>
-                        </td>
-                        <td><a href="javascript:void(0)">cotton shirt</a>
-                            <div class="mobile-cart-content">
-                                <div class="col-xs-3">
-                                    <div class="qty-box">
-                                        <div class="input-group">
-                                            <input type="number" name="quantity" class="form-control input-number" value="1">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-3">
-                                    <h2 class="td-color">$63.00</h2></div>
-                                <div class="col-xs-3">
-                                    <h2 class="td-color"><a href="javascript:void(0)" class="icon"><i class="ti-close"></i></a></h2></div>
-                            </div>
-                        </td>
-                        <td>
-                            <h2>$63.00</h2></td>
-                        <td>
-                            <div class="qty-box">
-                                <div class="input-group">
-                                    <input type="number" name="quantity" class="form-control input-number" value="1">
-                                </div>
-                            </div>
-                        </td>
-                        <td><a href="javascript:void(0)" class="icon"><i class="ti-close"></i></a></td>
-                        <td>
-                            <h2 class="td-color">$4539.00</h2></td>
-                    </tr>
-                    </tbody>
-                </table>
-                <table class="table cart-table table-responsive-md">
-                    <tfoot>
-                    <tr>
-                        <td>total price :</td>
-                        <td>
-                            <h2>$6935.00</h2></td>
-                    </tr>
-                    </tfoot>
-                </table>
+                                    </td>
+                                    <td><a href="javascript:void(0)" @click="remove_cart_item(cart.id)" class="icon"><i
+                                                class="ti-close"></i></a></td>
+                                    <td>
+                                        <h2 class="td-color">${{ cart.quantity * cart.product.current_price }}</h2>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        <table class="table cart-table table-responsive-md">
+                            <tfoot>
+                                <tr>
+                                    <td>total price :</td>
+                                    <td>
+                                        <h2>${{ total_cart_price }}</h2>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="row cart-buttons">
+                    <div class="col-12">
+                        <Link href="/" class="btn btn-normal">continue shopping</Link>
+                        <Link href="/checkout" class="btn btn-normal ms-3">check out</Link>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row cart-buttons">
-            <div class="col-12"><a href="javascript:void(0)" class="btn btn-normal">continue shopping</a> <a href="javascript:void(0)" class="btn btn-normal ms-3">check out</a></div>
-        </div>
-    </div>
-</section>
+        </section>
     </Layout>
 </template>
 
 <script>
 import Layout from "../../Shared/Layout.vue";
+import { mapActions, mapState } from "pinia";
+import { common_store } from "../../Store/common_store";
 export default {
     components: { Layout },
+
+
+    methods: {
+        ...mapActions(common_store, {
+
+            remove_cart_item: "remove_cart_item",
+            cart_quantity_update: "cart_quantity_update",
+        }),
+    },
+
+    computed: {
+        ...mapState(common_store, {
+            all_cart_data: "all_cart_data",
+            total_cart_price: "total_cart_price",
+        }),
+    },
 };
 </script>
 

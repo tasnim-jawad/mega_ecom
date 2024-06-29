@@ -54,11 +54,6 @@ accesor running price ,percentage
 
 
 
-
-
-
-
-
 ----command issue----
 
 command default value set

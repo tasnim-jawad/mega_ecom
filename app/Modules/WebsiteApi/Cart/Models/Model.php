@@ -9,6 +9,7 @@ class Model extends EloquentModel
 {
     protected $table = "carts";
     protected $guarded = [];
+    static $productModel = \App\Modules\ProductManagement\Product\Models\Model::class;
 
     protected static function booted()
     {
@@ -29,5 +30,11 @@ class Model extends EloquentModel
     public function scopeActive($q)
     {
         return $q->where('status', 'active');
+    }
+
+
+    public function product()
+    {
+        return $this->belongsTo(self::$productModel, "product_id");
     }
 }

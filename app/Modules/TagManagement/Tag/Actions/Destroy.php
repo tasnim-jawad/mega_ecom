@@ -10,7 +10,7 @@ class Destroy
     {
         try {
             if (!$data=self::$model::where('slug', $slug)->first()) {
-                return messageResponse('Data not found...', 404, 'error');
+                return messageResponse('Data not found...',$data, 404, 'error');
             }
             $data->delete();
             return messageResponse('Item Successfully deleted',[], 200, 'success');

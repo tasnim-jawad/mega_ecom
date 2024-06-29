@@ -38103,7 +38103,11 @@ ul.sosiyal.sosiyal-inverse li:hover {
 
 .add_to_cart .cart-inner .cart_media ul.cart_product .qty-adj {
    height: 25px;
+<<<<<<< HEAD
    width: 35px;
+=======
+   width: 50px;
+>>>>>>> 83204433019340f14bcc9bcba5e84d3b7d4fd4b8
 }
 
 .add_to_cart .cart-inner .cart_media ul.cart_product li {

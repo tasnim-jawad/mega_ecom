@@ -66,7 +66,6 @@ return new class extends Migration
             $table->float('minimum_sale_price')->nullable()->unsigned();
             $table->float('maximum_sale_price')->nullable()->unsigned();
             $table->float('profit_margin_percent')->nullable();
-            $table->float('profit_margin_percent')->nullable();
 
 
             $table->enum('discount_type', ['off', 'percent', 'flat'])->nullable();

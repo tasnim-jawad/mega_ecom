@@ -1,7 +1,7 @@
 <template>
     <!-- footer start -->
     <footer>
-        <div class="footer1 ">
+        <div class="footer1">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -553,24 +553,46 @@
             </div>
             <div class="cart_media">
                 <ul class="cart_product">
-                    <li>
+                    <li v-for="cart in all_cart_data" :key="cart.id">
                         <div class="media">
-                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/1(8).jpg">
-                            </a>
+                            <Link :href="`/product-details/${cart?.product?.slug}`">
+                            <img alt="megastore1" class="me-3" :src="`/${cart.product.product_image.url}`" />
+                            </Link>
                             <div class="media-body">
-                                <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                    <h4>redmi not 3</h4>
-                                </a>
+                                <Link :href="`/product-details/${cart?.product?.slug}`">
+                                <h4>{{ cart?.product?.title }}</h4>
+                                </Link>
                                 <h6>
-                                    $80.00 <span>$120.00</span>
+                                    ${{ cart?.product?.current_price }}
+                                    <span>${{
+                        cart?.product?.customer_sales_price
+                    }}</span>
                                 </h6>
                                 <div class="addit-box">
                                     <div class="qty-box">
                                         <div class="input-group">
-                                            <button class="qty-minus"></button>
-                                            <input class="qty-adj form-control" type="number" value="1">
-                                            <button class="qty-plus"></button>
+                                            <button class="qty-minus" @click="
+                    cart_quantity_update(
+                        cart.id,
+                        'minus',
+                        null
+                    )
+                        "></button>
+                                            <input class="qty-adj form-control" type="number" min="1"
+                                                v-model="cart.quantity" @keyup="
+                        cart_quantity_update(
+                            cart.id,
+                            null,
+                            $event.target.value
+                        )
+                        " />
+                                            <button class="qty-plus" @click="
+                        cart_quantity_update(
+                            cart.id,
+                            'plus',
+                            null
+                        )
+                        "></button>
                                         </div>
                                     </div>
                                     <div class="pro-add">
@@ -586,109 +608,7 @@
                                                 </path>
                                             </svg>
                                         </a>
-                                        <a href="javascript:void(0)">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-trash-2">
-                                                <polyline points="3 6 5 6 21 6"></polyline>
-                                                <path
-                                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                </path>
-                                                <line x1="10" y1="11" x2="10" y2="17"></line>
-                                                <line x1="14" y1="11" x2="14" y2="17"></line>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/2(9).jpg">
-                            </a>
-                            <div class="media-body">
-                                <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                    <h4>Double Door Refrigerator</h4>
-                                </a>
-                                <h6>
-                                    $80.00 <span>$120.00</span>
-                                </h6>
-                                <div class="addit-box">
-                                    <div class="qty-box">
-                                        <div class="input-group">
-                                            <button class="qty-minus"></button>
-                                            <input class="qty-adj form-control" type="number" value="1">
-                                            <button class="qty-plus"></button>
-                                        </div>
-                                    </div>
-                                    <div class="pro-add">
-                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                            data-bs-target="#edit-product">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-edit">
-                                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7">
-                                                </path>
-                                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <a href="javascript:void(0)">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-trash-2">
-                                                <polyline points="3 6 5 6 21 6"></polyline>
-                                                <path
-                                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                </path>
-                                                <line x1="10" y1="11" x2="10" y2="17"></line>
-                                                <line x1="14" y1="11" x2="14" y2="17"></line>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/3(9).jpg">
-                            </a>
-                            <div class="media-body">
-                                <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                    <h4>woman hande bag</h4>
-                                </a>
-                                <h6>
-                                    $80.00 <span>$120.00</span>
-                                </h6>
-                                <div class="addit-box">
-                                    <div class="qty-box">
-                                        <div class="input-group">
-                                            <button class="qty-minus"></button>
-                                            <input class="qty-adj form-control" type="number" value="1">
-                                            <button class="qty-plus"></button>
-                                        </div>
-                                    </div>
-                                    <div class="pro-add">
-                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                            data-bs-target="#edit-product">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-edit">
-                                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7">
-                                                </path>
-                                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <a href="javascript:void(0)">
+                                        <a href="javascript:void(0)" @click="remove_cart_item(cart.id)">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                                 stroke-linecap="round" stroke-linejoin="round"
@@ -709,25 +629,20 @@
                 </ul>
                 <ul class="cart_total">
                     <li>
-                        subtotal : <span>$1050.00</span>
+                        subtotal : <span>${{ total_cart_price }}</span>
                     </li>
-                    <li>
-                        shpping <span>free</span>
-                    </li>
-                    <li>
-                        taxes <span>$0.00</span>
-                    </li>
+                    <li>shpping <span>free</span></li>
+                    <li>taxes <span>$0.00</span></li>
                     <li>
                         <div class="total">
-                            total<span>$1050.00</span>
+                            total<span>$ {{ total_cart_price }}</span>
                         </div>
                     </li>
                     <li>
                         <div class="buttons">
-                            <a href="https://themes.pixelstrap.com/bigdeal/html/cart.html"
-                                class="btn btn-solid btn-sm">view cart</a>
-                            <a href="https://themes.pixelstrap.com/bigdeal/html/checkout.html"
-                                class="btn btn-solid btn-sm ">checkout</a>
+                            <Link href="/cart" class="btn btn-solid btn-sm">view cart
+                            </Link>
+                            <Link href="/checkout" class="btn btn-solid btn-sm">checkout</Link>
                         </div>
                     </li>
                 </ul>
@@ -737,8 +652,12 @@
     <!-- Add to cart bar end-->
 
     <!-- wishlistbar bar -->
-    <div id="wishlist_side" class="add_to_cart right ">
-        <a href="javascript:void(0)" class="overlay" onclick="closeWishlist()"></a>
+    <!-- <div id="wishlist_side" class="add_to_cart right">
+        <a
+            href="javascript:void(0)"
+            class="overlay"
+            onclick="closeWishlist()"
+        ></a>
         <div class="cart-inner">
             <div class="cart_top">
                 <h3>my wishlist</h3>
@@ -750,152 +669,100 @@
             </div>
             <div class="cart_media">
                 <ul class="cart_product">
-                    <li>
+                    <li v-for="cart in all_cart_data.data" :key="cart.id">
                         <div class="media">
-                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/1(8).jpg">
-                            </a>
+                            <Link
+                                :href="`/product-details/${cart?.product?.slug}`"
+                            >
+                                <img
+                                    alt="megastore1"
+                                    class="me-3"
+                                    :src="cart.product.product_image.url"
+                                />
+                            </Link>
                             <div class="media-body">
-                                <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                    <h4>redmi not 3</h4>
+                                <a
+                                    :href="`/product-details/${cart?.product?.slug}`"
+                                >
+                                    <h4>{{ cart?.product?.title }}</h4>
                                 </a>
                                 <h6>
-                                    $80.00 <span>$120.00</span>
+                                    ${{ cart?.product?.customer_sales_price }}
+                                    <span
+                                        >${{
+                                            cart?.product?.purchase_price
+                                        }}</span
+                                    >
                                 </h6>
                                 <div class="addit-box">
                                     <div class="qty-box">
                                         <div class="input-group">
                                             <button class="qty-minus"></button>
-                                            <input class="qty-adj form-control" type="number" value="1">
+                                            <input
+                                                class="qty-adj form-control"
+                                                type="number"
+                                                value="1"
+                                            />
                                             <button class="qty-plus"></button>
                                         </div>
                                     </div>
                                     <div class="pro-add">
-                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                            data-bs-target="#edit-product">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-edit">
-                                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7">
-                                                </path>
-                                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z">
-                                                </path>
+                                        <a
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#edit-product"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="feather feather-edit"
+                                            >
+                                                <path
+                                                    d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                                                ></path>
+                                                <path
+                                                    d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                                                ></path>
                                             </svg>
                                         </a>
                                         <a href="javascript:void(0)">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-trash-2">
-                                                <polyline points="3 6 5 6 21 6"></polyline>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="feather feather-trash-2"
+                                            >
+                                                <polyline
+                                                    points="3 6 5 6 21 6"
+                                                ></polyline>
                                                 <path
-                                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                </path>
-                                                <line x1="10" y1="11" x2="10" y2="17"></line>
-                                                <line x1="14" y1="11" x2="14" y2="17"></line>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/2(9).jpg">
-                            </a>
-                            <div class="media-body">
-                                <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                    <h4>Double Door Refrigerator</h4>
-                                </a>
-                                <h6>
-                                    $80.00 <span>$120.00</span>
-                                </h6>
-                                <div class="addit-box">
-                                    <div class="qty-box">
-                                        <div class="input-group">
-                                            <button class="qty-minus"></button>
-                                            <input class="qty-adj form-control" type="number" value="1">
-                                            <button class="qty-plus"></button>
-                                        </div>
-                                    </div>
-                                    <div class="pro-add">
-                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                            data-bs-target="#edit-product">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-edit">
-                                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7">
-                                                </path>
-                                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <a href="javascript:void(0)">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-trash-2">
-                                                <polyline points="3 6 5 6 21 6"></polyline>
-                                                <path
-                                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                </path>
-                                                <line x1="10" y1="11" x2="10" y2="17"></line>
-                                                <line x1="14" y1="11" x2="14" y2="17"></line>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                <img alt="megastore1" class="me-3" src="/frontend/assets/images/3(9).jpg">
-                            </a>
-                            <div class="media-body">
-                                <a href="https://themes.pixelstrap.com/bigdeal/html/product-page(left-sidebar).html">
-                                    <h4>woman hande bag</h4>
-                                </a>
-                                <h6>
-                                    $80.00 <span>$120.00</span>
-                                </h6>
-                                <div class="addit-box">
-                                    <div class="qty-box">
-                                        <div class="input-group">
-                                            <button class="qty-minus"></button>
-                                            <input class="qty-adj form-control" type="number" value="1">
-                                            <button class="qty-plus"></button>
-                                        </div>
-                                    </div>
-                                    <div class="pro-add">
-                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                            data-bs-target="#edit-product">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-edit">
-                                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7">
-                                                </path>
-                                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <a href="javascript:void(0)">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-trash-2">
-                                                <polyline points="3 6 5 6 21 6"></polyline>
-                                                <path
-                                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                </path>
-                                                <line x1="10" y1="11" x2="10" y2="17"></line>
-                                                <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                                ></path>
+                                                <line
+                                                    x1="10"
+                                                    y1="11"
+                                                    x2="10"
+                                                    y2="17"
+                                                ></line>
+                                                <line
+                                                    x1="14"
+                                                    y1="11"
+                                                    x2="14"
+                                                    y2="17"
+                                                ></line>
                                             </svg>
                                         </a>
                                     </div>
@@ -905,30 +772,25 @@
                     </li>
                 </ul>
                 <ul class="cart_total">
+                    <li>subtotal : <span>$1050.00</span></li>
+                    <li>shpping <span>free</span></li>
+                    <li>taxes <span>$0.00</span></li>
                     <li>
-                        subtotal : <span>$1050.00</span>
-                    </li>
-                    <li>
-                        shpping <span>free</span>
-                    </li>
-                    <li>
-                        taxes <span>$0.00</span>
-                    </li>
-                    <li>
-                        <div class="total">
-                            total<span>$1050.00</span>
-                        </div>
+                        <div class="total">total<span>$1050.00</span></div>
                     </li>
                     <li>
                         <div class="buttons">
-                            <a href="https://themes.pixelstrap.com/bigdeal/html/wishlist.html"
-                                class="btn btn-solid btn-block btn-md">view wislist</a>
+                            <a
+                                href="https://themes.pixelstrap.com/bigdeal/html/wishlist.html"
+                                class="btn btn-solid btn-block btn-md"
+                                >view wislist</a
+                            >
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- wishlistbar bar end-->
 
     <!-- My account bar start-->
@@ -1019,7 +881,28 @@
 </template>
 
 <script>
-export default {};
+import { mapActions, mapState } from "pinia";
+import { common_store } from "../Store/common_store";
+export default {
+    created: async function () {
+        // await this.get_all_cart_data();
+    },
+
+    methods: {
+        ...mapActions(common_store, {
+            get_all_cart_data: "get_all_cart_data",
+            remove_cart_item: "remove_cart_item",
+            cart_quantity_update: "cart_quantity_update",
+        }),
+    },
+
+    computed: {
+        ...mapState(common_store, {
+            all_cart_data: "all_cart_data",
+            total_cart_price: "total_cart_price",
+        }),
+    },
+};
 </script>
 
 <style></style>

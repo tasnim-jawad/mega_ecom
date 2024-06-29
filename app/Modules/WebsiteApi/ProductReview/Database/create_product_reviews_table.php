@@ -17,7 +17,7 @@ return new class extends Migration
             $table->bigInteger('user_id')->nullable();
             $table->bigInteger('product_id')->nullable();
             $table->integer('rating')->nullable();
-            $table->string('description, 100')}')->nullable();
+            $table->string('description', 100)->nullable();
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();

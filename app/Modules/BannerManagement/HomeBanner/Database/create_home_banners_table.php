@@ -19,12 +19,12 @@ return new class extends Migration
             $table->string('offer_title', 50)->nullable();
             $table->string('button_url', 150)->nullable();
             $table->string('image', 150)->nullable();
+            $table->tinyInteger('is_show')->default(0);
 
             $table->bigInteger('creator')->unsigned()->nullable();
             $table->string('slug', 50)->nullable();
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();
-            
         });
     }
 
